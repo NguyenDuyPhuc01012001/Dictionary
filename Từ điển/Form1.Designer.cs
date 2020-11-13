@@ -1,6 +1,6 @@
 ﻿namespace Từ_điển
 {
-    partial class Form1
+    public partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -55,6 +55,7 @@
             this.cbWord.Name = "cbWord";
             this.cbWord.Size = new System.Drawing.Size(302, 708);
             this.cbWord.TabIndex = 2;
+            this.cbWord.SelectedIndexChanged += new System.EventHandler(this.cbWord_SelectedIndexChanged);
             // 
             // btnSearchImage
             // 
@@ -65,6 +66,7 @@
             this.btnSearchImage.Size = new System.Drawing.Size(31, 31);
             this.btnSearchImage.TabIndex = 3;
             this.btnSearchImage.UseVisualStyleBackColor = true;
+            this.btnSearchImage.Click += new System.EventHandler(this.btnSearchImage_Click);
             // 
             // rTxbExplan
             // 
@@ -88,6 +90,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Dictionary";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
@@ -98,5 +101,6 @@
         private System.Windows.Forms.Button btnSearchImage;
         private System.Windows.Forms.RichTextBox rTxbExplan;
     }
+   
 }
 
