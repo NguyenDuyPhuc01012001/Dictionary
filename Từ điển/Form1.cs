@@ -23,6 +23,78 @@ namespace Từ_điển
             cmbSpeed.SelectedItem = "0";    //set speed
             cmbVolume.SelectedItem = "80";  //set volume
         }
+
+        private void btnSpeakEnglish_Click(object sender, EventArgs e)
+        {
+            voice.SpeakAsync(cbWord.Text);
+        }
+
+        private void btnSearchImage_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://google.com.vn/search?q=" + cbWord.Text + "&tbm=isch");
+        }
+
+        private void cbWord_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            rTxbExplan.Text = cbWord.SelectedItem.ToString();
+            HighlightPhrase(rTxbExplan, "*", "\n", Color.Green);
+            HighlightPhrase(rTxbExplan, "VD:", "-->", Color.Red);
+            HighlightPhrase(rTxbExplan, "Ex:", "-->", Color.Red);
+            HighlightPhrase(rTxbExplan, "~", "\n", Color.Magenta);
+        }
+
+        private void cbLanguage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbLanguage.SelectedIndex.ToString() == "0")
+            {
+                LoadData("anhviet.txt");
+                btnSpeakEnglish.Enabled = true;
+            }
+            if (cmbLanguage.SelectedIndex.ToString() == "1")
+            {
+                LoadData("vietanh.txt");
+                btnSpeakEnglish.Enabled = false;
+            }
+        }
+              
+        private void cmbVolume_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            voice.Volume = int.Parse(cmbVolume.SelectedItem.ToString());
+        }
+
+        private void cmbSpeed_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            voice.Rate = int.Parse(cmbSpeed.SelectedItem.ToString());
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+            {
+                e.Cancel = true;
+                return;
+            }
+            voice.SpeakAsyncCancelAll();
+        }
+
+        static void HighlightPhrase(RichTextBox box, string begin, string end, Color color)
+        {
+            string s = box.Text;
+            for (int ix = 0; ix < s.Length;)
+            {
+                int jx = s.IndexOf(begin, ix);
+                if (jx < 0)
+                    break;
+                int kx = s.IndexOf(end, jx);
+                if (kx < 0)
+                    kx = jx;
+                box.SelectionStart = jx;
+                box.SelectionLength = kx - jx;
+                box.SelectionColor = color;
+                ix = kx + 1;
+            }
+        }
+
         private void LoadData(string Path)
         {
             //Đa luồng
@@ -53,7 +125,6 @@ namespace Từ_điển
                                 word.Explanation += "          ";
                             //\r và \n để xuống hàng
                             word.Explanation += line + "\r\n";
-
                         }
                         words.Add(word);
                     }
@@ -63,66 +134,6 @@ namespace Từ_điển
                 }
                 )
             { IsBackground = true }.Start();
-        }
-
-        private void btnSearchImage_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://google.com.vn/search?q=" + cbWord.Text + "&tbm=isch");
-        }
-
-        private void cbWord_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            rTxbExplan.Text = cbWord.SelectedItem.ToString();
-            HighlightPhrase(rTxbExplan, "*", "\n", Color.Green);
-            HighlightPhrase(rTxbExplan, "VD:", "-->", Color.Red);
-            HighlightPhrase(rTxbExplan, "Ex:", "-->", Color.Red);
-            HighlightPhrase(rTxbExplan, "~", "\n", Color.Magenta);
-        }
-
-        private void cbLanguage_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cmbLanguage.SelectedIndex.ToString() == "0")
-            {
-                LoadData("anhviet.txt");
-                btnSpeakEnglish.Enabled = true;
-            }
-            if (cmbLanguage.SelectedIndex.ToString() == "1")
-            {
-                LoadData("vietanh.txt");
-                btnSpeakEnglish.Enabled = false;
-            }
-        }
-        static void HighlightPhrase(RichTextBox box, string begin, string end, Color color)
-        {
-            string s = box.Text;
-            for (int ix = 0; ix < s.Length;)
-            {
-                int jx = s.IndexOf(begin, ix);
-                if (jx < 0)
-                    break;
-                int kx = s.IndexOf(end, jx);
-                if (kx < 0)
-                    kx = jx;
-                box.SelectionStart = jx;
-                box.SelectionLength = kx - jx;
-                box.SelectionColor = color;
-                ix = kx + 1;
-            }
-        }
-
-        private void btnSpeakEnglish_Click(object sender, EventArgs e)
-        {
-            voice.SpeakAsync(cbWord.Text);
-        }
-
-        private void cmbVolume_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            voice.Volume = int.Parse(cmbVolume.SelectedItem.ToString());
-        }
-
-        private void cmbSpeed_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            voice.Rate = int.Parse(cmbSpeed.SelectedItem.ToString());
         }
     }
 }

@@ -48,10 +48,9 @@
             this.btnSpeakEnglish.BackColor = System.Drawing.SystemColors.Control;
             this.btnSpeakEnglish.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSpeakEnglish.BackgroundImage")));
             this.btnSpeakEnglish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSpeakEnglish.Location = new System.Drawing.Point(360, 48);
-            this.btnSpeakEnglish.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSpeakEnglish.Location = new System.Drawing.Point(320, 38);
             this.btnSpeakEnglish.Name = "btnSpeakEnglish";
-            this.btnSpeakEnglish.Size = new System.Drawing.Size(35, 39);
+            this.btnSpeakEnglish.Size = new System.Drawing.Size(31, 31);
             this.btnSpeakEnglish.TabIndex = 2;
             this.btnSpeakEnglish.UseVisualStyleBackColor = false;
             this.btnSpeakEnglish.Click += new System.EventHandler(this.btnSpeakEnglish_Click);
@@ -61,10 +60,9 @@
             this.cbWord.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.cbWord.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
             this.cbWord.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.cbWord.Location = new System.Drawing.Point(14, 47);
-            this.cbWord.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbWord.Location = new System.Drawing.Point(12, 38);
             this.cbWord.Name = "cbWord";
-            this.cbWord.Size = new System.Drawing.Size(339, 851);
+            this.cbWord.Size = new System.Drawing.Size(302, 682);
             this.cbWord.TabIndex = 2;
             this.cbWord.SelectedIndexChanged += new System.EventHandler(this.cbWord_SelectedIndexChanged);
             // 
@@ -72,10 +70,9 @@
             // 
             this.btnSearchImage.BackgroundImage = global::Từ_điển.Properties.Resources.tải_xuống__1_;
             this.btnSearchImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSearchImage.Location = new System.Drawing.Point(361, 95);
-            this.btnSearchImage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSearchImage.Location = new System.Drawing.Point(321, 76);
             this.btnSearchImage.Name = "btnSearchImage";
-            this.btnSearchImage.Size = new System.Drawing.Size(35, 39);
+            this.btnSearchImage.Size = new System.Drawing.Size(31, 31);
             this.btnSearchImage.TabIndex = 3;
             this.btnSearchImage.UseVisualStyleBackColor = true;
             this.btnSearchImage.Click += new System.EventHandler(this.btnSearchImage_Click);
@@ -83,23 +80,23 @@
             // rTxbExplan
             // 
             this.rTxbExplan.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.rTxbExplan.Location = new System.Drawing.Point(402, 48);
-            this.rTxbExplan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rTxbExplan.Location = new System.Drawing.Point(357, 38);
             this.rTxbExplan.Name = "rTxbExplan";
-            this.rTxbExplan.Size = new System.Drawing.Size(706, 846);
+            this.rTxbExplan.Size = new System.Drawing.Size(628, 678);
             this.rTxbExplan.TabIndex = 6;
             this.rTxbExplan.Text = "";
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cmbLanguage,
             this.âmThanhToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1122, 37);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(997, 32);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -109,7 +106,7 @@
             "Anh-Việt",
             "Việt-Anh"});
             this.cmbLanguage.Name = "cmbLanguage";
-            this.cmbLanguage.Size = new System.Drawing.Size(136, 33);
+            this.cmbLanguage.Size = new System.Drawing.Size(121, 28);
             this.cmbLanguage.Click += new System.EventHandler(this.cbLanguage_SelectedIndexChanged);
             // 
             // âmThanhToolStripMenuItem
@@ -118,7 +115,7 @@
             this.toolStripMenuItem1,
             this.toolStripMenuItem2});
             this.âmThanhToolStripMenuItem.Name = "âmThanhToolStripMenuItem";
-            this.âmThanhToolStripMenuItem.Size = new System.Drawing.Size(80, 33);
+            this.âmThanhToolStripMenuItem.Size = new System.Drawing.Size(73, 28);
             this.âmThanhToolStripMenuItem.Text = "Sound";
             // 
             // toolStripMenuItem1
@@ -126,7 +123,7 @@
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cmbVolume});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(152, 26);
             this.toolStripMenuItem1.Text = "Volume";
             // 
             // cmbVolume
@@ -144,7 +141,7 @@
             "90",
             "100"});
             this.cmbVolume.Name = "cmbVolume";
-            this.cmbVolume.Size = new System.Drawing.Size(121, 33);
+            this.cmbVolume.Size = new System.Drawing.Size(121, 28);
             this.cmbVolume.SelectedIndexChanged += new System.EventHandler(this.cmbVolume_SelectedIndexChanged);
             // 
             // toolStripMenuItem2
@@ -152,7 +149,7 @@
             this.toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cmbSpeed});
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(270, 34);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(152, 26);
             this.toolStripMenuItem2.Text = "Speed";
             // 
             // cmbSpeed
@@ -164,14 +161,14 @@
             "1",
             "2"});
             this.cmbSpeed.Name = "cmbSpeed";
-            this.cmbSpeed.Size = new System.Drawing.Size(121, 33);
+            this.cmbSpeed.Size = new System.Drawing.Size(121, 28);
             this.cmbSpeed.SelectedIndexChanged += new System.EventHandler(this.cmbSpeed_SelectedIndexChanged);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1122, 904);
+            this.ClientSize = new System.Drawing.Size(997, 675);
             this.Controls.Add(this.rTxbExplan);
             this.Controls.Add(this.btnSearchImage);
             this.Controls.Add(this.btnSpeakEnglish);
@@ -179,10 +176,10 @@
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Dictionary";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
