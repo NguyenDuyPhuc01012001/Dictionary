@@ -76,5 +76,19 @@ namespace Từ_điển
         {
             rTxbExplan.Text = cbWord.SelectedItem.ToString();
         }
+
+        private void cbLanguage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbLanguage.SelectedIndex.ToString() == "0")
+            {
+                LoadData("anhviet.txt");
+                btnSpeakEnglish.Enabled = true;
+            }
+            if (cmbLanguage.SelectedIndex.ToString() == "1")
+            {
+                LoadData("vietanh.txt");
+                btnSpeakEnglish.Enabled = false;
+            }
+        }
     }
 }
