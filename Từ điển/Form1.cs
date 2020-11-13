@@ -21,6 +21,7 @@ namespace Từ_điển
         }
         private void LoadData(string Path)
         {
+            //Đa luồng
             new Thread(
                 () =>
                 {
@@ -46,6 +47,7 @@ namespace Từ_điển
                                 word.Explanation += "          ";
                             if (line.StartsWith("Ex:"))
                                 word.Explanation += "          ";
+                            //\r và \n để xuống hàng
                             word.Explanation += line + "\r\n";
 
                         }

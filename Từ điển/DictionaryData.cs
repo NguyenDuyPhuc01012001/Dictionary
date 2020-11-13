@@ -15,7 +15,7 @@ namespace Từ_điển
         {
             return Explanation;
         }
-        public int CompareTo(DictionaryData obj) // OverRight phương thức CompareTo của Interface IComparable
+        public int CompareTo(DictionaryData obj) // Overright phương thức CompareTo của Interface IComparable
         {
             return this.Key.CompareTo(obj.Key);
         }
