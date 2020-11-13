@@ -46,6 +46,7 @@ namespace Từ_điển
         private void btnSpeakEnglish_Click(object sender, EventArgs e)
         {
             voice.SpeakAsync(cbWord.Text);
+            
         }
 
         private void btnSearchImage_Click(object sender, EventArgs e)
@@ -109,6 +110,7 @@ namespace Từ_điển
                         }
                         words.Add(word);
                     }
+                    //Sắp xếp tăng dần theo thứ tự alphabet
                     words.Sort();
                     //bỏ danh sách word vào source của combobox để hiển thị
                     cbWord.DataSource = words;

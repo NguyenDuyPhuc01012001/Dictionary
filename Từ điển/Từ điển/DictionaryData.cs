@@ -7,7 +7,7 @@ namespace Từ_điển
         public string Key { get; set; }
         public string Explanation { get; set; }
 
-        public override string ToString()
+        public override string ToString()//Trả về phần Explanation 
         {
             return Explanation;
         }
