@@ -10,14 +10,18 @@ namespace Từ_điển
 {
     public partial class Form1 : Form
     {
+        //hàm lấy âm thanh của window
         SpeechSynthesizer voice = new SpeechSynthesizer();
         public Form1()
         {
             InitializeComponent();
+
             Control.CheckForIllegalCrossThreadCalls = false;
 
-
             cbWord.DisplayMember = "Key";   //set display of cbWord
+            cmbLanguage.SelectedIndex = 0;  //set language
+            cmbSpeed.SelectedItem = "0";    //set speed
+            cmbVolume.SelectedItem = "80";  //set volume
         }
         private void LoadData(string Path)
         {
@@ -66,15 +70,13 @@ namespace Từ_điển
             Process.Start("https://google.com.vn/search?q=" + cbWord.Text + "&tbm=isch");
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            LoadData("anhviet.txt");
-
-        }
-
         private void cbWord_SelectedIndexChanged(object sender, EventArgs e)
         {
             rTxbExplan.Text = cbWord.SelectedItem.ToString();
+            HighlightPhrase(rTxbExplan, "*", "\n", Color.Green);
+            HighlightPhrase(rTxbExplan, "VD:", "-->", Color.Red);
+            HighlightPhrase(rTxbExplan, "Ex:", "-->", Color.Red);
+            HighlightPhrase(rTxbExplan, "~", "\n", Color.Magenta);
         }
 
         private void cbLanguage_SelectedIndexChanged(object sender, EventArgs e)
@@ -89,6 +91,38 @@ namespace Từ_điển
                 LoadData("vietanh.txt");
                 btnSpeakEnglish.Enabled = false;
             }
+        }
+        static void HighlightPhrase(RichTextBox box, string begin, string end, Color color)
+        {
+            string s = box.Text;
+            for (int ix = 0; ix < s.Length;)
+            {
+                int jx = s.IndexOf(begin, ix);
+                if (jx < 0)
+                    break;
+                int kx = s.IndexOf(end, jx);
+                if (kx < 0)
+                    kx = jx;
+                box.SelectionStart = jx;
+                box.SelectionLength = kx - jx;
+                box.SelectionColor = color;
+                ix = kx + 1;
+            }
+        }
+
+        private void btnSpeakEnglish_Click(object sender, EventArgs e)
+        {
+            voice.SpeakAsync(cbWord.Text);
+        }
+
+        private void cmbVolume_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            voice.Volume = int.Parse(cmbVolume.SelectedItem.ToString());
+        }
+
+        private void cmbSpeed_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            voice.Rate = int.Parse(cmbSpeed.SelectedItem.ToString());
         }
     }
 }
