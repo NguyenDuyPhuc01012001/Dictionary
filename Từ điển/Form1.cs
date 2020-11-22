@@ -5,7 +5,7 @@ using System.Drawing;
 using System.Speech.Synthesis;
 using System.Threading;
 using System.Windows.Forms;
-
+using System.IO;
 namespace Từ_điển
 {
     public partial class Form1 : Form
@@ -14,14 +14,21 @@ namespace Từ_điển
         SpeechSynthesizer voice = new SpeechSynthesizer();
         public Form1()
         {
-            InitializeComponent();
-
+           InitializeComponent();
+            
+            
             Control.CheckForIllegalCrossThreadCalls = false;
-
+            
             cbWord.DisplayMember = "Key";   //set display of cbWord
             cmbLanguage.SelectedIndex = 0;  //set language
             cmbSpeed.SelectedItem = "0";    //set speed
             cmbVolume.SelectedItem = "80";  //set volume
+            label1.Font = new Font(label1.Font, FontStyle.Bold);
+        }
+
+        private void formRun()
+        {
+            Application.Run(new SplashScreen());
         }
 
         private void btnSpeakEnglish_Click(object sender, EventArgs e)
@@ -97,41 +104,56 @@ namespace Từ_điển
 
         private void LoadData(string Path)
         {
+            
             //Đa luồng
             new Thread(
                 () =>
                 {
+                    
                     string line = "";
                     List<DictionaryData> words = new List<DictionaryData>();
 
                     //tạo 1 đối tượng luồng đọc để đọc file 
                     System.IO.StreamReader streamReader = new System.IO.StreamReader(Path);
                     //mỗi lần đọc 1 dòng trên file text và nếu đọc được sẽ lưu vào chuỗi line
-                    while ((line = streamReader.ReadLine()) != null)
+                    using (FileStream fs = File.Open(Path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+                    using (BufferedStream bs = new BufferedStream(fs))
+                    using (StreamReader sr = new StreamReader(bs))
                     {
-                        DictionaryData word = new DictionaryData();
-
-                        word.Key = line;
-                        //đọc thêm 1 dòng nữa để lấy nghĩa
                         while ((line = streamReader.ReadLine()) != null)
                         {
-                            if (line == "")
-                                break;
-                            if (line.StartsWith("-"))
-                                word.Explanation += "     ";
-                            if (line.StartsWith("VD:"))
-                                word.Explanation += "          ";
-                            if (line.StartsWith("Ex:"))
-                                word.Explanation += "          ";
-                            //\r và \n để xuống hàng
-                            word.Explanation += line + "\r\n";
+                            DictionaryData word = new DictionaryData();
+
+                            word.Key = line;
+                            
+                           
+                            //đọc thêm 1 dòng nữa để lấy nghĩa
+                            while ((line = streamReader.ReadLine()) != null)
+                            {
+                                if (line == "")
+                                    break;
+                                if (line.StartsWith("-"))
+                                    word.Explanation += "     ";
+                                if (line.StartsWith("VD:"))
+                                    word.Explanation += "          ";
+                                if (line.StartsWith("Ex:"))
+                                    word.Explanation += "          ";
+                                //\r và \n để xuống hàng
+                                word.Explanation += line + "\r\n";
+                            }
+                            words.Add(word);
                         }
-                        words.Add(word);
+                        label1.Dispose();
+                        
+                        words.Sort();
+                        //bỏ danh sách word vào source của combobox để hiển thị
+                        cbWord.DataSource = words;
                     }
-                    words.Sort();
-                    //bỏ danh sách word vào source của combobox để hiển thị
-                    cbWord.DataSource = words;
+                    label1.Dispose();
+                    pictureBox1.Dispose();
+                    MessageBox.Show("Dữ liệu đã được tải lên thành công ✓");
                 }
+
                 )
             { IsBackground = true }.Start();
         }

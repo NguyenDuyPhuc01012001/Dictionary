@@ -58,3 +58,4 @@ C:\Users\Admin\3D Objects\Từ điển Anh Việt\Dictionary\Từ điển\obj\De
 C:\Users\Admin\3D Objects\Từ điển Anh Việt\Dictionary\Từ điển\obj\Debug\Từ điển.csproj.CoreCompileInputs.cache
 C:\Users\Admin\3D Objects\Từ điển Anh Việt\Dictionary\Từ điển\obj\Debug\Từ điển.exe
 C:\Users\Admin\3D Objects\Từ điển Anh Việt\Dictionary\Từ điển\obj\Debug\Từ điển.pdb
+C:\Năm 2\Học kỳ 1\Lập trình trực quan\Do An LTTQ\Từ điển\obj\Debug\Từ_điển.SplashScreen.resources

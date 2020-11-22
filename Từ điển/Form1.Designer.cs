@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.btnSpeakEnglish = new System.Windows.Forms.Button();
             this.cbWord = new System.Windows.Forms.ComboBox();
-            this.btnSearchImage = new System.Windows.Forms.Button();
             this.rTxbExplan = new System.Windows.Forms.RichTextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cmbLanguage = new System.Windows.Forms.ToolStripComboBox();
@@ -40,49 +38,31 @@
             this.cmbVolume = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.cmbSpeed = new System.Windows.Forms.ToolStripComboBox();
+            this.btnSearchImage = new System.Windows.Forms.Button();
+            this.btnSpeakEnglish = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnSpeakEnglish
-            // 
-            this.btnSpeakEnglish.BackColor = System.Drawing.SystemColors.Control;
-            this.btnSpeakEnglish.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSpeakEnglish.BackgroundImage")));
-            this.btnSpeakEnglish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSpeakEnglish.Location = new System.Drawing.Point(320, 38);
-            this.btnSpeakEnglish.Name = "btnSpeakEnglish";
-            this.btnSpeakEnglish.Size = new System.Drawing.Size(31, 31);
-            this.btnSpeakEnglish.TabIndex = 2;
-            this.btnSpeakEnglish.UseVisualStyleBackColor = false;
-            this.btnSpeakEnglish.Click += new System.EventHandler(this.btnSpeakEnglish_Click);
             // 
             // cbWord
             // 
             this.cbWord.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.cbWord.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
             this.cbWord.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.cbWord.Location = new System.Drawing.Point(12, 38);
+            this.cbWord.Location = new System.Drawing.Point(0, 38);
             this.cbWord.Name = "cbWord";
-            this.cbWord.Size = new System.Drawing.Size(302, 682);
+            this.cbWord.Size = new System.Drawing.Size(324, 682);
             this.cbWord.TabIndex = 2;
             this.cbWord.SelectedIndexChanged += new System.EventHandler(this.cbWord_SelectedIndexChanged);
-            // 
-            // btnSearchImage
-            // 
-            this.btnSearchImage.BackgroundImage = global::Từ_điển.Properties.Resources.tải_xuống__1_;
-            this.btnSearchImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSearchImage.Location = new System.Drawing.Point(321, 76);
-            this.btnSearchImage.Name = "btnSearchImage";
-            this.btnSearchImage.Size = new System.Drawing.Size(31, 31);
-            this.btnSearchImage.TabIndex = 3;
-            this.btnSearchImage.UseVisualStyleBackColor = true;
-            this.btnSearchImage.Click += new System.EventHandler(this.btnSearchImage_Click);
             // 
             // rTxbExplan
             // 
             this.rTxbExplan.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.rTxbExplan.Location = new System.Drawing.Point(357, 38);
+            this.rTxbExplan.Location = new System.Drawing.Point(367, 38);
             this.rTxbExplan.Name = "rTxbExplan";
-            this.rTxbExplan.Size = new System.Drawing.Size(628, 678);
+            this.rTxbExplan.Size = new System.Drawing.Size(618, 678);
             this.rTxbExplan.TabIndex = 6;
             this.rTxbExplan.Text = "";
             // 
@@ -95,7 +75,6 @@
             this.âmThanhToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(997, 32);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
@@ -164,11 +143,55 @@
             this.cmbSpeed.Size = new System.Drawing.Size(121, 28);
             this.cmbSpeed.SelectedIndexChanged += new System.EventHandler(this.cmbSpeed_SelectedIndexChanged);
             // 
+            // btnSearchImage
+            // 
+            this.btnSearchImage.BackgroundImage = global::Từ_điển.Properties.Resources.tải_xuống__1_;
+            this.btnSearchImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSearchImage.Location = new System.Drawing.Point(330, 75);
+            this.btnSearchImage.Name = "btnSearchImage";
+            this.btnSearchImage.Size = new System.Drawing.Size(31, 31);
+            this.btnSearchImage.TabIndex = 3;
+            this.btnSearchImage.UseVisualStyleBackColor = true;
+            this.btnSearchImage.Click += new System.EventHandler(this.btnSearchImage_Click);
+            // 
+            // btnSpeakEnglish
+            // 
+            this.btnSpeakEnglish.BackColor = System.Drawing.SystemColors.Control;
+            this.btnSpeakEnglish.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSpeakEnglish.BackgroundImage")));
+            this.btnSpeakEnglish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSpeakEnglish.Location = new System.Drawing.Point(330, 38);
+            this.btnSpeakEnglish.Name = "btnSpeakEnglish";
+            this.btnSpeakEnglish.Size = new System.Drawing.Size(31, 31);
+            this.btnSpeakEnglish.TabIndex = 2;
+            this.btnSpeakEnglish.UseVisualStyleBackColor = false;
+            this.btnSpeakEnglish.Click += new System.EventHandler(this.btnSpeakEnglish_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 135);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(314, 292);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label1.Location = new System.Drawing.Point(1, 97);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(314, 23);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Dữ liệu đang được tải, vui lòng chờ...";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(997, 675);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.rTxbExplan);
             this.Controls.Add(this.btnSearchImage);
             this.Controls.Add(this.btnSpeakEnglish);
@@ -182,6 +205,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,7 +223,9 @@
         private System.Windows.Forms.ToolStripComboBox cmbVolume;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripComboBox cmbSpeed;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
-   
+
 }
 
