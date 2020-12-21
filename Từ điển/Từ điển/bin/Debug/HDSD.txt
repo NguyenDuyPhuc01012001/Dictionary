@@ -1,0 +1,10 @@
+	Chào mừng bạn!
+
+Bấm tổ hợp phím: 
+ • Ctrl+Q		thoát khỏi chương trình
+ • Alt+Z		thu nhỏ cửa sổ
+ • Alt+X		ẩn cửa sổ
+ • Alt+C hay ESC	xoá trường gõ vào
+
+Sau khi lựa chọn (cụm) từ trong văn bản, cú nhấn cái nút giữa chuột vào vùng Lời định nghĩa của cửa sổ chính, hay vào biểu tượng của vùng thông báo, sẽ tra tìm từ đó.
+

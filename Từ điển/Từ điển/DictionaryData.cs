@@ -7,9 +7,12 @@ namespace Từ_điển
         public string Key { get; set; }
         public string Explanation { get; set; }
 
-        public override string ToString()//Trả về phần Explanation 
+        public override string ToString()
         {
-            return Explanation;
+            //Not adding below 2 lines might throw OutOfMemoryException in listbox.Items.Add or listbox.DataSOurce = somelist
+            if (string.IsNullOrEmpty(Explanation)) //Added this check to avoid 
+                return this.GetType().Name; //Return string.Empty or something other than null else you will get OutOfMemoryException error when you add or bind this object to listbox
+            return Key+"\n"+Explanation;
         }
         public int CompareTo(DictionaryData obj) // OverRight phương thức CompareTo của Interface IComparable
         {
