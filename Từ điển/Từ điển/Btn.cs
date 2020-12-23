@@ -67,10 +67,10 @@ namespace Từ_điển
             base.OnPaint(e);
 
             Graphics graphics = e.Graphics;
-            GraphicsPath path = Create(0, 0, Bounds.Width, Bounds.Height, 30);
+            GraphicsPath path = Create(0, 0, Bounds.Width, Bounds.Height, 20);
             SizeF size = graphics.MeasureString(this.Text, this.Font); 
 
-            graphics.FillPath(new LinearGradientBrush(this.ClientRectangle, Color.White, Color.Orange, 90F), path);
+            graphics.FillPath(new LinearGradientBrush(this.ClientRectangle, Color.Orange, Color.White, 90F), path);
             graphics.DrawString(this.Text, this.Font, Brushes.Black, (this.Width - size.Width) / 2, (this.Height - size.Height) / 2);
         }
     }
