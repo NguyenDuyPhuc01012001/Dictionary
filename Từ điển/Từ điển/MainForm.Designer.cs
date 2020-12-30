@@ -29,55 +29,30 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btnSpeakEnglish = new System.Windows.Forms.Button();
             this.cbWord = new System.Windows.Forms.ComboBox();
-            this.btnSearchImage = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.cmbLanguage = new System.Windows.Forms.ToolStripComboBox();
-            this.âmThanhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmbVolume = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmbSpeed = new System.Windows.Forms.ToolStripComboBox();
-            this.trợGiúpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hướngDẫnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thêmTừToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gópÝToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rTxbExplan = new System.Windows.Forms.RichTextBox();
             this.cmbHistory = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cbTu = new System.Windows.Forms.ComboBox();
-            this.btnLike = new System.Windows.Forms.Button();
             this.cmbLike = new System.Windows.Forms.ComboBox();
-            this.dGvIrrVerbs = new System.Windows.Forms.DataGridView();
-            this.Base = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PastSimple = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PastParticiple = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Definition = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSetting = new Từ_điển.Btn();
-            this.btnIrrVerbs = new Từ_điển.Btn();
-            this.btnFavorite = new Từ_điển.Btn();
-            this.btnHelp = new Từ_điển.Btn();
-            this.btnTranslator = new Từ_điển.Btn();
-            this.btnHistory = new Từ_điển.Btn();
-            this.menuStrip1.SuspendLayout();
+            this.Pnl1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.cmbLanguage = new Guna.UI.WinForms.GunaComboBox();
+            this.btnHDSD = new Guna.UI.WinForms.GunaGradientButton();
+            this.btnHistory = new Guna.UI.WinForms.GunaGradientButton();
+            this.btnSetting = new Guna.UI.WinForms.GunaGradientButton();
+            this.btnFavorite = new Guna.UI.WinForms.GunaGradientButton();
+            this.btnTranslator = new Guna.UI.WinForms.GunaGradientButton();
+            this.btnPop = new Guna.UI.WinForms.GunaGradientButton();
+            this.Pnl2 = new Guna.UI.WinForms.GunaGradient2Panel();
+            this.btnSearchOnline = new System.Windows.Forms.Button();
+            this.btnLike = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnSpeakEnglish = new System.Windows.Forms.Button();
+            this.btnSearchImage = new System.Windows.Forms.Button();
+            this.Pnl1.SuspendLayout();
+            this.Pnl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dGvIrrVerbs)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnSpeakEnglish
-            // 
-            this.btnSpeakEnglish.BackColor = System.Drawing.SystemColors.Control;
-            this.btnSpeakEnglish.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSpeakEnglish.BackgroundImage")));
-            this.btnSpeakEnglish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSpeakEnglish.Location = new System.Drawing.Point(208, 102);
-            this.btnSpeakEnglish.Name = "btnSpeakEnglish";
-            this.btnSpeakEnglish.Size = new System.Drawing.Size(40, 40);
-            this.btnSpeakEnglish.TabIndex = 2;
-            this.btnSpeakEnglish.UseVisualStyleBackColor = false;
-            this.btnSpeakEnglish.Click += new System.EventHandler(this.btnSpeakEnglish_Click);
             // 
             // cbWord
             // 
@@ -87,174 +62,46 @@
             this.cbWord.DropDownWidth = 300;
             this.cbWord.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbWord.IntegralHeight = false;
-            this.cbWord.Location = new System.Drawing.Point(254, 52);
+            this.cbWord.Location = new System.Drawing.Point(40, 13);
             this.cbWord.Name = "cbWord";
-            this.cbWord.Size = new System.Drawing.Size(731, 33);
+            this.cbWord.Size = new System.Drawing.Size(533, 33);
             this.cbWord.Sorted = true;
             this.cbWord.TabIndex = 2;
             this.cbWord.SelectedIndexChanged += new System.EventHandler(this.Search);
             // 
-            // btnSearchImage
-            // 
-            this.btnSearchImage.BackgroundImage = global::Từ_điển.Properties.Resources.tải_xuống__1_;
-            this.btnSearchImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSearchImage.Location = new System.Drawing.Point(208, 148);
-            this.btnSearchImage.Name = "btnSearchImage";
-            this.btnSearchImage.Size = new System.Drawing.Size(40, 40);
-            this.btnSearchImage.TabIndex = 3;
-            this.btnSearchImage.UseVisualStyleBackColor = true;
-            this.btnSearchImage.Click += new System.EventHandler(this.btnSearchImage_Click);
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cmbLanguage,
-            this.âmThanhToolStripMenuItem,
-            this.trợGiúpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(997, 34);
-            this.menuStrip1.TabIndex = 5;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // cmbLanguage
-            // 
-            this.cmbLanguage.BackColor = System.Drawing.Color.Gold;
-            this.cmbLanguage.DropDownWidth = 150;
-            this.cmbLanguage.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.cmbLanguage.Items.AddRange(new object[] {
-            "Anh - Việt",
-            "Việt - Anh"});
-            this.cmbLanguage.Name = "cmbLanguage";
-            this.cmbLanguage.Size = new System.Drawing.Size(121, 30);
-            this.cmbLanguage.SelectedIndexChanged += new System.EventHandler(this.cmbLanguage_SelectedIndexChanged);
-            // 
-            // âmThanhToolStripMenuItem
-            // 
-            this.âmThanhToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.toolStripMenuItem2});
-            this.âmThanhToolStripMenuItem.Name = "âmThanhToolStripMenuItem";
-            this.âmThanhToolStripMenuItem.Size = new System.Drawing.Size(98, 30);
-            this.âmThanhToolStripMenuItem.Text = "Âm thanh";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cmbVolume});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(173, 26);
-            this.toolStripMenuItem1.Text = "Âm lượng";
-            // 
-            // cmbVolume
-            // 
-            this.cmbVolume.Items.AddRange(new object[] {
-            "0",
-            "10",
-            "20",
-            "30",
-            "40",
-            "50",
-            "60",
-            "70",
-            "80",
-            "90",
-            "100"});
-            this.cmbVolume.Name = "cmbVolume";
-            this.cmbVolume.Size = new System.Drawing.Size(121, 28);
-            this.cmbVolume.SelectedIndexChanged += new System.EventHandler(this.cmbVolume_SelectedIndexChanged);
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cmbSpeed});
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(173, 26);
-            this.toolStripMenuItem2.Text = "Tốc độ";
-            // 
-            // cmbSpeed
-            // 
-            this.cmbSpeed.Items.AddRange(new object[] {
-            "-2",
-            "-1",
-            "0",
-            "1",
-            "2"});
-            this.cmbSpeed.Name = "cmbSpeed";
-            this.cmbSpeed.Size = new System.Drawing.Size(121, 28);
-            this.cmbSpeed.SelectedIndexChanged += new System.EventHandler(this.cmbSpeed_SelectedIndexChanged);
-            // 
-            // trợGiúpToolStripMenuItem
-            // 
-            this.trợGiúpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.hướngDẫnToolStripMenuItem,
-            this.thêmTừToolStripMenuItem,
-            this.gópÝToolStripMenuItem});
-            this.trợGiúpToolStripMenuItem.Name = "trợGiúpToolStripMenuItem";
-            this.trợGiúpToolStripMenuItem.Size = new System.Drawing.Size(93, 30);
-            this.trợGiúpToolStripMenuItem.Text = "Trợ giúp";
-            // 
-            // hướngDẫnToolStripMenuItem
-            // 
-            this.hướngDẫnToolStripMenuItem.Name = "hướngDẫnToolStripMenuItem";
-            this.hướngDẫnToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.hướngDẫnToolStripMenuItem.Text = "Hướng dẫn";
-            // 
-            // thêmTừToolStripMenuItem
-            // 
-            this.thêmTừToolStripMenuItem.Name = "thêmTừToolStripMenuItem";
-            this.thêmTừToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.thêmTừToolStripMenuItem.Text = "Thêm từ";
-            // 
-            // gópÝToolStripMenuItem
-            // 
-            this.gópÝToolStripMenuItem.Name = "gópÝToolStripMenuItem";
-            this.gópÝToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.gópÝToolStripMenuItem.Text = "Góp ý";
-            // 
             // rTxbExplan
             // 
+            this.rTxbExplan.BackColor = System.Drawing.Color.White;
             this.rTxbExplan.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.rTxbExplan.Location = new System.Drawing.Point(254, 102);
+            this.rTxbExplan.Location = new System.Drawing.Point(40, 80);
             this.rTxbExplan.Name = "rTxbExplan";
-            this.rTxbExplan.Size = new System.Drawing.Size(731, 464);
+            this.rTxbExplan.ReadOnly = true;
+            this.rTxbExplan.Size = new System.Drawing.Size(671, 473);
             this.rTxbExplan.TabIndex = 6;
             this.rTxbExplan.Text = "";
             // 
             // cmbHistory
             // 
+            this.cmbHistory.BackColor = System.Drawing.Color.LavenderBlush;
             this.cmbHistory.DropDownHeight = 210;
             this.cmbHistory.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cmbHistory.FormattingEnabled = true;
             this.cmbHistory.IntegralHeight = false;
-            this.cmbHistory.Location = new System.Drawing.Point(12, 54);
+            this.cmbHistory.Location = new System.Drawing.Point(33, 18);
             this.cmbHistory.Name = "cmbHistory";
             this.cmbHistory.Size = new System.Drawing.Size(190, 33);
             this.cmbHistory.TabIndex = 7;
-            this.cmbHistory.SelectedIndexChanged += new System.EventHandler(this.cmbSearch_SelectedIndexChanged);
+            this.cmbHistory.SelectedIndexChanged += new System.EventHandler(this.cmbHistory_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.LavenderBlush;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(294, 57);
+            this.label1.Location = new System.Drawing.Point(80, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(666, 25);
+            this.label1.Size = new System.Drawing.Size(472, 25);
             this.label1.TabIndex = 13;
             this.label1.Text = "Loading data. Please wait!";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(257, 55);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(31, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
             // 
             // cbTu
             // 
@@ -265,218 +112,370 @@
             this.cbTu.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTu.FormattingEnabled = true;
             this.cbTu.IntegralHeight = false;
-            this.cbTu.Location = new System.Drawing.Point(254, 52);
+            this.cbTu.Location = new System.Drawing.Point(40, 13);
             this.cbTu.Name = "cbTu";
-            this.cbTu.Size = new System.Drawing.Size(731, 33);
+            this.cbTu.Size = new System.Drawing.Size(533, 33);
             this.cbTu.Sorted = true;
             this.cbTu.TabIndex = 17;
             this.cbTu.SelectedIndexChanged += new System.EventHandler(this.Search);
             // 
+            // cmbLike
+            // 
+            this.cmbLike.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbLike.BackColor = System.Drawing.Color.LavenderBlush;
+            this.cmbLike.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.cmbLike.FormattingEnabled = true;
+            this.cmbLike.IntegralHeight = false;
+            this.cmbLike.Location = new System.Drawing.Point(33, 18);
+            this.cmbLike.Name = "cmbLike";
+            this.cmbLike.Size = new System.Drawing.Size(190, 33);
+            this.cmbLike.TabIndex = 23;
+            this.cmbLike.SelectedIndexChanged += new System.EventHandler(this.cmbLike_SelectedIndexChanged);
+            // 
+            // Pnl1
+            // 
+            this.Pnl1.BorderColor = System.Drawing.Color.Black;
+            this.Pnl1.BorderThickness = 2;
+            this.Pnl1.Controls.Add(this.cmbLanguage);
+            this.Pnl1.Controls.Add(this.btnHDSD);
+            this.Pnl1.Controls.Add(this.btnHistory);
+            this.Pnl1.Controls.Add(this.btnSetting);
+            this.Pnl1.Controls.Add(this.btnFavorite);
+            this.Pnl1.Controls.Add(this.btnTranslator);
+            this.Pnl1.Controls.Add(this.btnPop);
+            this.Pnl1.Controls.Add(this.cmbHistory);
+            this.Pnl1.Controls.Add(this.cmbLike);
+            this.Pnl1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Pnl1.FillColor3 = System.Drawing.Color.Blue;
+            this.Pnl1.Location = new System.Drawing.Point(0, 0);
+            this.Pnl1.Name = "Pnl1";
+            this.Pnl1.ShadowDecoration.Parent = this.Pnl1;
+            this.Pnl1.Size = new System.Drawing.Size(278, 579);
+            this.Pnl1.TabIndex = 32;
+            // 
+            // cmbLanguage
+            // 
+            this.cmbLanguage.BackColor = System.Drawing.Color.Transparent;
+            this.cmbLanguage.BaseColor = System.Drawing.Color.White;
+            this.cmbLanguage.BorderColor = System.Drawing.Color.Silver;
+            this.cmbLanguage.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLanguage.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbLanguage.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Italic);
+            this.cmbLanguage.ForeColor = System.Drawing.Color.Black;
+            this.cmbLanguage.FormattingEnabled = true;
+            this.cmbLanguage.Items.AddRange(new object[] {
+            "Anh - Việt",
+            "Việt - Anh"});
+            this.cmbLanguage.Location = new System.Drawing.Point(33, 18);
+            this.cmbLanguage.Name = "cmbLanguage";
+            this.cmbLanguage.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cmbLanguage.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbLanguage.Size = new System.Drawing.Size(190, 33);
+            this.cmbLanguage.TabIndex = 33;
+            this.cmbLanguage.SelectedIndexChanged += new System.EventHandler(this.cmbLanguage_SelectedIndexChanged);
+            // 
+            // btnHDSD
+            // 
+            this.btnHDSD.Animated = true;
+            this.btnHDSD.AnimationHoverSpeed = 0.07F;
+            this.btnHDSD.AnimationSpeed = 0.03F;
+            this.btnHDSD.BackColor = System.Drawing.Color.Transparent;
+            this.btnHDSD.BaseColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnHDSD.BaseColor2 = System.Drawing.Color.CornflowerBlue;
+            this.btnHDSD.BorderColor = System.Drawing.Color.Black;
+            this.btnHDSD.BorderSize = 2;
+            this.btnHDSD.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnHDSD.FocusedColor = System.Drawing.Color.Empty;
+            this.btnHDSD.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.btnHDSD.ForeColor = System.Drawing.Color.White;
+            this.btnHDSD.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btnHDSD.Image = ((System.Drawing.Image)(resources.GetObject("btnHDSD.Image")));
+            this.btnHDSD.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnHDSD.Location = new System.Drawing.Point(15, 495);
+            this.btnHDSD.Name = "btnHDSD";
+            this.btnHDSD.OnHoverBaseColor1 = System.Drawing.Color.Fuchsia;
+            this.btnHDSD.OnHoverBaseColor2 = System.Drawing.Color.White;
+            this.btnHDSD.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnHDSD.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnHDSD.OnHoverImage = null;
+            this.btnHDSD.OnPressedColor = System.Drawing.Color.Black;
+            this.btnHDSD.Radius = 15;
+            this.btnHDSD.Size = new System.Drawing.Size(224, 50);
+            this.btnHDSD.TabIndex = 43;
+            this.btnHDSD.Text = "How to use?";
+            this.btnHDSD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnHDSD.UseTransfarantBackground = true;
+            this.btnHDSD.Click += new System.EventHandler(this.btnHDSD_Click);
+            // 
+            // btnHistory
+            // 
+            this.btnHistory.Animated = true;
+            this.btnHistory.AnimationHoverSpeed = 0.07F;
+            this.btnHistory.AnimationSpeed = 0.03F;
+            this.btnHistory.BackColor = System.Drawing.Color.Transparent;
+            this.btnHistory.BaseColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnHistory.BaseColor2 = System.Drawing.Color.CornflowerBlue;
+            this.btnHistory.BorderColor = System.Drawing.Color.Black;
+            this.btnHistory.BorderSize = 2;
+            this.btnHistory.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnHistory.FocusedColor = System.Drawing.Color.Empty;
+            this.btnHistory.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.btnHistory.ForeColor = System.Drawing.Color.White;
+            this.btnHistory.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btnHistory.Image = ((System.Drawing.Image)(resources.GetObject("btnHistory.Image")));
+            this.btnHistory.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnHistory.Location = new System.Drawing.Point(15, 163);
+            this.btnHistory.Name = "btnHistory";
+            this.btnHistory.OnHoverBaseColor1 = System.Drawing.Color.Fuchsia;
+            this.btnHistory.OnHoverBaseColor2 = System.Drawing.Color.White;
+            this.btnHistory.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnHistory.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnHistory.OnHoverImage = null;
+            this.btnHistory.OnPressedColor = System.Drawing.Color.Black;
+            this.btnHistory.Radius = 15;
+            this.btnHistory.Size = new System.Drawing.Size(224, 50);
+            this.btnHistory.TabIndex = 37;
+            this.btnHistory.Text = "History";
+            this.btnHistory.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnHistory.UseTransfarantBackground = true;
+            this.btnHistory.Click += new System.EventHandler(this.btnHistory_Click);
+            // 
+            // btnSetting
+            // 
+            this.btnSetting.Animated = true;
+            this.btnSetting.AnimationHoverSpeed = 0.07F;
+            this.btnSetting.AnimationSpeed = 0.03F;
+            this.btnSetting.BackColor = System.Drawing.Color.Transparent;
+            this.btnSetting.BaseColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnSetting.BaseColor2 = System.Drawing.Color.CornflowerBlue;
+            this.btnSetting.BorderColor = System.Drawing.Color.Black;
+            this.btnSetting.BorderSize = 2;
+            this.btnSetting.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnSetting.FocusedColor = System.Drawing.Color.Empty;
+            this.btnSetting.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.btnSetting.ForeColor = System.Drawing.Color.White;
+            this.btnSetting.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btnSetting.Image = global::Từ_điển.Properties.Resources.Setting;
+            this.btnSetting.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnSetting.Location = new System.Drawing.Point(15, 412);
+            this.btnSetting.Name = "btnSetting";
+            this.btnSetting.OnHoverBaseColor1 = System.Drawing.Color.Fuchsia;
+            this.btnSetting.OnHoverBaseColor2 = System.Drawing.Color.White;
+            this.btnSetting.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnSetting.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnSetting.OnHoverImage = null;
+            this.btnSetting.OnPressedColor = System.Drawing.Color.Black;
+            this.btnSetting.Radius = 15;
+            this.btnSetting.Size = new System.Drawing.Size(224, 50);
+            this.btnSetting.TabIndex = 42;
+            this.btnSetting.Text = "Setting";
+            this.btnSetting.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnSetting.UseTransfarantBackground = true;
+            // 
+            // btnFavorite
+            // 
+            this.btnFavorite.Animated = true;
+            this.btnFavorite.AnimationHoverSpeed = 0.07F;
+            this.btnFavorite.AnimationSpeed = 0.03F;
+            this.btnFavorite.BackColor = System.Drawing.Color.Transparent;
+            this.btnFavorite.BaseColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnFavorite.BaseColor2 = System.Drawing.Color.CornflowerBlue;
+            this.btnFavorite.BorderColor = System.Drawing.Color.Black;
+            this.btnFavorite.BorderSize = 2;
+            this.btnFavorite.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnFavorite.FocusedColor = System.Drawing.Color.Empty;
+            this.btnFavorite.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.btnFavorite.ForeColor = System.Drawing.Color.White;
+            this.btnFavorite.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btnFavorite.Image = ((System.Drawing.Image)(resources.GetObject("btnFavorite.Image")));
+            this.btnFavorite.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnFavorite.Location = new System.Drawing.Point(15, 80);
+            this.btnFavorite.Name = "btnFavorite";
+            this.btnFavorite.OnHoverBaseColor1 = System.Drawing.Color.Fuchsia;
+            this.btnFavorite.OnHoverBaseColor2 = System.Drawing.Color.White;
+            this.btnFavorite.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnFavorite.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnFavorite.OnHoverImage = null;
+            this.btnFavorite.OnPressedColor = System.Drawing.Color.Black;
+            this.btnFavorite.Radius = 15;
+            this.btnFavorite.Size = new System.Drawing.Size(224, 50);
+            this.btnFavorite.TabIndex = 36;
+            this.btnFavorite.Text = "Favorite";
+            this.btnFavorite.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnFavorite.UseTransfarantBackground = true;
+            this.btnFavorite.Click += new System.EventHandler(this.btnFavorite_Click);
+            // 
+            // btnTranslator
+            // 
+            this.btnTranslator.Animated = true;
+            this.btnTranslator.AnimationHoverSpeed = 0.07F;
+            this.btnTranslator.AnimationSpeed = 0.03F;
+            this.btnTranslator.BackColor = System.Drawing.Color.Transparent;
+            this.btnTranslator.BaseColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnTranslator.BaseColor2 = System.Drawing.Color.CornflowerBlue;
+            this.btnTranslator.BorderColor = System.Drawing.Color.Black;
+            this.btnTranslator.BorderSize = 2;
+            this.btnTranslator.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnTranslator.FocusedColor = System.Drawing.Color.Empty;
+            this.btnTranslator.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.btnTranslator.ForeColor = System.Drawing.Color.White;
+            this.btnTranslator.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btnTranslator.Image = null;
+            this.btnTranslator.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnTranslator.Location = new System.Drawing.Point(15, 329);
+            this.btnTranslator.Name = "btnTranslator";
+            this.btnTranslator.OnHoverBaseColor1 = System.Drawing.Color.Fuchsia;
+            this.btnTranslator.OnHoverBaseColor2 = System.Drawing.Color.White;
+            this.btnTranslator.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnTranslator.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnTranslator.OnHoverImage = null;
+            this.btnTranslator.OnPressedColor = System.Drawing.Color.Black;
+            this.btnTranslator.Radius = 15;
+            this.btnTranslator.Size = new System.Drawing.Size(224, 50);
+            this.btnTranslator.TabIndex = 41;
+            this.btnTranslator.Text = "Translator";
+            this.btnTranslator.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnTranslator.UseTransfarantBackground = true;
+            this.btnTranslator.Click += new System.EventHandler(this.btnTranslator_Click);
+            // 
+            // btnPop
+            // 
+            this.btnPop.Animated = true;
+            this.btnPop.AnimationHoverSpeed = 0.07F;
+            this.btnPop.AnimationSpeed = 0.03F;
+            this.btnPop.BackColor = System.Drawing.Color.Transparent;
+            this.btnPop.BaseColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnPop.BaseColor2 = System.Drawing.Color.CornflowerBlue;
+            this.btnPop.BorderColor = System.Drawing.Color.Black;
+            this.btnPop.BorderSize = 2;
+            this.btnPop.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnPop.FocusedColor = System.Drawing.Color.Empty;
+            this.btnPop.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.btnPop.ForeColor = System.Drawing.Color.White;
+            this.btnPop.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btnPop.Image = null;
+            this.btnPop.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnPop.Location = new System.Drawing.Point(15, 246);
+            this.btnPop.Name = "btnPop";
+            this.btnPop.OnHoverBaseColor1 = System.Drawing.Color.Fuchsia;
+            this.btnPop.OnHoverBaseColor2 = System.Drawing.Color.White;
+            this.btnPop.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnPop.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnPop.OnHoverImage = null;
+            this.btnPop.OnPressedColor = System.Drawing.Color.Black;
+            this.btnPop.Radius = 15;
+            this.btnPop.Size = new System.Drawing.Size(224, 50);
+            this.btnPop.TabIndex = 38;
+            this.btnPop.Text = "Popular Words";
+            this.btnPop.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnPop.UseTransfarantBackground = true;
+            this.btnPop.Click += new System.EventHandler(this.btnIrrVerbs_Click);
+            // 
+            // Pnl2
+            // 
+            this.Pnl2.BackColor = System.Drawing.Color.Transparent;
+            this.Pnl2.Controls.Add(this.btnSearchOnline);
+            this.Pnl2.Controls.Add(this.btnLike);
+            this.Pnl2.Controls.Add(this.label1);
+            this.Pnl2.Controls.Add(this.pictureBox1);
+            this.Pnl2.Controls.Add(this.cbTu);
+            this.Pnl2.Controls.Add(this.cbWord);
+            this.Pnl2.Controls.Add(this.btnSpeakEnglish);
+            this.Pnl2.Controls.Add(this.btnSearchImage);
+            this.Pnl2.Controls.Add(this.rTxbExplan);
+            this.Pnl2.GradientColor1 = System.Drawing.Color.White;
+            this.Pnl2.GradientColor2 = System.Drawing.Color.Navy;
+            this.Pnl2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.Pnl2.Location = new System.Drawing.Point(284, 0);
+            this.Pnl2.Name = "Pnl2";
+            this.Pnl2.Size = new System.Drawing.Size(755, 579);
+            this.Pnl2.TabIndex = 33;
+            // 
+            // btnSearchOnline
+            // 
+            this.btnSearchOnline.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearchOnline.BackgroundImage")));
+            this.btnSearchOnline.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSearchOnline.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchOnline.Location = new System.Drawing.Point(676, 12);
+            this.btnSearchOnline.Name = "btnSearchOnline";
+            this.btnSearchOnline.Size = new System.Drawing.Size(35, 35);
+            this.btnSearchOnline.TabIndex = 32;
+            this.btnSearchOnline.UseVisualStyleBackColor = true;
+            this.btnSearchOnline.Click += new System.EventHandler(this.btnSearchOnline_Click);
+            // 
             // btnLike
             // 
-            this.btnLike.BackColor = System.Drawing.Color.Transparent;
+            this.btnLike.BackColor = System.Drawing.Color.White;
             this.btnLike.BackgroundImage = global::Từ_điển.Properties.Resources.NotLike;
             this.btnLike.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLike.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLike.Location = new System.Drawing.Point(208, 194);
+            this.btnLike.Location = new System.Drawing.Point(676, 80);
             this.btnLike.Name = "btnLike";
-            this.btnLike.Size = new System.Drawing.Size(40, 40);
+            this.btnLike.Size = new System.Drawing.Size(35, 35);
             this.btnLike.TabIndex = 22;
             this.btnLike.UseVisualStyleBackColor = false;
             this.btnLike.Click += new System.EventHandler(this.btnLike_Click);
             // 
-            // cmbLike
+            // pictureBox1
             // 
-            this.cmbLike.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cmbLike.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.cmbLike.FormattingEnabled = true;
-            this.cmbLike.IntegralHeight = false;
-            this.cmbLike.Location = new System.Drawing.Point(12, 54);
-            this.cmbLike.Name = "cmbLike";
-            this.cmbLike.Size = new System.Drawing.Size(190, 33);
-            this.cmbLike.TabIndex = 23;
+            this.pictureBox1.BackColor = System.Drawing.Color.LavenderBlush;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(43, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(31, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
             // 
-            // dGvIrrVerbs
+            // btnSpeakEnglish
             // 
-            this.dGvIrrVerbs.AllowUserToAddRows = false;
-            this.dGvIrrVerbs.AllowUserToDeleteRows = false;
-            this.dGvIrrVerbs.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dGvIrrVerbs.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
-            this.dGvIrrVerbs.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dGvIrrVerbs.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dGvIrrVerbs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dGvIrrVerbs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGvIrrVerbs.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Base,
-            this.PastSimple,
-            this.PastParticiple,
-            this.Definition});
-            this.dGvIrrVerbs.Location = new System.Drawing.Point(254, 102);
-            this.dGvIrrVerbs.Name = "dGvIrrVerbs";
-            this.dGvIrrVerbs.RowHeadersVisible = false;
-            this.dGvIrrVerbs.RowHeadersWidth = 51;
-            this.dGvIrrVerbs.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.dGvIrrVerbs.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.dGvIrrVerbs.RowTemplate.DefaultCellStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dGvIrrVerbs.RowTemplate.Height = 24;
-            this.dGvIrrVerbs.RowTemplate.ReadOnly = true;
-            this.dGvIrrVerbs.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dGvIrrVerbs.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dGvIrrVerbs.Size = new System.Drawing.Size(731, 464);
-            this.dGvIrrVerbs.TabIndex = 31;
+            this.btnSpeakEnglish.AutoEllipsis = true;
+            this.btnSpeakEnglish.BackColor = System.Drawing.Color.Transparent;
+            this.btnSpeakEnglish.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSpeakEnglish.BackgroundImage")));
+            this.btnSpeakEnglish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSpeakEnglish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSpeakEnglish.Location = new System.Drawing.Point(594, 12);
+            this.btnSpeakEnglish.Name = "btnSpeakEnglish";
+            this.btnSpeakEnglish.Size = new System.Drawing.Size(35, 35);
+            this.btnSpeakEnglish.TabIndex = 2;
+            this.btnSpeakEnglish.UseVisualStyleBackColor = false;
+            this.btnSpeakEnglish.Click += new System.EventHandler(this.btnSpeakEnglish_Click);
             // 
-            // Base
+            // btnSearchImage
             // 
-            this.Base.FillWeight = 32.58945F;
-            this.Base.HeaderText = "Base";
-            this.Base.MinimumWidth = 6;
-            this.Base.Name = "Base";
+            this.btnSearchImage.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearchImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearchImage.BackgroundImage")));
+            this.btnSearchImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSearchImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchImage.Location = new System.Drawing.Point(635, 12);
+            this.btnSearchImage.Name = "btnSearchImage";
+            this.btnSearchImage.Size = new System.Drawing.Size(35, 35);
+            this.btnSearchImage.TabIndex = 3;
+            this.btnSearchImage.UseVisualStyleBackColor = false;
+            this.btnSearchImage.Click += new System.EventHandler(this.btnSearchImage_Click);
             // 
-            // PastSimple
-            // 
-            this.PastSimple.FillWeight = 48.68F;
-            this.PastSimple.HeaderText = "Past Simple";
-            this.PastSimple.MinimumWidth = 6;
-            this.PastSimple.Name = "PastSimple";
-            // 
-            // PastParticiple
-            // 
-            this.PastParticiple.FillWeight = 53.92393F;
-            this.PastParticiple.HeaderText = "Past Participle";
-            this.PastParticiple.MinimumWidth = 6;
-            this.PastParticiple.Name = "PastParticiple";
-            // 
-            // Definition
-            // 
-            this.Definition.FillWeight = 66.48212F;
-            this.Definition.HeaderText = "Definition";
-            this.Definition.MinimumWidth = 6;
-            this.Definition.Name = "Definition";
-            // 
-            // btnSetting
-            // 
-            this.btnSetting.BackColor = System.Drawing.Color.Transparent;
-            this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSetting.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnSetting.Location = new System.Drawing.Point(12, 434);
-            this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Size = new System.Drawing.Size(190, 50);
-            this.btnSetting.TabIndex = 30;
-            this.btnSetting.Text = "Setting";
-            this.btnSetting.UseVisualStyleBackColor = false;
-            // 
-            // btnIrrVerbs
-            // 
-            this.btnIrrVerbs.BackColor = System.Drawing.Color.Transparent;
-            this.btnIrrVerbs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIrrVerbs.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnIrrVerbs.Location = new System.Drawing.Point(12, 268);
-            this.btnIrrVerbs.Name = "btnIrrVerbs";
-            this.btnIrrVerbs.Size = new System.Drawing.Size(190, 50);
-            this.btnIrrVerbs.TabIndex = 29;
-            this.btnIrrVerbs.Text = "Irregular Verbs";
-            this.btnIrrVerbs.UseVisualStyleBackColor = false;
-            this.btnIrrVerbs.Click += new System.EventHandler(this.btnIrrVerbs_Click);
-            // 
-            // btnFavorite
-            // 
-            this.btnFavorite.BackColor = System.Drawing.Color.Transparent;
-            this.btnFavorite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFavorite.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnFavorite.Location = new System.Drawing.Point(12, 102);
-            this.btnFavorite.Name = "btnFavorite";
-            this.btnFavorite.Size = new System.Drawing.Size(190, 50);
-            this.btnFavorite.TabIndex = 28;
-            this.btnFavorite.Text = "Favorite";
-            this.btnFavorite.UseVisualStyleBackColor = true;
-            this.btnFavorite.Click += new System.EventHandler(this.btnFavorite_Click);
-            // 
-            // btnHelp
-            // 
-            this.btnHelp.BackColor = System.Drawing.Color.Transparent;
-            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHelp.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnHelp.Location = new System.Drawing.Point(12, 516);
-            this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Size = new System.Drawing.Size(190, 50);
-            this.btnHelp.TabIndex = 27;
-            this.btnHelp.Text = "How to use?";
-            this.btnHelp.UseVisualStyleBackColor = false;
-            this.btnHelp.Click += new System.EventHandler(this.btnHDSD_Click);
-            // 
-            // btnTranslator
-            // 
-            this.btnTranslator.BackColor = System.Drawing.Color.Transparent;
-            this.btnTranslator.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTranslator.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnTranslator.Location = new System.Drawing.Point(12, 351);
-            this.btnTranslator.Name = "btnTranslator";
-            this.btnTranslator.Size = new System.Drawing.Size(190, 50);
-            this.btnTranslator.TabIndex = 26;
-            this.btnTranslator.Text = "Translator";
-            this.btnTranslator.UseVisualStyleBackColor = false;
-            this.btnTranslator.Click += new System.EventHandler(this.btnTranslator_Click);
-            // 
-            // btnHistory
-            // 
-            this.btnHistory.BackColor = System.Drawing.Color.Transparent;
-            this.btnHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHistory.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnHistory.Location = new System.Drawing.Point(12, 185);
-            this.btnHistory.Name = "btnHistory";
-            this.btnHistory.Size = new System.Drawing.Size(190, 50);
-            this.btnHistory.TabIndex = 25;
-            this.btnHistory.Text = "History";
-            this.btnHistory.UseVisualStyleBackColor = false;
-            this.btnHistory.Click += new System.EventHandler(this.btnHistory_Click);
-            // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(997, 578);
-            this.Controls.Add(this.btnSetting);
-            this.Controls.Add(this.btnIrrVerbs);
-            this.Controls.Add(this.btnFavorite);
-            this.Controls.Add(this.btnHelp);
-            this.Controls.Add(this.btnTranslator);
-            this.Controls.Add(this.btnHistory);
-            this.Controls.Add(this.cmbLike);
-            this.Controls.Add(this.btnLike);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.cmbHistory);
-            this.Controls.Add(this.btnSearchImage);
-            this.Controls.Add(this.btnSpeakEnglish);
-            this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.cbTu);
-            this.Controls.Add(this.cbWord);
-            this.Controls.Add(this.rTxbExplan);
-            this.Controls.Add(this.dGvIrrVerbs);
+            this.ClientSize = new System.Drawing.Size(1040, 578);
+            this.Controls.Add(this.Pnl2);
+            this.Controls.Add(this.Pnl1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dictionary";
+            this.Text = "EVDict";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.Pnl1.ResumeLayout(false);
+            this.Pnl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dGvIrrVerbs)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -484,35 +483,23 @@
         private System.Windows.Forms.Button btnSpeakEnglish;
         private System.Windows.Forms.ComboBox cbWord;
         private System.Windows.Forms.Button btnSearchImage;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem âmThanhToolStripMenuItem;
-        private System.Windows.Forms.ToolStripComboBox cmbLanguage;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripComboBox cmbVolume;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripComboBox cmbSpeed;
         private System.Windows.Forms.RichTextBox rTxbExplan;
         private System.Windows.Forms.ComboBox cmbHistory;
-        private System.Windows.Forms.ToolStripMenuItem trợGiúpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem hướngDẫnToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gópÝToolStripMenuItem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ToolStripMenuItem thêmTừToolStripMenuItem;
         private System.Windows.Forms.ComboBox cbTu;
         private System.Windows.Forms.Button btnLike;
         private System.Windows.Forms.ComboBox cmbLike;
-        private Btn btnHistory;
-        private Btn btnTranslator;
-        private Btn btnHelp;
-        private Btn btnFavorite;
-        private Btn btnIrrVerbs;
-        private Btn btnSetting;
-        private System.Windows.Forms.DataGridView dGvIrrVerbs;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Base;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PastSimple;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PastParticiple;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Definition;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel Pnl1;
+        private Guna.UI.WinForms.GunaGradientButton btnFavorite;
+        private Guna.UI.WinForms.GunaGradientButton btnHistory;
+        private Guna.UI.WinForms.GunaGradientButton btnHDSD;
+        private Guna.UI.WinForms.GunaGradientButton btnSetting;
+        private Guna.UI.WinForms.GunaGradientButton btnTranslator;
+        private Guna.UI.WinForms.GunaGradientButton btnPop;
+        private Guna.UI.WinForms.GunaComboBox cmbLanguage;
+        private Guna.UI.WinForms.GunaGradient2Panel Pnl2;
+        private System.Windows.Forms.Button btnSearchOnline;
     }
 }
 

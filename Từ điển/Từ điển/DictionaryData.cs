@@ -12,7 +12,7 @@ namespace Từ_điển
             //Not adding below 2 lines might throw OutOfMemoryException in listbox.Items.Add or listbox.DataSOurce = somelist
             if (string.IsNullOrEmpty(Explanation)) //Added this check to avoid 
                 return this.GetType().Name; //Return string.Empty or something other than null else you will get OutOfMemoryException error when you add or bind this object to listbox
-            return Key+"\n"+Explanation;
+            return Key+"\r\n"+Explanation;
         }
         public int CompareTo(DictionaryData obj) // OverRight phương thức CompareTo của Interface IComparable
         {

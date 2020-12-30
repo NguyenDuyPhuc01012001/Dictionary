@@ -28,8 +28,7 @@ namespace Từ_điển
             LoadData("AnhViet.txt", cbWord, true);
             LoadData("VietAnh.txt", cbTu, false);
             LoadData("History.txt", cmbHistory, false);
-            LoadData("Favorite.txt", cmbLike, false);
-            LoadDataToIrregularVerbs("BQT.txt", dGvIrrVerbs);
+            LoadData("Favorite.txt", cmbLike, false);            
             #endregion
 
             #region Init
@@ -38,8 +37,8 @@ namespace Từ_điển
             cmbLike.DisplayMember = "Key";
             cbTu.DisplayMember = "Key";   //set display of cbWord
             cmbLanguage.SelectedIndex = 0;  //set language
-            cmbSpeed.SelectedItem = "0";    //set speed
-            cmbVolume.SelectedItem = "80";  //set volume
+            //cmbSpeed.SelectedItem = "0";    //set speed
+            //cmbVolume.SelectedItem = "80";  //set volume
 
             cmbLike.Hide();
             cmbHistory.Hide();
@@ -47,21 +46,18 @@ namespace Từ_điển
 
             #region InvisibleBorder
             btnLike.FlatAppearance.BorderSize = 0;
-            btnFavorite.FlatAppearance.BorderSize = 0;
-            btnHistory.FlatAppearance.BorderSize = 0;
-            btnTranslator.FlatAppearance.BorderSize = 0;
-            btnIrrVerbs.FlatAppearance.BorderSize = 0;
-            btnSetting.FlatAppearance.BorderSize = 0;
-            btnHelp.FlatAppearance.BorderSize = 0;
+            btnSearchImage.FlatAppearance.BorderSize = 0;
+            btnSpeakEnglish.FlatAppearance.BorderSize = 0;
+            btnSearchOnline.FlatAppearance.BorderSize = 0;
             #endregion
-        }
 
-        protected override void OnPaintBackground(PaintEventArgs e)
-        {
-            using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle, Color.White, Color.Blue, 90F))
-            {
-                e.Graphics.FillRectangle(brush, this.ClientRectangle);
-            }
+            #region Setting Panel
+            Pnl1.Location = new Point(0, 0);
+            Pnl1.Height = this.Height;
+            Pnl2.Location = new Point(Pnl1.Width, 0);
+            Pnl2.Width = this.Width - Pnl1.Width;
+            Pnl2.Height = this.Height;
+            #endregion
         }
 
         #region Speak
@@ -74,12 +70,12 @@ namespace Từ_điển
 
         private void cmbVolume_SelectedIndexChanged(object sender, EventArgs e)
         {
-            voice.Volume = int.Parse(cmbVolume.SelectedItem.ToString());
+            //voice.Volume = int.Parse(cmbVolume.SelectedItem.ToString());
         }
 
         private void cmbSpeed_SelectedIndexChanged(object sender, EventArgs e)
         {
-            voice.Rate = int.Parse(cmbSpeed.SelectedItem.ToString());
+            //voice.Rate = int.Parse(cmbSpeed.SelectedItem.ToString());
         }
         #endregion
 
@@ -93,8 +89,8 @@ namespace Từ_điển
                 rTxbExplan.Text = comboBox.SelectedItem.ToString();
                 if (cmbHistory.Items.Count > 0)
                     ReverseCombobox(cmbHistory);
-                if (cmbLike.Items.Contains(comboBox.SelectedItem))
-                    cmbLike.Items.Remove(comboBox.SelectedItem);
+                if (cmbHistory.Items.Contains(comboBox.SelectedItem))
+                    cmbHistory.Items.Remove(comboBox.SelectedItem);
                 cmbHistory.Items.Add(comboBox.SelectedItem);
                 ReverseCombobox(cmbHistory);
                 LoadHightLightData("HightLight.txt");
@@ -103,8 +99,8 @@ namespace Từ_điển
             for (int i = 0; i < cmbLike.Items.Count; i++)
             {
 
-                String substringCmBLike = cmbLike.Items[i].ToString().Split('\n')[0];
-                String substringComboBox = comboBox.Text.Split('\n')[0];
+                String substringCmBLike = cmbLike.Items[i].ToString().Split('\r')[0];
+                String substringComboBox = comboBox.Text.Split('\r')[0];
 
                 if (substringCmBLike == substringComboBox)
                 {
@@ -122,33 +118,7 @@ namespace Từ_điển
                 SelectedIndexChanged(cbTu);
         }
 
-        private void FindWord(object sender, EventArgs e)
-        {
-            if (cmbLanguage.SelectedIndex.ToString() == "0")
-                FindWordInCb(cbWord);
-            if (cmbLanguage.SelectedIndex.ToString() == "1")
-                FindWordInCb(cbTu);
-        }
-
-        private void FindWordInCb(ComboBox comboBox)
-        {
-            //int i = comboBox.FindString(txbSearch.Text);
-            //if (i > 0)
-            //{
-            //    comboBox.SelectedIndex = i;
-            //    if (!cmbSearch.Items.Contains(comboBox.SelectedItem))
-            //    {
-            //        if (cmbSearch.Items.Count > 0)
-            //            ReverseCombobox(cmbSearch);
-            //        cmbSearch.Items.Add(comboBox.SelectedItem);
-            //        ReverseCombobox(cmbSearch);
-            //    }
-            //}
-            //else
-            //    rTxbExplan.Text = "Không tìm thấy từ";
-        }
-
-        private void cmbSearch_SelectedIndexChanged(object sender, EventArgs e)
+        private void cmbHistory_SelectedIndexChanged(object sender, EventArgs e)
         {
             rTxbExplan.Text = cmbHistory.SelectedItem.ToString();
             LoadHightLightData("HightLight.txt");
@@ -198,7 +168,7 @@ namespace Từ_điển
                     }
                     catch (Exception ex)
                     {
-                        string errorMsg = string.Format("An error has occured in {0}. \nException:\n{1}", "cbWord", ex.Message);
+                        MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
 
                     if (IsLoading)
@@ -210,46 +180,7 @@ namespace Từ_điển
                 }
                 )
             { IsBackground = true }.Start();
-        }
-
-        private void LoadDataToIrregularVerbs(string Path, DataGridView dataGrid)
-        {
-            new Thread(
-                () =>
-                {
-                    try
-                    {
-                        //dataGrid.PerformLayout();
-                        string line = "";
-
-                        //tạo 1 đối tượng luồng đọc để đọc file 
-                        StreamReader streamReader = new StreamReader(Path);
-                        //mỗi lần đọc 1 dòng trên file text và nếu đọc được sẽ lưu vào chuỗi line
-                        while ((line = streamReader.ReadLine()) != null)
-                        {
-                            string baseWord = line;
-                            string Vp = streamReader.ReadLine();
-                            string Vpp = streamReader.ReadLine();
-                            string def = streamReader.ReadLine();
-
-                            while ((line = streamReader.ReadLine()) != null)
-                            {
-                                if (line == "")
-                                    break;
-                                def += Environment.NewLine;
-                                def += line;
-                            }
-                            dataGrid.Rows.Add(baseWord, Vp, Vpp, def);
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        string errorMsg = string.Format("An error has occured in {0}. \nException:\n{1}", "cbWord", ex.Message);
-                    }
-                }
-                )
-            { IsBackground = true }.Start();
-        }
+        }        
 
         private void LoadHightLightData(string Path)
         {
@@ -278,8 +209,7 @@ namespace Từ_điển
                     }
                     catch (Exception ex)
                     {
-                        string errorMsg = string.Format("An error has occured in {0}. \nException:\n{1}", "cbWord", ex.Message);
-                        MessageBox.Show(errorMsg, "Application Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                        MessageBox.Show(ex.Message, "Application Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                     }
                 }
                 )
@@ -323,7 +253,10 @@ namespace Từ_điển
                 {
                     cmbHistory.Items.Add(dictionaries[i]);
                 }
-                catch { }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
             }
         }
         #endregion
@@ -385,9 +318,17 @@ namespace Từ_điển
         {
             IsShowCmbLike = !IsShowCmbLike;
             if (IsShowCmbLike)
+            {
                 cmbLike.Show();
+                cmbLanguage.Hide();
+                cmbHistory.Hide();
+                IsShowCmbHistory = false;
+            }
             else
+            {
                 cmbLike.Hide();
+                cmbLanguage.Show();
+            }                
         }
 
         #endregion
@@ -399,12 +340,11 @@ namespace Từ_điển
                 e.Cancel = true;
                 return;
             }
-            //Output(cbWord,"av.txt");
-            //Output(cbTu, "va.txt");
+            //Output(cbWord,"AnhViet.txt");
+            //Output(cbTu, "VietAnh.txt");
             Output(cmbHistory, "History.txt");
             Output(cmbLike, "Favorite.txt");
             voice.SpeakAsyncCancelAll();
-            Environment.Exit(Environment.ExitCode);
         }
 
         private void cmbLanguage_SelectedIndexChanged(object sender, EventArgs e)
@@ -452,9 +392,17 @@ namespace Từ_điển
         {
             IsShowCmbHistory = !IsShowCmbHistory;
             if (IsShowCmbHistory)
+            {
                 cmbHistory.Show();
+                cmbLanguage.Hide();
+                cmbLike.Hide();
+                IsShowCmbLike = false;
+            }
             else
+            {
                 cmbHistory.Hide();
+                cmbLanguage.Show();
+            }
         }
 
         private void Like(ComboBox comboBox)
@@ -503,24 +451,41 @@ namespace Từ_điển
 
         private void btnIrrVerbs_Click(object sender, EventArgs e)
         {            
-            IsShowIrrVerb = !IsShowIrrVerb;
-            if (IsShowIrrVerb)
-            {
-                dGvIrrVerbs.Show();
-                rTxbExplan.Hide();
-            }
-            else
-            {
-                dGvIrrVerbs.Hide();
-                rTxbExplan.Show();
-            }
-            
+            PopularWords popularWords = new PopularWords();
+            popularWords.Show();            
         }
 
         private void btnTranslator_Click(object sender, EventArgs e)
         {
             TranslatorForm form = new TranslatorForm();
             form.Show();
+        }
+
+        private void cmbLike_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            btnLike.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Like));
+            rTxbExplan.Text = cmbLike.SelectedItem.ToString();
+            LoadHightLightData("HightLight.txt");
+        }
+
+        private void btnSearchOnline_Click(object sender, EventArgs e)
+        {
+            //Dictionary
+            Process.Start("https://www.dictionary.com/browse/" + cbWord.Text);
+            //TheFreeDict
+            Process.Start("https://www.thefreedictionary.com/" + cbWord.Text);
+            //UrbanDictionary
+            Process.Start("https://www.urbandictionary.com/define.php?term=" + cbWord.Text);
+            //OneLook
+            Process.Start("https://www.onelook.com/?w=" + cbWord.Text+"&ls=a" );
+            //Merriam-Webster
+            Process.Start("https://www.merriam-webster.com/dictionary/" + cbWord.Text);
+            //Oxford Dictionaries
+            Process.Start("https://www.oxfordlearnersdictionaries.com/definition/english/" + cbWord.Text +"? q=" + cbWord.Text);
+            //Dictionary Cambridge
+            Process.Start("https://dictionary.cambridge.org/dictionary/english/" + cbWord.Text);
+            //LongMan
+            Process.Start("https://www.ldoceonline.com/dictionary/" + cbWord.Text);
         }
     }
 }
