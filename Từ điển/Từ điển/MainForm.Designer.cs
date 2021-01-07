@@ -62,9 +62,10 @@
             this.cbWord.DropDownWidth = 300;
             this.cbWord.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbWord.IntegralHeight = false;
-            this.cbWord.Location = new System.Drawing.Point(40, 13);
+            this.cbWord.Location = new System.Drawing.Point(64, 55);
+            this.cbWord.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbWord.Name = "cbWord";
-            this.cbWord.Size = new System.Drawing.Size(533, 33);
+            this.cbWord.Size = new System.Drawing.Size(599, 37);
             this.cbWord.Sorted = true;
             this.cbWord.TabIndex = 2;
             this.cbWord.SelectedIndexChanged += new System.EventHandler(this.Search);
@@ -73,10 +74,11 @@
             // 
             this.rTxbExplan.BackColor = System.Drawing.Color.White;
             this.rTxbExplan.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.rTxbExplan.Location = new System.Drawing.Point(40, 80);
+            this.rTxbExplan.Location = new System.Drawing.Point(45, 100);
+            this.rTxbExplan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rTxbExplan.Name = "rTxbExplan";
             this.rTxbExplan.ReadOnly = true;
-            this.rTxbExplan.Size = new System.Drawing.Size(671, 473);
+            this.rTxbExplan.Size = new System.Drawing.Size(754, 590);
             this.rTxbExplan.TabIndex = 6;
             this.rTxbExplan.Text = "";
             // 
@@ -87,9 +89,10 @@
             this.cmbHistory.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cmbHistory.FormattingEnabled = true;
             this.cmbHistory.IntegralHeight = false;
-            this.cmbHistory.Location = new System.Drawing.Point(33, 18);
+            this.cmbHistory.Location = new System.Drawing.Point(37, 22);
+            this.cmbHistory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbHistory.Name = "cmbHistory";
-            this.cmbHistory.Size = new System.Drawing.Size(190, 33);
+            this.cmbHistory.Size = new System.Drawing.Size(213, 37);
             this.cmbHistory.TabIndex = 7;
             this.cmbHistory.SelectedIndexChanged += new System.EventHandler(this.cmbHistory_SelectedIndexChanged);
             // 
@@ -97,9 +100,9 @@
             // 
             this.label1.BackColor = System.Drawing.Color.LavenderBlush;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(80, 18);
+            this.label1.Location = new System.Drawing.Point(105, 65);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(472, 25);
+            this.label1.Size = new System.Drawing.Size(531, 31);
             this.label1.TabIndex = 13;
             this.label1.Text = "Loading data. Please wait!";
             // 
@@ -112,9 +115,10 @@
             this.cbTu.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTu.FormattingEnabled = true;
             this.cbTu.IntegralHeight = false;
-            this.cbTu.Location = new System.Drawing.Point(40, 13);
+            this.cbTu.Location = new System.Drawing.Point(64, 55);
+            this.cbTu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbTu.Name = "cbTu";
-            this.cbTu.Size = new System.Drawing.Size(533, 33);
+            this.cbTu.Size = new System.Drawing.Size(599, 37);
             this.cbTu.Sorted = true;
             this.cbTu.TabIndex = 17;
             this.cbTu.SelectedIndexChanged += new System.EventHandler(this.Search);
@@ -126,9 +130,10 @@
             this.cmbLike.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cmbLike.FormattingEnabled = true;
             this.cmbLike.IntegralHeight = false;
-            this.cmbLike.Location = new System.Drawing.Point(33, 18);
+            this.cmbLike.Location = new System.Drawing.Point(37, 22);
+            this.cmbLike.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbLike.Name = "cmbLike";
-            this.cmbLike.Size = new System.Drawing.Size(190, 33);
+            this.cmbLike.Size = new System.Drawing.Size(213, 37);
             this.cmbLike.TabIndex = 23;
             this.cmbLike.SelectedIndexChanged += new System.EventHandler(this.cmbLike_SelectedIndexChanged);
             // 
@@ -148,9 +153,10 @@
             this.Pnl1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Pnl1.FillColor3 = System.Drawing.Color.Blue;
             this.Pnl1.Location = new System.Drawing.Point(0, 0);
+            this.Pnl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Pnl1.Name = "Pnl1";
             this.Pnl1.ShadowDecoration.Parent = this.Pnl1;
-            this.Pnl1.Size = new System.Drawing.Size(278, 579);
+            this.Pnl1.Size = new System.Drawing.Size(313, 724);
             this.Pnl1.TabIndex = 32;
             // 
             // cmbLanguage
@@ -167,11 +173,12 @@
             this.cmbLanguage.Items.AddRange(new object[] {
             "Anh - Việt",
             "Việt - Anh"});
-            this.cmbLanguage.Location = new System.Drawing.Point(33, 18);
+            this.cmbLanguage.Location = new System.Drawing.Point(37, 22);
+            this.cmbLanguage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbLanguage.Name = "cmbLanguage";
             this.cmbLanguage.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cmbLanguage.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cmbLanguage.Size = new System.Drawing.Size(190, 33);
+            this.cmbLanguage.Size = new System.Drawing.Size(213, 38);
             this.cmbLanguage.TabIndex = 33;
             this.cmbLanguage.SelectedIndexChanged += new System.EventHandler(this.cmbLanguage_SelectedIndexChanged);
             // 
@@ -192,7 +199,8 @@
             this.btnHDSD.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.btnHDSD.Image = ((System.Drawing.Image)(resources.GetObject("btnHDSD.Image")));
             this.btnHDSD.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnHDSD.Location = new System.Drawing.Point(15, 495);
+            this.btnHDSD.Location = new System.Drawing.Point(17, 619);
+            this.btnHDSD.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnHDSD.Name = "btnHDSD";
             this.btnHDSD.OnHoverBaseColor1 = System.Drawing.Color.Fuchsia;
             this.btnHDSD.OnHoverBaseColor2 = System.Drawing.Color.White;
@@ -201,7 +209,7 @@
             this.btnHDSD.OnHoverImage = null;
             this.btnHDSD.OnPressedColor = System.Drawing.Color.Black;
             this.btnHDSD.Radius = 15;
-            this.btnHDSD.Size = new System.Drawing.Size(224, 50);
+            this.btnHDSD.Size = new System.Drawing.Size(252, 62);
             this.btnHDSD.TabIndex = 43;
             this.btnHDSD.Text = "How to use?";
             this.btnHDSD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -225,7 +233,8 @@
             this.btnHistory.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.btnHistory.Image = ((System.Drawing.Image)(resources.GetObject("btnHistory.Image")));
             this.btnHistory.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnHistory.Location = new System.Drawing.Point(15, 163);
+            this.btnHistory.Location = new System.Drawing.Point(17, 204);
+            this.btnHistory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnHistory.Name = "btnHistory";
             this.btnHistory.OnHoverBaseColor1 = System.Drawing.Color.Fuchsia;
             this.btnHistory.OnHoverBaseColor2 = System.Drawing.Color.White;
@@ -234,7 +243,7 @@
             this.btnHistory.OnHoverImage = null;
             this.btnHistory.OnPressedColor = System.Drawing.Color.Black;
             this.btnHistory.Radius = 15;
-            this.btnHistory.Size = new System.Drawing.Size(224, 50);
+            this.btnHistory.Size = new System.Drawing.Size(252, 62);
             this.btnHistory.TabIndex = 37;
             this.btnHistory.Text = "History";
             this.btnHistory.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -258,7 +267,8 @@
             this.btnSetting.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.btnSetting.Image = global::Từ_điển.Properties.Resources.Setting;
             this.btnSetting.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnSetting.Location = new System.Drawing.Point(15, 412);
+            this.btnSetting.Location = new System.Drawing.Point(17, 515);
+            this.btnSetting.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.OnHoverBaseColor1 = System.Drawing.Color.Fuchsia;
             this.btnSetting.OnHoverBaseColor2 = System.Drawing.Color.White;
@@ -267,7 +277,7 @@
             this.btnSetting.OnHoverImage = null;
             this.btnSetting.OnPressedColor = System.Drawing.Color.Black;
             this.btnSetting.Radius = 15;
-            this.btnSetting.Size = new System.Drawing.Size(224, 50);
+            this.btnSetting.Size = new System.Drawing.Size(252, 62);
             this.btnSetting.TabIndex = 42;
             this.btnSetting.Text = "Setting";
             this.btnSetting.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -290,7 +300,8 @@
             this.btnFavorite.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.btnFavorite.Image = ((System.Drawing.Image)(resources.GetObject("btnFavorite.Image")));
             this.btnFavorite.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnFavorite.Location = new System.Drawing.Point(15, 80);
+            this.btnFavorite.Location = new System.Drawing.Point(17, 100);
+            this.btnFavorite.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnFavorite.Name = "btnFavorite";
             this.btnFavorite.OnHoverBaseColor1 = System.Drawing.Color.Fuchsia;
             this.btnFavorite.OnHoverBaseColor2 = System.Drawing.Color.White;
@@ -299,7 +310,7 @@
             this.btnFavorite.OnHoverImage = null;
             this.btnFavorite.OnPressedColor = System.Drawing.Color.Black;
             this.btnFavorite.Radius = 15;
-            this.btnFavorite.Size = new System.Drawing.Size(224, 50);
+            this.btnFavorite.Size = new System.Drawing.Size(252, 62);
             this.btnFavorite.TabIndex = 36;
             this.btnFavorite.Text = "Favorite";
             this.btnFavorite.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -323,7 +334,8 @@
             this.btnTranslator.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.btnTranslator.Image = null;
             this.btnTranslator.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnTranslator.Location = new System.Drawing.Point(15, 329);
+            this.btnTranslator.Location = new System.Drawing.Point(17, 411);
+            this.btnTranslator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTranslator.Name = "btnTranslator";
             this.btnTranslator.OnHoverBaseColor1 = System.Drawing.Color.Fuchsia;
             this.btnTranslator.OnHoverBaseColor2 = System.Drawing.Color.White;
@@ -332,7 +344,7 @@
             this.btnTranslator.OnHoverImage = null;
             this.btnTranslator.OnPressedColor = System.Drawing.Color.Black;
             this.btnTranslator.Radius = 15;
-            this.btnTranslator.Size = new System.Drawing.Size(224, 50);
+            this.btnTranslator.Size = new System.Drawing.Size(252, 62);
             this.btnTranslator.TabIndex = 41;
             this.btnTranslator.Text = "Translator";
             this.btnTranslator.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -356,7 +368,8 @@
             this.btnPop.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.btnPop.Image = null;
             this.btnPop.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnPop.Location = new System.Drawing.Point(15, 246);
+            this.btnPop.Location = new System.Drawing.Point(17, 308);
+            this.btnPop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPop.Name = "btnPop";
             this.btnPop.OnHoverBaseColor1 = System.Drawing.Color.Fuchsia;
             this.btnPop.OnHoverBaseColor2 = System.Drawing.Color.White;
@@ -365,7 +378,7 @@
             this.btnPop.OnHoverImage = null;
             this.btnPop.OnPressedColor = System.Drawing.Color.Black;
             this.btnPop.Radius = 15;
-            this.btnPop.Size = new System.Drawing.Size(224, 50);
+            this.btnPop.Size = new System.Drawing.Size(252, 62);
             this.btnPop.TabIndex = 38;
             this.btnPop.Text = "Popular Words";
             this.btnPop.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -387,9 +400,10 @@
             this.Pnl2.GradientColor1 = System.Drawing.Color.White;
             this.Pnl2.GradientColor2 = System.Drawing.Color.Navy;
             this.Pnl2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.Pnl2.Location = new System.Drawing.Point(284, 0);
+            this.Pnl2.Location = new System.Drawing.Point(320, 0);
+            this.Pnl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Pnl2.Name = "Pnl2";
-            this.Pnl2.Size = new System.Drawing.Size(755, 579);
+            this.Pnl2.Size = new System.Drawing.Size(849, 724);
             this.Pnl2.TabIndex = 33;
             // 
             // btnSearchOnline
@@ -397,9 +411,10 @@
             this.btnSearchOnline.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearchOnline.BackgroundImage")));
             this.btnSearchOnline.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSearchOnline.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchOnline.Location = new System.Drawing.Point(676, 12);
+            this.btnSearchOnline.Location = new System.Drawing.Point(759, 48);
+            this.btnSearchOnline.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSearchOnline.Name = "btnSearchOnline";
-            this.btnSearchOnline.Size = new System.Drawing.Size(35, 35);
+            this.btnSearchOnline.Size = new System.Drawing.Size(39, 44);
             this.btnSearchOnline.TabIndex = 32;
             this.btnSearchOnline.UseVisualStyleBackColor = true;
             this.btnSearchOnline.Click += new System.EventHandler(this.btnSearchOnline_Click);
@@ -410,9 +425,10 @@
             this.btnLike.BackgroundImage = global::Từ_điển.Properties.Resources.NotLike;
             this.btnLike.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLike.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLike.Location = new System.Drawing.Point(676, 80);
+            this.btnLike.Location = new System.Drawing.Point(760, 100);
+            this.btnLike.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLike.Name = "btnLike";
-            this.btnLike.Size = new System.Drawing.Size(35, 35);
+            this.btnLike.Size = new System.Drawing.Size(39, 44);
             this.btnLike.TabIndex = 22;
             this.btnLike.UseVisualStyleBackColor = false;
             this.btnLike.Click += new System.EventHandler(this.btnLike_Click);
@@ -421,9 +437,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.LavenderBlush;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(43, 16);
+            this.pictureBox1.Location = new System.Drawing.Point(64, 54);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(31, 30);
+            this.pictureBox1.Size = new System.Drawing.Size(35, 38);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
@@ -435,9 +452,10 @@
             this.btnSpeakEnglish.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSpeakEnglish.BackgroundImage")));
             this.btnSpeakEnglish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSpeakEnglish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSpeakEnglish.Location = new System.Drawing.Point(594, 12);
+            this.btnSpeakEnglish.Location = new System.Drawing.Point(669, 48);
+            this.btnSpeakEnglish.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSpeakEnglish.Name = "btnSpeakEnglish";
-            this.btnSpeakEnglish.Size = new System.Drawing.Size(35, 35);
+            this.btnSpeakEnglish.Size = new System.Drawing.Size(39, 44);
             this.btnSpeakEnglish.TabIndex = 2;
             this.btnSpeakEnglish.UseVisualStyleBackColor = false;
             this.btnSpeakEnglish.Click += new System.EventHandler(this.btnSpeakEnglish_Click);
@@ -448,24 +466,26 @@
             this.btnSearchImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearchImage.BackgroundImage")));
             this.btnSearchImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSearchImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchImage.Location = new System.Drawing.Point(635, 12);
+            this.btnSearchImage.Location = new System.Drawing.Point(714, 48);
+            this.btnSearchImage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSearchImage.Name = "btnSearchImage";
-            this.btnSearchImage.Size = new System.Drawing.Size(35, 35);
+            this.btnSearchImage.Size = new System.Drawing.Size(39, 44);
             this.btnSearchImage.TabIndex = 3;
             this.btnSearchImage.UseVisualStyleBackColor = false;
             this.btnSearchImage.Click += new System.EventHandler(this.btnSearchImage_Click);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1040, 578);
+            this.ClientSize = new System.Drawing.Size(1170, 722);
             this.Controls.Add(this.Pnl2);
             this.Controls.Add(this.Pnl1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainForm";
