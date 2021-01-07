@@ -44,3 +44,11 @@ C:\Users\Asus\Downloads\TuDien\Từ điển\Từ điển\bin\Debug\Guna.UI.dll
 C:\Users\Asus\Downloads\TuDien\Từ điển\Từ điển\bin\Debug\Guna.UI2.dll
 C:\Users\Asus\Downloads\TuDien\Từ điển\Từ điển\obj\Debug\Từ điển.csproj.CopyComplete
 C:\Users\Asus\Downloads\TuDien\Từ điển\Từ điển\obj\Debug\Từ_điển.PopularWords.resources
+C:\Users\Asus\Downloads\Git\Từ điển\Từ điển\bin\Debug\Guna.UI.dll
+C:\Users\Asus\Downloads\Git\Từ điển\Từ điển\bin\Debug\Guna.UI2.dll
+C:\Users\Asus\Downloads\Git\Từ điển\Từ điển\obj\Debug\Từ_điển.PopularWords.resources
+C:\Users\Asus\Downloads\Git\Từ điển\Từ điển\obj\Debug\Từ điển.csproj.CopyComplete
+C:\Users\Asus\Downloads\Git\Từ điển\Từ điển\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Asus\Downloads\Git\Từ điển\Từ điển\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Asus\Downloads\Git\Từ điển\Từ điển\obj\Debug\Interop.WMPLib.dll
+C:\Users\Asus\Downloads\Git\Từ điển\Từ điển\obj\Debug\Từ điển.csproj.ResolveComReference.cache

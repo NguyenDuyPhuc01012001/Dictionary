@@ -1,14 +1,18 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
+using System.Net.Http;
 using System.Speech.Synthesis;
 using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using WMPLib;
 
 namespace Từ_điển
 {
@@ -17,47 +21,13 @@ namespace Từ_điển
         bool IsShowCmbLike = false;
         bool IsShowCmbHistory = false;
         bool IsShowIrrVerb = false;
+        bool IsShowToolStripSetting = false;
 
         public MainForm()
         {
             InitializeComponent();
 
             Control.CheckForIllegalCrossThreadCalls = false;
-
-            #region LoadData
-            LoadData("AnhViet.txt", cbWord, true);
-            LoadData("VietAnh.txt", cbTu, false);
-            LoadData("History.txt", cmbHistory, false);
-            LoadData("Favorite.txt", cmbLike, false);            
-            #endregion
-
-            #region Init
-            cbWord.DisplayMember = "Key";   //set display of cbWord
-            cmbHistory.DisplayMember = "Key";
-            cmbLike.DisplayMember = "Key";
-            cbTu.DisplayMember = "Key";   //set display of cbWord
-            cmbLanguage.SelectedIndex = 0;  //set language
-            //cmbSpeed.SelectedItem = "0";    //set speed
-            //cmbVolume.SelectedItem = "80";  //set volume
-
-            cmbLike.Hide();
-            cmbHistory.Hide();
-            #endregion
-
-            #region InvisibleBorder
-            btnLike.FlatAppearance.BorderSize = 0;
-            btnSearchImage.FlatAppearance.BorderSize = 0;
-            btnSpeakEnglish.FlatAppearance.BorderSize = 0;
-            btnSearchOnline.FlatAppearance.BorderSize = 0;
-            #endregion
-
-            #region Setting Panel
-            Pnl1.Location = new Point(0, 0);
-            Pnl1.Height = this.Height;
-            Pnl2.Location = new Point(Pnl1.Width, 0);
-            Pnl2.Width = this.Width - Pnl1.Width;
-            Pnl2.Height = this.Height;
-            #endregion
         }
 
         #region Speak
@@ -65,17 +35,43 @@ namespace Từ_điển
 
         private void btnSpeakEnglish_Click(object sender, EventArgs e)
         {
-            voice.SpeakAsync(cbWord.Text);
-        }
+            if (cmbLanguage.SelectedIndex == 0)
+            {
+                voice.SpeakAsync(cbWord.Text);
+                return;
+            }
+            if (cmbLanguage.SelectedIndex == 1)
+            {
+                String payload = cbTu.Text;
+                if (payload.Length < 5)
+                    payload = "    " + payload;
+                try
+                {
+                    String result = Task.Run(async () =>
+                    {
+                        HttpClient client = new HttpClient();
+                        client.DefaultRequestHeaders.Add("api-key", "IyNOVYUO3CGiRTMKzP1empfmrk3dSXfE");
+                        client.DefaultRequestHeaders.Add("speed", "-1");
+                        client.DefaultRequestHeaders.Add("voice", "linhsan");
+                        client.DefaultRequestHeaders.Add("callback_url", "");
+                        var response = await client.PostAsync("https://api.fpt.ai/hmi/tts/v5", new StringContent(payload));
+                        return await response.Content.ReadAsStringAsync();
+                    }).GetAwaiter().GetResult();
 
-        private void cmbVolume_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //voice.Volume = int.Parse(cmbVolume.SelectedItem.ToString());
-        }
+                    var json = JsonConvert.DeserializeObject<SpeechJSon.root>(result);
+                    SpeechJSon.root output = json;
 
-        private void cmbSpeed_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //voice.Rate = int.Parse(cmbSpeed.SelectedItem.ToString());
+                    string url = string.Format("{0}", output.async);
+
+                    WindowsMediaPlayer sound = new WindowsMediaPlayer();
+                    sound.URL = url;
+                    sound.controls.play();
+                }
+                catch (System.Net.Http.HttpRequestException)
+                {
+                    MessageBox.Show("Hãy kết nối mạng trước khi sử dụng tính năng này.");
+                }
+            }
         }
         #endregion
 
@@ -106,6 +102,7 @@ namespace Từ_điển
                 {
                     btnLike.BackgroundImage = Properties.Resources.Like;
                     cmbLike.Text = substringComboBox;
+
                 }
             }
         }
@@ -136,7 +133,7 @@ namespace Từ_điển
             new Thread(
                 () =>
                 {
-                    label1.Show();
+                    lblLoading.Show();
                     pictureBox1.Show();
                     try
                     {
@@ -155,12 +152,6 @@ namespace Từ_điển
                             {
                                 if (line == "")
                                     break;
-                                //if (line.StartsWith("-"))
-                                //    word.Explanation += "     ";
-                                //if (line.StartsWith("VD:"))
-                                //    word.Explanation += "          ";
-                                //if (line.StartsWith("Ex:"))
-                                //    word.Explanation += "          ";
                                 word.Explanation += line + "\r\n";
                             }
                             comboBox.Items.Add(word);
@@ -173,14 +164,14 @@ namespace Từ_điển
 
                     if (IsLoading)
                     {
-                        label1.Hide();
+                        lblLoading.Hide();
                         pictureBox1.Hide();
                         MessageBox.Show("Dữ liệu đã được tải lên thành công ✓", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                     }
                 }
                 )
             { IsBackground = true }.Start();
-        }        
+        }
 
         private void LoadHightLightData(string Path)
         {
@@ -274,13 +265,13 @@ namespace Từ_điển
             }
             else
                 if (ImageCompareArray((Bitmap)btnLike.BackgroundImage, Properties.Resources.Like))
-                {
-                    if (cmbLanguage.SelectedIndex.ToString() == "0")
-                        Dislike(cbWord);
-                    if (cmbLanguage.SelectedIndex.ToString() == "1")
-                        Dislike(cbTu);
-                    btnLike.BackgroundImage = Properties.Resources.NotLike;
-                }
+            {
+                if (cmbLanguage.SelectedIndex.ToString() == "0")
+                    Dislike(cbWord);
+                if (cmbLanguage.SelectedIndex.ToString() == "1")
+                    Dislike(cbTu);
+                btnLike.BackgroundImage = Properties.Resources.NotLike;
+            }
         }
 
         private bool ImageCompareArray(Bitmap firstImage, Bitmap secondImage)
@@ -328,20 +319,29 @@ namespace Từ_điển
             {
                 cmbLike.Hide();
                 cmbLanguage.Show();
-            }                
+            }
         }
 
         #endregion
-        
+
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+            if (toolStripCmbLanguage.SelectedItem == "Vietnamese")
             {
-                e.Cancel = true;
-                return;
+                if (MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+                {
+                    e.Cancel = true;
+                    return;
+                }
             }
-            //Output(cbWord,"AnhViet.txt");
-            //Output(cbTu, "VietAnh.txt");
+            else
+            {
+                if (MessageBox.Show("Do you want to exit?", "Notification", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+                {
+                    e.Cancel = true;
+                    return;
+                }
+            }
             Output(cmbHistory, "History.txt");
             Output(cmbLike, "Favorite.txt");
             voice.SpeakAsyncCancelAll();
@@ -349,19 +349,17 @@ namespace Từ_điển
 
         private void cmbLanguage_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbLanguage.SelectedIndex.ToString() == "0")
+            if (cmbLanguage.SelectedIndex == 0)
             {
                 cbWord.Show();
                 cbTu.Hide();
                 cbWord.Text = "";
-                btnSpeakEnglish.Enabled = true;
             }
-            if (cmbLanguage.SelectedIndex.ToString() == "1")
+            else
             {
                 cbTu.Show();
                 cbWord.Hide();
                 cbTu.Text = "";
-                btnSpeakEnglish.Enabled = false;
             }
         }
 
@@ -369,21 +367,8 @@ namespace Từ_điển
         {
             FileStream fs = new FileStream(FilePath, FileMode.Create);
             StreamWriter writer = new StreamWriter(fs, Encoding.UTF8);
-            //for (int j = 0; j < dgvInfo.Rows.Count; j++)
-            //{
-            //    writer.WriteLine(dgvInfo.Rows[j].Cells[0].Value);
-            //    writer.WriteLine(dgvInfo.Rows[j].Cells[1].Value);
-            //    writer.WriteLine(dgvInfo.Rows[j].Cells[2].Value);
-            //    writer.WriteLine(dgvInfo.Rows[j].Cells[3].Value);
-            //    writer.WriteLine(dgvInfo.Rows[j].Cells[4].Value);
-            //    writer.WriteLine();
-            //}
-            //cbWord.Items
             foreach (var item in comboBox.Items)
-            {
                 writer.WriteLine(item);
-                //writer.WriteLine();
-            }
             writer.Flush();
             fs.Close();
         }
@@ -411,7 +396,7 @@ namespace Từ_điển
             {
                 if (cmbLike.Items.Count > 0)
                     ReverseCombobox(cmbLike);
-                if(cmbLike.Items.Contains(comboBox.SelectedItem))
+                if (cmbLike.Items.Contains(comboBox.SelectedItem))
                     cmbLike.Items.Remove(comboBox.SelectedItem);
                 cmbLike.Items.Add(comboBox.SelectedItem);
                 ReverseCombobox(cmbLike);
@@ -450,9 +435,9 @@ namespace Từ_điển
         }
 
         private void btnIrrVerbs_Click(object sender, EventArgs e)
-        {            
+        {
             PopularWords popularWords = new PopularWords();
-            popularWords.Show();            
+            popularWords.Show();
         }
 
         private void btnTranslator_Click(object sender, EventArgs e)
@@ -470,22 +455,140 @@ namespace Từ_điển
 
         private void btnSearchOnline_Click(object sender, EventArgs e)
         {
-            //Dictionary
-            Process.Start("https://www.dictionary.com/browse/" + cbWord.Text);
-            //TheFreeDict
-            Process.Start("https://www.thefreedictionary.com/" + cbWord.Text);
-            //UrbanDictionary
-            Process.Start("https://www.urbandictionary.com/define.php?term=" + cbWord.Text);
-            //OneLook
-            Process.Start("https://www.onelook.com/?w=" + cbWord.Text+"&ls=a" );
-            //Merriam-Webster
-            Process.Start("https://www.merriam-webster.com/dictionary/" + cbWord.Text);
-            //Oxford Dictionaries
-            Process.Start("https://www.oxfordlearnersdictionaries.com/definition/english/" + cbWord.Text +"? q=" + cbWord.Text);
-            //Dictionary Cambridge
-            Process.Start("https://dictionary.cambridge.org/dictionary/english/" + cbWord.Text);
-            //LongMan
-            Process.Start("https://www.ldoceonline.com/dictionary/" + cbWord.Text);
+            if (cmbOnline.SelectedItem == "vdict")
+            {
+                if (cmbLanguage.SelectedIndex == 0)
+                    Process.Start("https://vdict.com/" + cbWord.Text + ",1,0,0.html");
+                else
+                    Process.Start("https://vdict.com/" + cbTu.Text + ",2,0,0.html");
+            }
+            if (cmbOnline.SelectedItem == "soha")
+            {
+                if (cmbLanguage.SelectedIndex == 0)
+                    Process.Start("http://tratu.soha.vn/dict/en_vn/" + cbWord.Text);
+                else
+                    Process.Start("http://tratu.soha.vn/dict/vn_en/" + cbTu.Text);
+            }
+            if (cmbOnline.SelectedItem == "vndic")
+            {
+                if (cmbLanguage.SelectedIndex == 0)
+                    Process.Start("http://3.vndic.net/index.php?word=" + cbWord.Text + "&dict=en_vi");
+                else
+                    Process.Start("http://3.vndic.net/index.php?word=" + cbTu.Text + "&dict=vi_en");
+            }
+            if (cmbOnline.SelectedItem == "Oxford")
+            {
+                if (cmbLanguage.SelectedIndex == 0)
+                    Process.Start("https://www.oxfordlearnersdictionaries.com/definition/english/" + cbWord.Text + "? q=" + cbWord.Text);
+                else
+                    MessageBox.Show("Ngôn ngữ không hỗ trợ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            if (cmbOnline.SelectedItem == "laban")
+            {
+                if (cmbLanguage.SelectedIndex == 0)
+                    Process.Start("https://dict.laban.vn/find?type=1&query=" + cbWord.Text);
+                else
+                    Process.Start("https://dict.laban.vn/find?type=2&query=" + cbTu.Text);
+            }
+            if (cmbOnline.SelectedItem == "Cambridge")
+            {
+                if (cmbLanguage.SelectedIndex == 0)
+                    Process.Start("https://dictionary.cambridge.org/dictionary/english/" + cbWord.Text);
+                else
+                    MessageBox.Show("Ngôn ngữ không hỗ trợ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            #region LoadData
+            LoadData("AnhViet.txt", cbWord, true);
+            LoadData("VietAnh.txt", cbTu, false);
+            LoadData("History.txt", cmbHistory, false);
+            LoadData("Favorite.txt", cmbLike, false);
+            foreach (FontFamily font in FontFamily.Families)
+                toolStripCmbFont.Items.Add(font.Name);
+            #endregion
+
+            #region Init
+            cbWord.DisplayMember = "Key";                       //set display of cbWord
+            cmbHistory.DisplayMember = "Key";                   //set display of cbHistory
+            cmbLike.DisplayMember = "Key";                      //set display of cbLike
+            cbTu.DisplayMember = "Key";                         //set display of cbTu
+            cmbLanguage.SelectedIndex = 0;                      //set language
+            toolStripCmbFont.SelectedItem = "Times New Romans"; //set font
+            toolStripCmbSize.Text = "13";                       //set size    
+            toolStripCmbLanguage.SelectedIndex = 0;             //set language
+            cmbOnline.SelectedIndex = 0;                        //set online dictionary
+
+            cmbLike.Hide();
+            cmbHistory.Hide();
+            #endregion
+
+            #region InvisibleBorder
+            btnLike.FlatAppearance.BorderSize = 0;
+            btnSearchImage.FlatAppearance.BorderSize = 0;
+            btnSpeakEnglish.FlatAppearance.BorderSize = 0;
+            btnSearchOnline.FlatAppearance.BorderSize = 0;
+            #endregion
+
+            #region Setting Panel
+            Pnl1.Location = new Point(0, 0);
+            Pnl1.Height = this.Height;
+            Pnl2.Location = new Point(Pnl1.Width, 0);
+            Pnl2.Width = this.Width - Pnl1.Width;
+            Pnl2.Height = this.Height;
+            #endregion  
+        }
+
+        private void toolStripCmbLanguage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index = cmbLanguage.SelectedIndex;
+
+            if (toolStripCmbLanguage.SelectedItem == "Vietnamese")
+            {
+                btnFavorite.Text = "Từ yêu thích";
+                btnHistory.Text = "Lịch sử tra từ";
+                btnHDSD.Text = "Hướng dẫn dùng";
+                btnTranslator.Text = "Dịch văn bản";
+                btnPop.Text = "Từ phổ biến";
+                toolStripCmbLanguage.Text = "Tiếng Việt";
+                cmbLanguage.Items.Clear();
+                cmbLanguage.Items.Add("Anh - Việt");
+                cmbLanguage.Items.Add("Việt - Anh");
+                cmbLanguage.SelectedIndex = index;
+                lblLoading.Text = "Đang tải dữ liệu. Vui lòng chờ!";
+            }
+            else
+            {
+                btnFavorite.Text = "Favorite";
+                btnHistory.Text = "History";
+                btnHDSD.Text = "How to use ?";
+                btnTranslator.Text = "Translator";
+                btnPop.Text = "Popular Words";
+                toolStripCmbLanguage.Text = "English";
+                cmbLanguage.Items.Clear();
+                cmbLanguage.Items.Add("Eng - Vie");
+                cmbLanguage.Items.Add("Vie - Eng");
+                cmbLanguage.SelectedIndex = index;
+                lblLoading.Text = "Loading data. Please wait!";
+            }
+        }
+
+        private void ChangeFontSize(object sender, EventArgs e)
+        {
+            try
+            {
+                if (toolStripCmbFont.Text != "" && toolStripCmbSize.Text != "")
+                {
+                    rTxbExplan.Font = new Font(toolStripCmbFont.Text, int.Parse(toolStripCmbSize.Text));
+                    LoadHightLightData("HightLight.txt");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
     }
 }

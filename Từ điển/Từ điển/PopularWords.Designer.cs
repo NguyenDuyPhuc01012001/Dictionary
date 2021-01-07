@@ -31,7 +31,6 @@ namespace Từ_điển
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaControlBox2 = new Guna.UI.WinForms.GunaControlBox();
             this.cmbWord = new System.Windows.Forms.ComboBox();
@@ -89,6 +88,7 @@ namespace Từ_điển
             this.cmbWord.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbWord.Name = "cmbWord";
             this.cmbWord.Size = new System.Drawing.Size(344, 30);
+            this.cmbWord.Sorted = true;
             this.cmbWord.TabIndex = 8;
             this.cmbWord.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -122,7 +122,7 @@ namespace Từ_điển
             this.btnIrrVerbs.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.btnIrrVerbs.Image = null;
             this.btnIrrVerbs.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnIrrVerbs.Location = new System.Drawing.Point(20, 383);
+            this.btnIrrVerbs.Location = new System.Drawing.Point(14, 383);
             this.btnIrrVerbs.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnIrrVerbs.Name = "btnIrrVerbs";
             this.btnIrrVerbs.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(145)))), ((int)(((byte)(221)))));
@@ -132,7 +132,7 @@ namespace Từ_điển
             this.btnIrrVerbs.OnHoverImage = null;
             this.btnIrrVerbs.OnPressedColor = System.Drawing.Color.Black;
             this.btnIrrVerbs.Radius = 10;
-            this.btnIrrVerbs.Size = new System.Drawing.Size(146, 44);
+            this.btnIrrVerbs.Size = new System.Drawing.Size(165, 44);
             this.btnIrrVerbs.TabIndex = 4;
             this.btnIrrVerbs.Text = "Irregular Verbs";
             this.btnIrrVerbs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -153,7 +153,7 @@ namespace Từ_điển
             this.btnToefl.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.btnToefl.Image = null;
             this.btnToefl.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnToefl.Location = new System.Drawing.Point(20, 127);
+            this.btnToefl.Location = new System.Drawing.Point(14, 127);
             this.btnToefl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnToefl.Name = "btnToefl";
             this.btnToefl.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(145)))), ((int)(((byte)(221)))));
@@ -163,7 +163,7 @@ namespace Từ_điển
             this.btnToefl.OnHoverImage = null;
             this.btnToefl.OnPressedColor = System.Drawing.Color.Black;
             this.btnToefl.Radius = 10;
-            this.btnToefl.Size = new System.Drawing.Size(146, 44);
+            this.btnToefl.Size = new System.Drawing.Size(165, 44);
             this.btnToefl.TabIndex = 3;
             this.btnToefl.Text = "900 TOEFL";
             this.btnToefl.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -184,7 +184,7 @@ namespace Từ_điển
             this.btnToeic.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.btnToeic.Image = null;
             this.btnToeic.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnToeic.Location = new System.Drawing.Point(20, 42);
+            this.btnToeic.Location = new System.Drawing.Point(14, 42);
             this.btnToeic.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnToeic.Name = "btnToeic";
             this.btnToeic.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(145)))), ((int)(((byte)(221)))));
@@ -194,7 +194,7 @@ namespace Từ_điển
             this.btnToeic.OnHoverImage = null;
             this.btnToeic.OnPressedColor = System.Drawing.Color.Black;
             this.btnToeic.Radius = 10;
-            this.btnToeic.Size = new System.Drawing.Size(146, 44);
+            this.btnToeic.Size = new System.Drawing.Size(165, 44);
             this.btnToeic.TabIndex = 2;
             this.btnToeic.Text = "600 TOEIC";
             this.btnToeic.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -215,7 +215,7 @@ namespace Từ_điển
             this.btnIelts.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.btnIelts.Image = null;
             this.btnIelts.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnIelts.Location = new System.Drawing.Point(20, 212);
+            this.btnIelts.Location = new System.Drawing.Point(14, 212);
             this.btnIelts.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnIelts.Name = "btnIelts";
             this.btnIelts.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(145)))), ((int)(((byte)(221)))));
@@ -225,7 +225,7 @@ namespace Từ_điển
             this.btnIelts.OnHoverImage = null;
             this.btnIelts.OnPressedColor = System.Drawing.Color.Black;
             this.btnIelts.Radius = 10;
-            this.btnIelts.Size = new System.Drawing.Size(146, 44);
+            this.btnIelts.Size = new System.Drawing.Size(165, 44);
             this.btnIelts.TabIndex = 1;
             this.btnIelts.Text = "900 IELTS";
             this.btnIelts.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -246,7 +246,7 @@ namespace Từ_điển
             this.btnOxford.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.btnOxford.Image = null;
             this.btnOxford.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnOxford.Location = new System.Drawing.Point(20, 297);
+            this.btnOxford.Location = new System.Drawing.Point(14, 297);
             this.btnOxford.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnOxford.Name = "btnOxford";
             this.btnOxford.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(145)))), ((int)(((byte)(221)))));
@@ -256,7 +256,7 @@ namespace Từ_điển
             this.btnOxford.OnHoverImage = null;
             this.btnOxford.OnPressedColor = System.Drawing.Color.Black;
             this.btnOxford.Radius = 10;
-            this.btnOxford.Size = new System.Drawing.Size(146, 44);
+            this.btnOxford.Size = new System.Drawing.Size(165, 44);
             this.btnOxford.TabIndex = 0;
             this.btnOxford.Text = "3000 OXFORD";
             this.btnOxford.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -318,16 +318,8 @@ namespace Từ_điển
             this.PastSimple,
             this.PastParticiple,
             this.Definition});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvIrrVerbs.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvIrrVerbs.Location = new System.Drawing.Point(195, 46);
-            this.dgvIrrVerbs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvIrrVerbs.Margin = new System.Windows.Forms.Padding(2);
             this.dgvIrrVerbs.Name = "dgvIrrVerbs";
             this.dgvIrrVerbs.RowHeadersVisible = false;
             this.dgvIrrVerbs.RowHeadersWidth = 51;
@@ -373,7 +365,7 @@ namespace Từ_điển
             // 
             this.txbMeaning.BackColor = System.Drawing.Color.White;
             this.txbMeaning.Location = new System.Drawing.Point(211, 363);
-            this.txbMeaning.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbMeaning.Margin = new System.Windows.Forms.Padding(2);
             this.txbMeaning.Multiline = true;
             this.txbMeaning.Name = "txbMeaning";
             this.txbMeaning.ReadOnly = true;

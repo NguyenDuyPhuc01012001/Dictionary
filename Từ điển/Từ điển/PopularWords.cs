@@ -34,23 +34,25 @@ namespace Từ_điển
             dgvIrrVerbs.Hide();
         }
 
-        private void LoadPicture(int number)
+        private void LoadPicture()
         {
             Image img=null;
             try
             {
                 string filename = null;
-
+                string name = cmbWord.Text.ToString().Split('/')[0];
+                if (name.EndsWith(" N"))
+                    name=name.Substring(0, name.Length - 2);
+                MessageBox.Show(name);
                 if (IsToeic)
-                    filename = @"TOEIC\TOEIC - " + number + ".jpg";
+                    filename = @"TOEIC\" + name + ".jpg";
                 if (IsToefl)
-                    filename = @"TOEFL\" + number + ".jpg";
+                    filename = @"TOEFL\" + name + ".jpg";
                 if (IsIelts)
-                    filename = @"IELTS\IELTS - " + number + ".jpg";
+                    filename = @"IELTS\" + name + ".jpg";
                 if (IsOxford)
-                    filename = @"OXFORD\OXFORD - " + number + ".jpg";
+                    filename = @"OXFORD\" + name + ".jpg";
                 img = Image.FromFile(filename);
-                
             }
             catch (FileNotFoundException)
             {
@@ -117,7 +119,7 @@ namespace Từ_điển
                 else
                     btnAfter.Show();
                 txbMeaning.Text = cmbWord.SelectedItem.ToString();
-                LoadPicture(cmbWord.SelectedIndex + 1);
+                LoadPicture();
             }
         }
 

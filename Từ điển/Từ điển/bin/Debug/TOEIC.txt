@@ -1930,12 +1930,11 @@ adhere to N/A
 Example: The chairman never adhered to his own rules 
 Vị chủ tịch chẳng bao giờ giữ vững những quy tắc của riêng ông ta
 
-agendaa list of items to be discussed at a meeting
- The next item on the agenda is the publicity budget. 
+agendaa
+ list of items to be discussed at a meeting
 (n): nhật ký công tác, chương trình nghị sự 
 Example: The agenda was sent out three weeks ago so that everyone could prepare for the meeting 
-Chương trình nghị sự đã được phân phát 3 tuần trước để cho mọi người có thể chuẩn bị cho cuộc 
-họp
+Chương trình nghị sự đã được phân phát 3 tuần trước để cho mọi người có thể chuẩn bị cho cuộc họp
 
 bring up N/A
  to introduce a topic 

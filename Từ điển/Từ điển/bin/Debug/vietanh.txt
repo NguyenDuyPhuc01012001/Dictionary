@@ -19,7 +19,7 @@
 ả
 * noun
      - Lass
-          Ex: tại anh tại ả, tại cả đôi bên => it's the lad's fault, it's the lass' fault, it's the fault of both
+          Ex: tại anh tại ả, tại cả đôi bên => it's the lad's fault, it's the lass's fault, it's the fault of both
 
 á
 * excl
@@ -513,7 +513,7 @@ an nghỉ
 * verb
      - To rest in peace and quiet
           Ex: nơi an nghỉ cuối cùng => The last home, the last resting-place
-          Ex: người du kích anh hùng ấy mãi mãi an nghỉ trong nghĩa trang liệt sĩ => that heroic guerilla lies at rest for ever and ever in the martyrs' cemetery
+          Ex: người du kích anh hùng ấy mãi mãi an nghỉ trong nghĩa trang liệt sĩ => that heroic guerilla lies at rest for ever and ever in the martyrs's cemetery
           Ex: cầu cho Mary an nghỉ => Mary RIP (requiescant in pace)
 
 án ngữ
@@ -1173,12 +1173,12 @@ au
 ăn chặn
 * verb
      - To appropriate part of
-          Ex: chúng dám ăn chặn lương hưu của nhiều cựu chiến binh => they dared appropriate part of many war veterans' retirement pension
+          Ex: chúng dám ăn chặn lương hưu của nhiều cựu chiến binh => they dared appropriate part of many war veterans's retirement pension
 
 ăn chẹt
 * verb
      - To take unfair advantage of
-          Ex: tay đầu bếp ấy thường ăn chẹt khẩu phần bánh mì của các tù nhân => that cook usually takes unfair advantage of the prisoners' bread ration
+          Ex: tay đầu bếp ấy thường ăn chẹt khẩu phần bánh mì của các tù nhân => that cook usually takes unfair advantage of the prisoners's bread ration
 
 ăn chơi
 * verb
@@ -1341,7 +1341,7 @@ au
      - To celebrate (with feasts and rejoicings)
           Ex: ăn mừng chiến thắng => to celebrate a military victory
           Ex: ăn mừng ngày cưới => to celebrate a wedding anniversary
-          Ex: Ăn mừng nhà mới: Nhân dịp xây cất xong ngôi nhà, chủ nhân chọn ngày lành tháng tốt để dọn về nhà mo => 'i. Nhân dịp này, chủ nhân sửa soạn lễ mời bà con, bạn bè đến để ăn mừng. => Ăn mừng nhà mới (Housewarming celebration): After the construction of a new house has been completed, the owner chooses a good date for moving in it. On this occasion, he celebrates a housewarming banquet at which the guests will share his happiness
+          Ex: Ăn mừng nhà mới: Nhân dịp xây cất xong ngôi nhà, chủ nhân chọn ngày lành tháng tốt để dọn về nhà mới. Nhân dịp này, chủ nhân sửa soạn lễ mời bà con, bạn bè đến để ăn mừng. => Ăn mừng nhà mới (Housewarming celebration): After the construction of a new house has been completed, the owner chooses a good date for moving in it. On this occasion, he celebrates a housewarming banquet at which the guests will share his happiness
 
 ăn nằm
 * verb
@@ -1713,7 +1713,7 @@ au
      - Soul, wraith, manes
           Ex: miếu âm hồn => A small temple (for the souls of) the dead
           Ex: các âm hồn vất vưởng vẫn vật vờ trên trái đất => lost souls still walking the earth
-          Ex: Ngày cúng các âm hồn => All Souls' Day
+          Ex: Ngày cúng các âm hồn => All Souls's Day
 
 âm hưởng
 * noun
@@ -2250,7 +2250,7 @@ bà
           Ex: bà ngoại => grandmother on the distaff side
           Ex: bà thím => grandaunt
      - Madam, lady
-          Ex: thưa qui' bà, qui' ông (thưa quý vị) => Ladies and gentlemen
+          Ex: thưa quý bà, quý ông (thưa quý vị) => Ladies and gentlemen
 
 bả
 * noun
@@ -3440,7 +3440,7 @@ bản án
 * noun
      - judgment, sentence
           Ex: toà còn phải thông qua bản án về vụ này => the court has still to pass judgment in this case
-          Ex: bản án mười năm tù giam => a sentence of ten years' imprisonment
+          Ex: bản án mười năm tù giam => a sentence of ten years's imprisonment
 
 bàn ăn
      - Dining-table
@@ -3632,7 +3632,7 @@ bàn định
 bạn đọc
 * noun
      - Reader
-          Ex: thư bạn đọc => readers' letters
+          Ex: thư bạn đọc => readers's letters
 
 bản đồ
 * noun
@@ -3725,7 +3725,7 @@ bàn hoàn
 bạn học
 * noun
      -School-fellow;
-     - class-mate' fellow-student
+     - class-mate's fellow-student
 
 bạn hữu
 * noun
@@ -4145,7 +4145,7 @@ bản xứ
 * noun
      - (dùng phụ sau danh từ) Indigenous country, native country
           Ex: dân bản xứ => The native people
-          Ex: chính sách thực dân dùng người bản xứ đánh người bản xứ => the colonialists' policy of using the natives to fight the natives
+          Ex: chính sách thực dân dùng người bản xứ đánh người bản xứ => the colonialists's policy of using the natives to fight the natives
 
 bán ý thức
      - Semi-consciousness
@@ -4155,7 +4155,7 @@ bang
      - State
           Ex: bang Oklahoma => the state of Oklahoma
           Ex: Hoa Kỳ có bao nhiêu bang? => how many states are there in the United States of America?
-     - Chinese nationals' community, Chinese colony
+     - Chinese nationals's community, Chinese colony
           Ex: bang Phúc Kiến => the community of Chinese nationals from Fukien, the Fukien Chinese colony
 
 bàng
@@ -4980,7 +4980,7 @@ bào ngư
 bạo ngược
 * adj
      - Wickedly cruel
-          Ex: những hành động bạo ngược dã man của quân đội Quốc xã trong thời Đệ nhị thế chiến => nazist troops' wickedly cruel and savage deeds in the Second World War
+          Ex: những hành động bạo ngược dã man của quân đội Quốc xã trong thời Đệ nhị thế chiến => nazist troops's wickedly cruel and savage deeds in the Second World War
 
 bao nhiêu
      - How much;
@@ -5730,7 +5730,7 @@ băng chuyền
 bằng chứng
 * noun
      - Evidence, proof, exhibit
-          Ex: những bằng chứng về tội ác của bọn khủng bố => exhibits of the terrorists' crimes
+          Ex: những bằng chứng về tội ác của bọn khủng bố => exhibits of the terrorists's crimes
 
 băng dương
 * noun
@@ -6196,7 +6196,7 @@ bấm gan
 bấm giờ
 * verb
      - To time
-          Ex: nhà máy bấm giờ để tính năng suất => the factory timed the workers' productivity
+          Ex: nhà máy bấm giờ để tính năng suất => the factory timed the workers's productivity
           Ex: trọng tài bấm giờ cho vận động viên thi chạy => the judge times the athletes in the running race
      -To tell days of good or bad omen
 
@@ -7241,7 +7241,7 @@ bẻ lái
 bè lũ
 * noun
      - Clique, gang
-          Ex: bè lũ phát xít => the fascists' gang
+          Ex: bè lũ phát xít => the fascists's gang
 
 bẻ mặt
      - xem bẽ
@@ -7382,7 +7382,7 @@ béo
           Ex: món thịt xào béo quá => a too greasy browned meat
 * khẩu ngữ
      - Making rich
-          Ex: chỉ béo bọn con buôn => it will only feather the traffickers' nests, it will only help the traffickers make a packet
+          Ex: chỉ béo bọn con buôn => it will only feather the traffickers's nests, it will only help the traffickers make a packet
 
 bẹo
      - (địa phương) như véo Pinch
@@ -7436,7 +7436,7 @@ béo mập
      - Stout, plump
 
 béo mỡ
-     - (tiếng mă'ng) Pranky prankish, prankful, frolicsome
+     - (tiếng mắng) Pranky prankish, prankful, frolicsome
 
 béo ngậy
      - Greasy
@@ -9131,7 +9131,7 @@ biểu thức
 
 biếu xén
      - To give, to present
-          Ex: tìm cách biếu xén bọn quan thầy => to try to make presents and gifts to one's protectors, to try to curry one's protectors' favour with presents
+          Ex: tìm cách biếu xén bọn quan thầy => to try to make presents and gifts to one's protectors, to try to curry one's protectors's favour with presents
 
 bìm
      - như bìm bìm
@@ -9329,7 +9329,7 @@ bình điện
 bình định
 * verb
      - To pacify, to quell
-          Ex: Lê Lợi mười năm bình định giặc Minh => Le Loi pacified the country after ten years' fighting the Minh aggressors;
+          Ex: Lê Lợi mười năm bình định giặc Minh => Le Loi pacified the country after ten years's fighting the Minh aggressors;
      - Le Loi quelled the Minh aggression in ten years
 
 Bình Định
@@ -10944,7 +10944,7 @@ bổ sung
 bồ tát
 * noun
      - Bodhisattva
-          Ex: của người bồ tát, của mình lạt buộc => generous with others' property, closefisted with one's own;
+          Ex: của người bồ tát, của mình lạt buộc => generous with others's property, closefisted with one's own;
      - men cut large thongs of other men's leather
 
 bồ tạt
@@ -11041,7 +11041,7 @@ bốc cháy
 bốc dỡ
      - To load and unload
           Ex: bốc dỡ hàng hoá bằng cơ giới => to load and unload with mechanized means
-          Ex: công nhân đội bốc dỡ => workers of the stevedores' group
+          Ex: công nhân đội bốc dỡ => workers of the stevedores's group
 
 bốc đồng
      - (khẩu ngữ) To act like a hothead, to be hotheaded
@@ -11855,7 +11855,7 @@ bơi lội
 bới móc
 * verb
      - To pick out for hostile criticism, to pick to pieces
-          Ex: bới móc đời tư của người khác => to pick to pieces shortcomings in others' private life
+          Ex: bới móc đời tư của người khác => to pick to pieces shortcomings in others's private life
 
 bơi ngửa
      - To swim on one's back
@@ -12004,7 +12004,7 @@ bớt tay
 bớt xén
 * verb
      - To take a rake-off, to appropriate part of
-          Ex: cai thầu bớt xén tiền công của thợ => the contractor took a rake-off on the workers' wages
+          Ex: cai thầu bớt xén tiền công của thợ => the contractor took a rake-off on the workers's wages
           Ex: bớt xén nguyên liệu của hàng gia công => to appropriate part of the material given to be processed at home
 
 bớt xớ
@@ -12130,7 +12130,7 @@ bùa
 
 bủa
 * noun
-     - Nest of forked twigs (cho tằm làm ke'n)
+     - Nest of forked twigs (cho tằm làm kén)
 * verb
      - To cast, to fan out like a net, to surround like a net
           Ex: bủa lưới đánh cá => to cast a fishing net
@@ -13206,7 +13206,7 @@ cả
           Ex: lên giọng đàn anh kẻ cả => to speak in the tone of a superior and senior
      - On a grand scale, on the greatest scale
           Ex: cả ăn cả tiêu => to spend on a grand scale
-          Ex: Nguyễn Huệ cả phá quân nhà Thanh => Nguyen Hue destroyed the Ch'in army on a grand scale, Nguyen Hue decimated the Ch'in army
+          Ex: Nguyễn Huệ cả phá quân nhà Thanh => Nguyen Hue destroyed the Chinese army on a grand scale, Nguyen Hue decimated the Chinese army
 
 cá
 * noun
@@ -13822,7 +13822,7 @@ cạch
      - (dùng hạn chế trong một vài tổ hợp) Dull
           Ex: đỏ cạch => dull red
 * verb
-     - To give up (vì sợ hoặc vì ghe't)
+     - To give up (vì sợ hoặc vì ghét)
           Ex: cạch đến già => to give up for all the rest of one's life
      -To clatter
           Ex: gõ cạch một cái xuống bàn => to give a clattering knock on the table
@@ -14467,7 +14467,7 @@ cản
           Ex: cản bước tiến => to prevent someone's advance
           Ex: cản đường => to block the way
           Ex: hắn cản địch cho đồng đội rút lui => to lay a barrage for fellow combatants to withdraw;
-     - to cover fellow combatants' retreat with a barrage
+     - to cover fellow combatants's retreat with a barrage
           Ex: sức cản => resistance force
 * noun
      - Barrage, dam
@@ -15043,7 +15043,7 @@ cao
      -Cataplasm
 * adj
      - High, tall, steep, towering
-          Ex: cao một mét bảy mươi => to be 5'7'' tall, to stand 5'7" in height
+          Ex: cao một mét bảy mươi => to be 5'7" tall, to stand 5'7" in height
           Ex: núi cao trên ba nghìn mét => a mountain more than 3,000 metres high, a mountain over 10,000 feet high
           Ex: đo chiều cao => to measure the height (of someone, something)
           Ex: chim bay cao tít => the bird flew very high
@@ -15668,7 +15668,7 @@ cày
      - Plough
           Ex: trâu bò kéo cày => buffaloes and oxen draw ploughs
           Ex: cày máy => a tractor-pulled plough
-          Ex: tay cày, tay súng => a rifle in one hand, a plough in the other (peasants' preparedness)
+          Ex: tay cày, tay súng => a rifle in one hand, a plough in the other (peasants's preparedness)
 * verb
      - To plough
           Ex: cày ruộng => to plough fields
@@ -15844,7 +15844,7 @@ cắm mốc
 
 căm phẫn
      - To feel indignant
-          Ex: căm phẫn trước những tội ác dã man của bọn khủng bố => to feel indignant at the terrorists' heinous crimes
+          Ex: căm phẫn trước những tội ác dã man của bọn khủng bố => to feel indignant at the terrorists's heinous crimes
           Ex: làn sóng căm phẫn => a wave of indignation
 
 cắm ruộng
@@ -16364,7 +16364,7 @@ cầm cố
 cấm cố
 * verb
      - To confine to a solitary cell
-          Ex: bị kết án mười năm cấm cố => he was sentenced to ten years' solitary confinement
+          Ex: bị kết án mười năm cấm cố => he was sentenced to ten years's solitary confinement
 
 cấm cung
 * verb
@@ -16653,7 +16653,7 @@ cần dùng
      - Needed, wanted
 
 cân đai
-     - Turban and belt (of mandarins' court robes);
+     - Turban and belt (of mandarins's court robes);
      - court robes
 
 cận đại
@@ -17160,7 +17160,7 @@ cầu an
      - Quiet-seeking, eager for a quiet life
 
 cầu ao
-     - Small wooden pier over a pond (để giặt giũ, lấy nu => o => 'c)
+     - Small wooden pier over a pond (để giặt giũ, lấy nước)
 
 cấu âm
      - (ngôn ngữ) Articulate
@@ -17245,7 +17245,7 @@ cầu đảo
      -To pray for rain (by worshipping deity)
 
 câu đầu
-     - (kiến tru'c) Tie-beam
+     - (kiến trúc) Tie-beam
 
 câu đố
 * noun
@@ -17719,7 +17719,7 @@ có chồng
      -Married
 
 có chửa
-     - To be big with child (người), to be with young (thu')
+     - To be big with child (người), to be with young (thú)
 
 có điều
      - Only, only that
@@ -17844,8 +17844,8 @@ cỏ sâu róm
      - Green bristle grass
 
 có tình
-     - Taking into consideration others' feelings, feeling
-          Ex: nói có lý có tình => to speak with consideration to others' reason and feeling
+     - Taking into consideration others's feelings, feeling
+          Ex: nói có lý có tình => to speak with consideration to others's reason and feeling
           Ex: ăn ở rất có tình => to behave in the most feeling way
 
 có tuổi
@@ -18641,7 +18641,7 @@ công
 cồng
 * noun
      - Gong
-          Ex: lệnh ông không bằng cồng bà => the master's orders are drowned by the mistress' gong;
+          Ex: lệnh ông không bằng cồng bà => the master's orders are drowned by the mistress's gong;
      - the wife's say is more decisive than the husband's
      -Ten years ago, the central highlands resounded with the echoes of an array of gongs. The Pleiku township in Gia Lai province was hosting the first "Cồng Chiêng" festival (Festival of gongs). Twelve Cồng Chiêng bands with 438 artists belonging to various ethnic minorities such as the Ê Đê, Gia Rai, Ba Na, Xơ Đăng presented a series of virtuoso performances. Seventy years separated the oldest and the youngest player Three years later, in 1988, participants numbered 1,000 from 14 ethnic groups from as many provinces. The deep sounds and melodies left an indelible impression on the large audience. The sounds of the Cồng and the Chiêng (Cồng has a knob in the middle, Chiêng has none -- Cồng makes the deep bass sounds, melodies are coaxed out of the Chiêng) are the very soul of the highlands. They are played to commemorate good harvests, at religious festivals and on many other occasions like child-birth, weddings, and funerals. Indeed, it is believed by the highlanders that a divine entity resides in each Cồng and Chiêng. In many communities, a Cồng Chiêng band consists of three Cồngs, nine Chiêngs, a drum and cymbals played by about twenty artistes. The compositions played differ, of course, with each festival and occasion --, lively, melancholic or sombre. The Cồng Chiêng in Vietnam's central highlands is the subject of study for many anthropologists, musicians, and "orientalists". Figures of Cồng Chiêng teams can be found on bronze drums which date back to 3000 years ago. This suggests that these instruments made their appearance in the early days among ethnic tribes such as Thái, and Mường in northern Vietnam, and Koho, Kor, Ba Na, Stieng, Mnong, in the central highlands. With recent economic and cultural developments, many musical instruments have made their way to the central highlands, but the Cồng Chiêng will remain intricately woven into the fabric of a highlander's life for ever. -- ()
 
@@ -18995,7 +18995,6 @@ cơm
      - Meal
           Ex: dọn một mâm cơm => to lay a meal on a tray
           Ex: làm cơm thết khách => to prepare a meal to entertain guests
-          Ex: cửa hàng bán cơm bữa => a table d'ho^te restaurant
           Ex: đi ở cơm không => to be a servant on board-wages
           Ex: chuyện cơm bữa => common occurence
           Ex: cơm áo gạo tiền => daily necessaries
@@ -19904,8 +19903,8 @@ chả chớt
           Ex: nói chả chớt => to speak in a half-serious half-joking voice
 
 cha chú
-     - Elder, person belonging to one's parents' generation
-          Ex: ông ấy là bậc cha chú của tôi => he ranks with people of my parents' generation
+     - Elder, person belonging to one's parents's generation
+          Ex: ông ấy là bậc cha chú của tôi => he ranks with people of my parents's generation
 
 chà đạp
      - To trample on
@@ -20292,7 +20291,7 @@ chanh chòi
      - Ill-natured, cantankerous (said of children)
 
 chánh chủ khảo
-     - Chairman of the examiners' board
+     - Chairman of the examiners's board
 
 chanh chua
      - Sharp-tongued, tart, sour
@@ -20425,7 +20424,7 @@ chao ôi
           Ex: chao ôi! sao mà nhớ nhà thế! => oh dear, how homesick I am!
 
 cháo quẩy
-     - Finger - shaped soufle' batter
+     - Finger - shaped soufle's batter
 
 chạo rạo
      - Tumultuous
@@ -20434,7 +20433,7 @@ chạp
 * noun
      - Twelfth month, last month
           Ex: tiết một chạp => the eleventh and twelfth month period
-     - đi với giỗ tết) Ancestors' worship
+     - đi với giỗ tết: Ancestors's worship
           Ex: ngày giỗ, ngày chạp => death anniversary days, ancestor-worshipping days
 
 chạp mả
@@ -20479,7 +20478,7 @@ cháu
 * noun
      - Grandchild, grandson, granddaughter
      -Nephew, niece;
-     - firstcousin once or twice removed (used for addressing persons of the above said relatives' age or by them when addressing elderly people as self-appellation)
+     - firstcousin once or twice removed (used for addressing persons of the above said relatives's age or by them when addressing elderly people as self-appellation)
      -Child, children
           Ex: ông được mấy cháu? => how many children have you got?
 
@@ -20561,7 +20560,7 @@ chạy
      - To run
           Ex: cầu thủ chạy theo quả bóng => the players ran after the ball
           Ex: chạy nhanh như bay => to run as fast as a rabbit
-          Ex: chị ấy thường vẫn chạy đi chạy về thăm bố mẹ => she usually makes a run to her parents' home
+          Ex: chị ấy thường vẫn chạy đi chạy về thăm bố mẹ => she usually makes a run to her parents's home
           Ex: tàu chạy trên đường sắt => the train runs on rails
           Ex: có cảm giác lành lạnh chạy qua xương sống => to feel a shiver of cold run through one's spine
           Ex: máy chạy thông ca => the machine runs through shifts
@@ -20756,9 +20755,9 @@ chăm
 
 Chăm
      - dân tộc Chăm
-     - With about 100,000 inhabitants, Chăm (Chàm, Chiêm, Hời) ethnic group originates from Ancient Chăm Pa Kingdom. They live mainly in Ninh Thuận, Bình Thuận, Bình Định, Phú Yên. Belonging to Mã Lai-Đa Đảo linguistic group, the Chăm people remains influenced by matriarchy and Indian culture. The ancient Chăm writing is Sanskrit-based. Hinduism => and Mohammedanism are their principal religions
-     - THE UNIQUE CHĂM CULTURE: The Chăm culture is a unique tradition, contributing much to the => diversity and richness of the Vietnamese multi-ethnic culture. From the first century AD, the Chăm people received deep influences from Indian culture. In the 7th century AD, Chăm Pa was already a kingdom with a capital in Trà Kiệu (now Quảng Nam) with a temple dedicated to the Indian Valmiki and his famous epic, the Ramayana By the middle of the 8th century AD, their capital was shifted to Nha Trang and five years later to Đông Dương, 15 km away from Trà Kiệu in the southeast.
-     - The Chăm are one of the 53 ethnic groups in Vietnam and comprise various subgroups. There are around 98,000 Chăm people, including the Chăm Hroi in Bình Định, Phú Yên and those living in Ninh Thuận, Bình Thuận and other parts of southern Vietnam Inhabiting a large area, the Chăm also have many diversified customs and social practices. While most of the Chăm in Saigon, AnGiang and Tây Ninh, and the Chăm from Cambodia follow Islam, those living in Bình Thuận, Ninh Thuận provinces follow Brahmanism. Islam is modified to suit the people here and is called 'Baní. The Chăm language is of the => Malayo-Polynesian family and is spoken by about 250,000 people (G Moussay, Dictionaire Cham-Vietnamien-Francais, published by Phan Rang Culture Centre 1971). However, it does not necessarily follow that the Chăm in different regions can fully understand each other. It is natural that the Chăm borrow local words and expressions at the place they reside, mainly from Khơ Me and Vietnamese. In terms of their script, only the Cham Dong (in Bình Thuận, Ninh Thuận provinces) have preserved their original script. The Chăm script is now being taught at elementary school to help maintain this unique linguistic tradition. The Chăm also => utilised the Akhar Thrah scripts from Nam An which has been incorporated into present-day Chăm scripts. Ancient texts written on papyrus or paper => used both of these scripts and include various epics and love stories such as the Devamuno Inra Patra, Ummurup, Cambini, Bini-Cam, Sah Pakei, Patauw Kamai, Patauw adat Likei etc. This ancient literature gives a clear picture of the life and society of the Chăm through history. Together with academic literature, the Chăm also have very rich popular literature => which comprises hundreds of stories, sayings, idioms, puzzles, songs etc., which make up a precious literary tradition. Chăm people have songs for => fishing using the 'vai chai' rhythm (pwoc jah), betrothals (danh dom da ra), milling rice (danh rasung chai) etc. These rhythms are also sung during festivities with dances which have become a real attraction to spectators. Surely the greatest and most unique contribution from the Chăm culture is their architecture and carvings Historical stupa compounds in Mỹ Sơn (Quảng Nam-Đà Nẵng), Tháp Bà (Nha Trang), Tháp Chàm (Ninh Thuận) and various Tara statues in Đông Dương, and Apsaras in Trà Kiệu have all had their position => confirmed in the Southeast Asian sculptural tradition. => Though most of these works were created for religious purposes and stemmed from Brahmin spiritualism, they became popularised and part of the Chăm => national culture. As such, the Indian-inspired Vishnus, and Shivas went through considerable transformations and became more human when recreated by Chăm artisans.Ex: In the present day, the Chăm people have adjusted their lives to local conditions. People in Tây Ninh mostly work in agriculture, fishing and => commerce while those who live near Saigon have developed an urban lifestyle. The majority, however, still maintain traditional professions like cultivation, husbandry, weaving and ceramic production. Chăm => handicrafts are now exported to various countries where they are highly appreciated due to their unique style and high quality workmanship
+     - With about 100,000 inhabitants, Chăm (Chàm, Chiêm, Hời) ethnic group originates from Ancient Chăm Pa Kingdom. They live mainly in Ninh Thuận, Bình Thuận, Bình Định, Phú Yên. Belonging to Mã Lai-Đa Đảo linguistic group, the Chăm people remains influenced by matriarchy and Indian culture. The ancient Chăm writing is Sanskrit-based. Hinduism and Mohammedanism are their principal religions
+     - THE UNIQUE CHĂM CULTURE: The Chăm culture is a unique tradition, contributing much to the diversity and richness of the Vietnamese multi-ethnic culture. From the first century AD, the Chăm people received deep influences from Indian culture. In the 7th century AD, Chăm Pa was already a kingdom with a capital in Trà Kiệu (now Quảng Nam) with a temple dedicated to the Indian Valmiki and his famous epic, the Ramayana By the middle of the 8th century AD, their capital was shifted to Nha Trang and five years later to Đông Dương, 15 km away from Trà Kiệu in the southeast.
+     - The Chăm are one of the 53 ethnic groups in Vietnam and comprise various subgroups. There are around 98,000 Chăm peoples, including the Chăm Hời in Bình Định, Phú Yên and those living in Ninh Thuận, Bình Thuận and other parts of southern Vietnam Inhabiting a large area, the Chăm also have many diversified customs and social practices. While most of the Chăm in Saigon, An Giang and Tây Ninh, and the Chăm from Cambodia follow Islam, those living in Bình Thuận, Ninh Thuận provinces follow Brahmanism. Islam is modified to suit the people here and is called 'Baní. The Chăm language is of the Malayo-Polynesian family and is spoken by about 250,000 people (G Moussay, Dictionaire Cham-Vietnamien-Francais, published by Phan Rang Culture Centre 1971). However, it does not necessarily follow that the Chăm in different regions can fully understand each other. It is natural that the Chăm borrow local words and expressions at the place they reside, mainly from Khơ Me and Vietnamese. In terms of their script, only the Cham Dong (in Bình Thuận, Ninh Thuận provinces) have preserved their original script. The Chăm script is now being taught at elementary school to help maintain this unique linguistic tradition. The Chăm also utilised the Akhar Thrah scripts from Nam An which has been incorporated into present-day Chăm scripts. Ancient texts written on papyrus or paper used both of these scripts and include various epics and love stories such as the Devamuno Inra Patra, Ummurup, Cambini, Bini-Cam, Sah Pakei, Patauw Kamai, Patauw adat Likei etc. This ancient literature gives a clear picture of the life and society of the Chăm through history. Together with academic literature, the Chăm also have very rich popular literature which comprises hundreds of stories, sayings, idioms, puzzles, songs etc., which make up a precious literary tradition. Chăm people have songs for fishing using the 'vai chai' rhythm (pwoc jah), betrothals (danh dom da ra), milling rice (danh rasung chai) etc. These rhythms are also sung during festivities with dances which have become a real attraction to spectators. Surely the greatest and most unique contribution from the Chăm culture is their architecture and carvings Historical stupa compounds in Mỹ Sơn (Quảng Nam-Đà Nẵng), Tháp Bà (Nha Trang), Tháp Chàm (Ninh Thuận) and various Tara statues in Đông Dương, and Apsaras in Trà Kiệu have all had their position confirmed in the Southeast Asian sculptural tradition. Though most of these works were created for religious purposes and stemmed from Brahmin spiritualism, they became popularised and part of the Chăm national culture. As such, the Indian-inspired Vishnus, and Shivas went through considerable transformations and became more human when recreated by Chăm artisans.Ex: In the present day, the Chăm people have adjusted their lives to local conditions. People in Tây Ninh mostly work in agriculture, fishing and commerce while those who live near Saigon have developed an urban lifestyle. The majority, however, still maintain traditional professions like cultivation, husbandry, weaving and ceramic production. Chăm handicrafts are now exported to various countries where they are highly appreciated due to their unique style and high quality workmanship
 
 chằm
 * verb
@@ -21271,7 +21270,7 @@ châm chọc
 châm chước
 * verb
      - To adjust, to balance, to allow for
-          Ex: châm chước đề nghị của hai bên để làm hợp đồng => to allow for both sides' proposals and draw up a contract
+          Ex: châm chước đề nghị của hai bên để làm hợp đồng => to allow for both sides's proposals and draw up a contract
      -To lessen the requirement of
           Ex: có thể châm chước vài tiêu chuẩn không quan trọng => it is possible to lessen the requirement of some unimportant criteria
           Ex: châm chước về điều kiện tuổi => to lessen the requirement concerning age
@@ -22405,7 +22404,7 @@ chệnh choạng
 chênh lệch
      - Uneven, unequal, of different levels
           Ex: giá cả chênh lệch => the prices are of different levels
-          Ex: lực lượng hai bên rất chênh lệch => both sides' strength is very unequal
+          Ex: lực lượng hai bên rất chênh lệch => both sides's strength is very unequal
           Ex: khắc phục tình trạng trồng trọt và chăn nuôi phát triển còn chênh lệch nhau => to do away with the still uneven development of crop growing and animal husbandry
 
 chểnh mảng
@@ -23262,7 +23261,7 @@ chiều
 
 chiểu
 * verb
-     - (dùng trong văn hành chi'nh) To take into account, to consider
+     - (dùng trong văn hành chính) To take into account, to consider
 
 chiếu
 * noun
@@ -23315,7 +23314,7 @@ chiêu đãi
 
 chiêu đãi sở
 * noun
-     - Guests' house
+     - Guests's house
 
 chiếu điện
      - To X-ray, to roentgenize
@@ -23423,7 +23422,7 @@ chín
           Ex: chín người mười ý => Nine men, ten opinions;
      - so many men, so many opinions
           Ex: chín từng mây => cloud-touching, cloud-topped, cloud-capped
-          Ex: chín bỏ làm mười => to easily let pass (others' mistakes...), to tolerate
+          Ex: chín bỏ làm mười => to easily let pass (others's mistakes...), to tolerate
           Ex: đoàn kết không phải là bất cứ cái gì cũng chín bỏ làm mười cho qua chuyện => Solidarity does not mean easily letting pass any mistakes of others as past things
 
 chín cây
@@ -24067,7 +24066,7 @@ chỏm
 chõm
 * verb
      - To pinch
-          Ex: chõm của người khác => to pinch others' things
+          Ex: chõm của người khác => to pinch others's things
 
 chõm chọe
 * adj
@@ -25309,7 +25308,7 @@ chũm
 chúm
 * verb
      - To round (lips)
-          Ex: chúm miệng hu'yt sáo => to round one's lips and whistle
+          Ex: chúm miệng huýt sáo => to round one's lips and whistle
 
 chụm
 * verb
@@ -26133,7 +26132,7 @@ chừa
 chửa
 * verb
      - To be pregnant, to be with child, to be in the family way (người);
-     - to be with young (thu')
+     - to be with young (thú)
 * adv
      - Như chưa
 
@@ -26232,7 +26231,7 @@ chức danh
 chức dịch
 * noun
      - Village officials (in former times)
-          Ex: nhiều chức dịch trong làng là tay chân của địa chủ => many village officials were landlords' agents
+          Ex: nhiều chức dịch trong làng là tay chân của địa chủ => many village officials were landlords's agents
 
 chức năng
 * noun
@@ -29941,7 +29940,7 @@ du học sinh
 du kích
 * noun
      - Guerilla
-          Ex: đội du kích => A guerillas' unit
+          Ex: đội du kích => A guerillas's unit
           Ex: du kích quân => Guerilla man
 
 du khách
@@ -30764,7 +30763,7 @@ dương cầm
      - piano
 
 dương cực
-     - (ly') Anode
+     - (lý) Anode
 
 dương danh
      - (cũ) Get oneself a good name
@@ -31327,8 +31326,8 @@ dứt tình
      - (ít dùng) Great change
 
 đại biện
-     - Charge d'affaires
-          Ex: Đại biện lâm thời => Charge d'affaires a.i. (ad interim)
+     - Charge daffaires
+          Ex: Đại biện lâm thời => Charge daffaires a.i. (ad interim)
 
 đại biểu
      - Representative, delegate
@@ -31698,7 +31697,7 @@ dứt tình
      - marble
 
 đàn anh
-     - One's seniors' rank
+     - One's seniors's rank
           Ex: Anh ta là bậc đàn anh chúng tôi => He ranks among our seniors
 
 đàn áp
@@ -31737,7 +31736,7 @@ dứt tình
           Ex: Đánh đàn đánh đúm => To gang in small groups and gamble
 
 đàn em
-     - One's juniors' rank
+     - One's juniors's rank
 
 đạn ghém
      - Dust shot
@@ -31791,7 +31790,7 @@ dứt tình
 đan trì
      - (cũ) Canopied dais;
      - the throne
-          Ex: Khấu đầu lạy tru => 'o => c đan trì => To kow tow before the canopied dais
+          Ex: Khấu đầu lạy trướcc đan trì => To kow tow before the canopied dais
 
 đang
 * verb
@@ -32309,7 +32308,7 @@ dứt tình
      - (cũ) Thief
 
 đảo chính
-     - Stage a coup d'etat
+     - Stage a coup detat
 
 đạo diễn
      - Stage (a play) direct (a flim)
@@ -32391,7 +32390,7 @@ dứt tình
      - to desert
 
 đào nguyên
-     - (văn chương) Fairies' home, Elysium
+     - (văn chương) Fairies's home, Elysium
 
 đảo ngược
 * verb
@@ -32476,7 +32475,7 @@ dứt tình
      - Reply (to awelcome address, toats..)
 
 đạp thanh
-     - (cũ) Visit relatives'graves in spring
+     - (cũ) Visit relatives's graves in spring
 
 đáp ứng
      - Satisfy, meet (a need..)
@@ -32933,7 +32932,7 @@ dứt tình
      - (cũ) Set off (on a journey), leave, take the road
 
 đằng trương
-     - (tính tu => `)(ly') Isotonic
+     - (tính từ)(lý) Isotonic
 
 đẳng trương
 * adj
@@ -33869,7 +33868,7 @@ dứt tình
      - Hanging oil lamp
 
 đèn trời
-     - (cũ) Wisdom (foresight,enlightenment) of highter level(concerning the lower levels' grievances)
+     - (cũ) Wisdom (foresight,enlightenment) of highter level(concerning the lower levels's grievances)
 
 đèn vách
 * noun
@@ -34422,7 +34421,7 @@ dứt tình
           Ex: Nhà có hai cô con gái đến thì => They have got two nubile girls in that family
 
 đềnh đoàng
-     - như ddue^`nh đoàng
+     - như đuềnh đoàng
 
 đểnh đoảng
      - Lukewarm, tepid
@@ -35069,7 +35068,7 @@ dứt tình
 
 điều ước
      - Treaty
-          Ex: Điều ước Ve'c-xay => The Versailles Treaty
+          Ex: Điều ước Véc-xây => The Versailles Treaty
 
 đinh
 * verb
@@ -36157,7 +36156,7 @@ dứt tình
 
 đô thành
      - Royal (imperial) capital
-          Ex: Huế trước là đô thành nhà Nguyễn => Hue was the Nguyens' imperial capital
+          Ex: Huế trước là đô thành nhà Nguyễn => Hue was the Nguyens's imperial capital
      -Capital;
      - city
 
@@ -36193,7 +36192,7 @@ dứt tình
           Ex: Đã làm vỡ cái lọ còn đổ thừa cho người khác => To shift the blame for one's breaking the flower - vase on someone else
 
 độ trì
-     - Assist and preserve (noi' về một sức thiên liêng)
+     - Assist and preserve (nói về sự thiên liêng)
           Ex: Nhờ có thánh thần độ trì => To be assisted and preserved by genii
 
 độ trước
@@ -36220,7 +36219,7 @@ dứt tình
 
 độ vong
      - Pray for the ascent of a soul to virnava, say a requiem mass
-          Ex: Làm lễ độ vong cho tín đồ đạo Phật => To observe a prayer for a Buddhist's soul' ascent to nirvana
+          Ex: Làm lễ độ vong cho tín đồ đạo Phật => To observe a prayer for a Buddhist's soul's ascent to nirvana
 
 đốc
 * noun
@@ -37508,7 +37507,7 @@ dứt tình
      - Blind
 
 đùi non
-     - Young gilrs' thigh
+     - Young gilrs's thigh
 
 đùm
 * noun
@@ -37604,7 +37603,7 @@ dứt tình
 
 đụng độ
      - Clash
-          Ex: Quân đội hai bên đụng độ ở biên giới => There was a clash between the teo sides' troop on the fronties
+          Ex: Quân đội hai bên đụng độ ở biên giới => There was a clash between the teo sides's troop on the fronties
 
 đùng đùng
      - Boom away, bang away
@@ -37905,7 +37904,7 @@ dứt tình
 
 đứng gió
      - Windless
-          Ex: Trời hôm nay đứng gio' => It is windless today 
+          Ex: Trời hôm nay đứng gió => It is windless today 
 
 đứng lên
      - cũng nói đứng dậy Stand up, sit up, rise
@@ -37956,7 +37955,7 @@ dứt tình
 
 được thể
      - Follow up an advantage
-          Ex: Được thể dễ nói khoác It is easy to follow up one ' s advantage => and indulge in boasting
+          Ex: Được thể dễ nói khoác It is easy to follow up one's advantage => and indulge in boasting
           Ex: được thua => Gain or loss
      -Result
           Ex: Được thua ra sao? => How is the result?
@@ -38097,7 +38096,7 @@ dứt tình
      - Road, way
           Ex: Trời tối không nhận ra đường lối => To be unable to find one's way because of darkness
      -Line
-          Ex: Đường lối quần chúng => Mass line (prompted by the masses' aspirations and serving their interests)
+          Ex: Đường lối quần chúng => Mass line (prompted by the masses's aspirations and serving their interests)
 
 đường mòn
      - Track, rut
@@ -39830,7 +39829,7 @@ ghềnh
 
 ghểnh
      - Crane
-          Ex: Ghểnh cổ => To crane one''s neck
+          Ex: Ghểnh cổ => To crane one's neck
 
 ghệt
      - Gaiters
@@ -39867,7 +39866,7 @@ ghi chú
 
 ghi lòng
      - Engrave on one's heart
-          Ex: Ghi lòng tạc dạ => To engrave forever on one ' s heart 
+          Ex: Ghi lòng tạc dạ => To engrave forever on one's heart 
 
 ghi nhận
      - Acknowledge
@@ -40138,7 +40137,7 @@ gọng
      - framework
 
 gọng kìm
-     - Pincers's handle, pincer' jaw
+     - Pincers's handle, pincer's jaw
           Ex: Cặp thanh sắt nung đỏ vào gọng kìm => To grip a red hot iron rod between the jaws of a pair of pincers
      -Pincer movement
           Ex: Tấn công đồn địch bằng hai gọng kìm => To attack an ennemy post with a pincer movement
@@ -40558,7 +40557,7 @@ gửi gắm
      - to entrust, to recommend
 
 gửi rể
-     - (cũng nói ở rể) Live at one's in laws' (nói về người chồng)
+     - (cũng nói ở rể) Live at one's in laws (nói về người chồng)
           Ex: Tục gửi rể => Matrilocat
 
 gừng
@@ -40621,10 +40620,10 @@ gượng gạo
           Ex: Nụ cười gượng gạo => Strained a strained smile
 
 gương lõm
-     - (ly') Concave mirror
+     - (lý) Concave mirror
 
 gương lồi
-     - (ly') Convex mirror
+     - (lý) Convex mirror
 
 gương mặt
      - Look, expression of the face
@@ -40643,7 +40642,7 @@ gượng nhẹ
      - gingerly
 
 gương phẳng
-     - (ly') Plane mirror
+     - (lý) Plane mirror
 
 gương sen
      - (tiếng địa phương) Lotus seed-pod
@@ -41269,7 +41268,7 @@ giai gái
 
 giải giáp
      - lay down one's arms
-          Ex: Thà chết không chịu giải giáp => Would rather die than lay down one''s arms;
+          Ex: Thà chết không chịu giải giáp => Would rather die than lay down one's arms;
      - to perfer death to surrennder
 
 giãi giề
@@ -41825,7 +41824,7 @@ giảng nghĩa
 
 giáng phàm
      - (từ cũ;
-     - nghĩa cũ) Descend on earth (noi' về thần tiên)
+     - nghĩa cũ) Descend on earth (nói về thần tiên)
 
 giáng sinh
 * verb
@@ -42520,7 +42519,7 @@ giậm dọa
 
 giẫm đạp
      - Trample upon
-          Ex: Giẫm đạp lên quyền lợi của người khác => To trample upon others'interests
+          Ex: Giẫm đạp lên quyền lợi của người khác => To trample upon others's interests
 
 giấm ghém
      - Dish of boiled pork and raw vegetables dipped in vinegar
@@ -43042,7 +43041,7 @@ gió bụi
      -Troubled (times).
           Ex: Thuở trời đất nổi cơn gió bụi => In troubled times by Heaven's will
      -Hard, full of ups and downs
-          Ex: Cuộc đời gi'o bụi => A life full of ups and downs
+          Ex: Cuộc đời gió bụi => A life full of ups and downs
 
 gió đông
      - Easterly wind
@@ -43929,17 +43928,17 @@ hạ nang
      - Scrotum
 
 Hà Nội
-     - Hà Nội is the political capital of Vietnam. Hà Nội lies in Red River Delta and is situated in a tropical area having a strong monsoon influence. The name of Hà Nội (Interior side of a river) has been => derived from an ancient language which is literally known as a land area located in the inner side of Red River. It does not mean that the city is inside the river, but it is embraced by about 100 km of the Red River dykes. Hà Nội has four inner precincts (Hoàn Kiếm, Ba Đình, Hai Bà Trưng, Đống Đa) and five suburban districts (Từ Liêm, Thanh Trì, Gia Lâm, Đông Anh and Sóc Sơn). From the time when the first State of ancient Vietnam was established, Hà Nội (formerly Thăng => Long) has been considered a sacred and typical part of Vietnam. It was in the autumn of 1010 that Lý Công Ờân (also known as Lý Thái Tổ) - the founder of Nhà Hậu Lý (Post-Ly Dynasty) - removed the court from Hoa Lư (present-day Ninh Bình province) to Đại La Citadel which was later renamed as Thăng Long. As soon as the royal fleet with King Lý Thái Tổ aboard cast anchors at the landing wharf in the Nhị River (present-day Red River), there ascended a golden dragon. Thinking that it was a good omen for his trip, King Lý Thái Tổ had Đại La Citadel renamed Thăng Long (Ascending Dragon). He also had Hoa Lư - his former capital - renamed Trường Yên. 1397 was the year marking an end to the decline of Nhà Hậu Lê (Post-Le Dynasty). It was the time when the king indulged himself in entertainments. Hồ Quý Ly, a high-ranking court => official, overthrew the king and proclaimed himself the king of a new dynasty - Hồ Dynasty. This dynasty removed the court to Tây Đô (Western Capital) in Thanh Hoá province. Thăng Long was then renamed Đông Đô (Eastern Capital). In 1407, the Ming aggressors defeated the army of Hồ Dynasty. They rushed to Đông Đô Citadel and renamed it Đông Quan Citadel. In 1418, a farmer whose name was Lê Lợi (future Lê Thái Tổ) grouped an insurrection army in Lam Sơn district in Thanh Hoá province. He proclaimed himself as Bình Định Vương (King => of Pacification) and led the resistance against the aggressors for 10 years and regained national independence. He entered the then Đông Quan Citadel and the next year, he renamed the citadel as Đông Kinh (Eastern Imperial City). In 1527, when a new dynasty - Nhà Mạc (Mac Dynasty) - was in the control of the country, the citadel resumed its former name (Thăng Long). In 1802, King Gia Long established the first court of Nhà Nguyễn (Nguyễn Dynasty) in Phú Xuân in the central coastal city of Huế. Thăng Long was then used as the regional capital exercising => influence on 11 northern citadels. But the word LONG which literally meant RũNG (Dragon) was changed to 'long' which was understood as 'thịnh' (Prosperity). In 1831, King Minh Mạng established the province of Hà Nội which includes the ancient Thăng Long Citadel and the districts of Từ Liêm, ứng Hoà, Thường Tín and Lý Nhân. In 1888, after the tragic defeat of Nhà Nguyễn (Nguyễn Dynasty), Hà Nội became a colonial city until 1954. Hà Nội capital was liberated from French colonialists on October 10, 1954. After April 30, 1975, Hà Nội was => officially recognized as the capital of Vietnam by the communist goverment. In the old days, each of 36 guild streets in Hà Nội had its => name closely associated with the trade and occupation of the inhabitants Now, Hà Nội has 381 streets representing a tenfold increase as compared with the ancient Hà Nội with 36 guild streets only. These are some tourist attractions of Hà Nội
-     - Chùa một cột (One-pillar Pagoda): Its original name was Diên Hựu (long-lasting happiness and good luck). Legend has it that King Lý Thái Tôn was very old and had no son of his own. Therefore, he often went to pagodas to pray for Buddha's blessing so that he might have a son. => One night, he had a dream that he was granted a private audience with Buddha with a male baby in his hands. Buddha, sitting on a lotus flower in a square-shaped lotus pond in the western side of Thăng Long Citadel, => gave the king the baby. Months later, the queen got pregnant and gave birth to a male child. To repay gift from Buddha, the king ordered the construction of a pagoda which was supported by only one pillar resembling a lotus seat on which Buddha had been seated. The pagoda was dedicated to Buddha
-     - Quốc Tử Giám (Temple of Literature) was built in 1070 as a dedication to the founder of Confucianism. Six years later, Quốc Tử Giám - the first university of Vietnam - was built in the premises of Văn Miếu. Quốc Tử Giám was the first school for princes and children of royal family members. In 1482, King Lê Thánh Tôn ordered => the erection of steles with inscription of all the names, birth dates and birth places of doctors and other excellent graduates who took part in examinations since 1442. Each stela is placed on the back of a turtle representing the nation's longevity. During Nhà Nguyễn (Nguyễn Dynasty), Temple of Literature was moved to Phú Xuân (Huế Royal City)
+     - Hà Nội is the political capital of Vietnam. Hà Nội lies in Red River Delta and is situated in a tropical area having a strong monsoon influence. The name of Hà Nội (Interior side of a river) has been derived from an ancient language which is literally known as a land area located in the inner side of Red River. It does not mean that the city is inside the river, but it is embraced by about 100 km of the Red River dykes. Hà Nội has four inner precincts (Hoàn Kiếm, Ba Đình, Hai Bà Trưng, Đống Đa) and five suburban districts (Từ Liêm, Thanh Trì, Gia Lâm, Đông Anh and Sóc Sơn). From the time when the first State of ancient Vietnam was established, Hà Nội (formerly Thăng Long) has been considered a sacred and typical part of Vietnam. It was in the autumn of 1010 that Lý Công Ờân (also known as Lý Thái Tổ) - the founder of Nhà Hậu Lý (Post-Ly Dynasty) - removed the court from Hoa Lư (present-day Ninh Bình province) to Đại La Citadel which was later renamed as Thăng Long. As soon as the royal fleet with King Lý Thái Tổ aboard cast anchors at the landing wharf in the Nhị River (present-day Red River), there ascended a golden dragon. Thinking that it was a good omen for his trip, King Lý Thái Tổ had Đại La Citadel renamed Thăng Long (Ascending Dragon). He also had Hoa Lư - his former capital - renamed Trường Yên. 1397 was the year marking an end to the decline of Nhà Hậu Lê (Post-Le Dynasty). It was the time when the king indulged himself in entertainments. Hồ Quý Ly, a high-ranking court official, overthrew the king and proclaimed himself the king of a new dynasty - Hồ Dynasty. This dynasty removed the court to Tây Đô (Western Capital) in Thanh Hoá province. Thăng Long was then renamed Đông Đô (Eastern Capital). In 1407, the Ming aggressors defeated the army of Hồ Dynasty. They rushed to Đông Đô Citadel and renamed it Đông Quan Citadel. In 1418, a farmer whose name was Lê Lợi (future Lê Thái Tổ) grouped an insurrection army in Lam Sơn district in Thanh Hoá province. He proclaimed himself as Bình Định Vương (King of Pacification) and led the resistance against the aggressors for 10 years and regained national independence. He entered the then Đông Quan Citadel and the next year, he renamed the citadel as Đông Kinh (Eastern Imperial City). In 1527, when a new dynasty - Nhà Mạc (Mac Dynasty) - was in the control of the country, the citadel resumed its former name (Thăng Long). In 1802, King Gia Long established the first court of Nhà Nguyễn (Nguyễn Dynasty) in Phú Xuân in the central coastal city of Huế. Thăng Long was then used as the regional capital exercising influence on 11 northern citadels. But the word LONG which literally meant RũNG (Dragon) was changed to 'long' which was understood as 'thịnh' (Prosperity). In 1831, King Minh Mạng established the province of Hà Nội which includes the ancient Thăng Long Citadel and the districts of Từ Liêm, ứng Hoà, Thường Tín and Lý Nhân. In 1888, after the tragic defeat of Nhà Nguyễn (Nguyễn Dynasty), Hà Nội became a colonial city until 1954. Hà Nội capital was liberated from French colonialists on October 10, 1954. After April 30, 1975, Hà Nội was officially recognized as the capital of Vietnam by the communist goverment. In the old days, each of 36 guild streets in Hà Nội had its name closely associated with the trade and occupation of the inhabitants Now, Hà Nội has 381 streets representing a tenfold increase as compared with the ancient Hà Nội with 36 guild streets only. These are some tourist attractions of Hà Nội
+     - Chùa một cột (One-pillar Pagoda): Its original name was Diên Hựu (long-lasting happiness and good luck). Legend has it that King Lý Thái Tôn was very old and had no son of his own. Therefore, he often went to pagodas to pray for Buddha's blessing so that he might have a son. One night, he had a dream that he was granted a private audience with Buddha with a male baby in his hands. Buddha, sitting on a lotus flower in a square-shaped lotus pond in the western side of Thăng Long Citadel, gave the king the baby. Months later, the queen got pregnant and gave birth to a male child. To repay gift from Buddha, the king ordered the construction of a pagoda which was supported by only one pillar resembling a lotus seat on which Buddha had been seated. The pagoda was dedicated to Buddha
+     - Quốc Tử Giám (Temple of Literature) was built in 1070 as a dedication to the founder of Confucianism. Six years later, Quốc Tử Giám - the first university of Vietnam - was built in the premises of Văn Miếu. Quốc Tử Giám was the first school for princes and children of royal family members. In 1482, King Lê Thánh Tôn ordered the erection of steles with inscription of all the names, birth dates and birth places of doctors and other excellent graduates who took part in examinations since 1442. Each stela is placed on the back of a turtle representing the nation's longevity. During Nhà Nguyễn (Nguyễn Dynasty), Temple of Literature was moved to Phú Xuân (Huế Royal City)
      - Chùa Kim Liên (Kim Lien Pagoda): Legend has it that in the 12th century, Princess Tu Hoa, daughter of King Lý Thần Tôn, led her ladies-in-waiting to this area. They cultivated mulberry and silkworms to make silk. Later, a pagoda was built right on the site and by 1771, it was named Kim Liên (Golden Lotus)
      - Chùa Quán Sứ (Quan Su Pagoda) was built in the 17th century. It is located in the street of the same name. Since 1958, Vietnam Buddhism Association has used this pagoda as its head office
-     - Đền Quan Thánh (Quan Thanh Temple): The three ancient Chinese characters which are still seen today on the top of the entrance to the temple mean Tran Vu Quan. Literally, the temple is dedicated to Saint Tran Vụ Temples are places for worshipping saints while pagodas are dedicated => to Buddha and faithful disciplines. Saint Tran Vu was a legendary figure which was a combination between a legendary character in Vietnam's legend and a mystic character derived from Chinás legend. In Vietnam's legend, he was a saint who had earned the merits of assisting Thục Phán (future King An Dương Vương) in getting rid of ghost spirit during the construction of Cổ Loa Citadel. An Dương Vương Temple in Cổ Loa Citadel (Đông Anh district) is also named Thuong Temple. Inside it, there are An Dương Vu => o => ng's bronze statue (cast in 1897) and a big arbalest symbolizing the magic arbalest in the old days. In Chinás => legend, Saint Tran Vu was a saint who had made many contributions in safeguarding the northern border. Quan Thánh Temple was built during the reign of King Lý Thái Tổ (1010-1028). Special attention should be paid to the black bronze statue of Saint Tran Vụ Another object of no less => significance is a smaller black bronze statue of Old Trong, a chief artisan of the bronze casting team who had made the giant statue of Saint Tran Vu and the great bell on top of the entrance
-     - Đền Hai Bà Trưng (Hai Bà Trưng Temple) is also called Đồng Nhân Temple, because it is located in Đồng Nhân village, Hai Bà Trưng precinct. Built in 1142 under the reign of King Lý Anh Tôn, it is dedicated to the two Vietnamese heroines Trưng Trắc and Trưng Nhị. On => the 5th and 6th days of the lunar second month, there is a grand festival at this temple to commemorate the two national heroines
-     - Hồ Tây (West Lake) & Đường Thanh Niên (Youth Road): Youth Road can be compared to a beautiful bridge spanning across the two large bodies of water - West Lake to the northwest and Trúc Bạch Lake to the southeast. Covering an area of nearly 500 hectares, Hồ Tây was also => called Dam Dam (Misty Pond), Lang Bac (White Waves)....Oral tradition has it that Hồ Tây derived from a low-lying area upturned by a golden buffalo, so the stream derived from Hồ Tây was named Sông Kim Ngưu (Golden Buffalo River). As for Trúc Bạch Lake, legend has it that in the old days, Trúc Bạch Lake was where lived the abandoned ladies-in-waiting who were forced to weave silk. Therefore, beautiful silk was called Trúc Bạch (Silk of the Trúc village). As the biggest lake in the city, Hồ Tây is surrounded by many areas reputed for their traditional occupations: Yên Phụ and Nghi Tàm (silkworm-breeding and silk-weaving villages in the past), Quảng Bá, Nhật Tân (peach-growing village), Bưởi (paper-making village). In Tây Sơn times, Nguyễn Huy Lượng wrote Tụng Tây Hồ Phú (Eulogy for West Lake) so as to highlight the landscapes of the West Lake and Nguyễn Huệ (future Quang Trung)'s glorious merits. Now, Hồ Tây has been earmarked for the city's major => tourism development center
-     - Hồ Hoàn Kiếm (Lake of Restored Sword): The name of this lake is derived from a legend having it that a fisherman named Lê Thân caught a sword blade when drawing the fish-net. Thân decided to offer it to his commanding general Lê Lợi (future Lê Thái Tổ). Afterwards, Lê Lợi found a hilt fitting that blade very well. This sword had always => been on his side during 10 years of resistance against Ming aggressors After winning over the foreign aggression, King Lê Thái Tổ returned to Thăng Long Citadel. One day, aboard a royal boat, he took a cruise in the Lục Thủy lake. Suddenly, a giant turtle emerged and came towards him. => The king withdrew his sword, and pinpointed with the sword the direction of the coming turtle for his soldiers' attention. All of a sudden, the turtle caught the sword between its teeth from the king's hand and submerged. The king thought that during the resistance against Ming aggressors, the genius had offered him this sword to help him defeat the enemy. At that time, the peace was returning, and the genius appeared to take back the sword. Consequently, King Lê Thái Tổ decided to name the Luc Thuy lake Hồ Hoàn Kiếm (Lake of Restored Sword). In the middle of the lake is Tháp Rùa (Turtle Tower). The lake abounds in big turtles => aged five or six hundred. When there are the changes in weather, they often emerge or expose themselves at the foot of the Turtle Temple
-     - Đền Ngọc Sơn (Ngoc Son Temple): Initially, the temple was called Ngọc Sơn Pagoda. Later, it was renamed as Ngọc Sơn Temple, because it => was dedicated to the saints. Saint Van Xuong was a person considered the brightest star in Vietnam's literature and intellectual circles. Trần Hưng Đạo was worshipped because he was the national hero who led the Vietnamese people to a resounding victory over the Mongol aggression. The temple as it is seen today was attributable to the restoration efforts of Nguyễn Văn Siêu, a great Hanoian writer. He had a large pen-shaped tower (Tháp Bút) built at the entrance to the temple. On the upper section of Tháp Bút, there are three Chinese characters Tả Thanh Thiên which mean literally that to write on the blue sky is to imply the height of a genuine and righteous person's determination and will. Behind Tháp Bút is Đài Nghiên (Ink Stand). The Ink Stand is carved from stone resembling a peach, which is placed on the back of three frogs on top of the gate to the temple. Passing through Đài Nghiên, visitors will tread on the wooden bridge called Thê Húc. Thê Húc is literally understood => as the place where beams of morning sunshine are touching
-     - NGHI TÀM: A VILLAGE OF FLOWERS? Once upon a time, the King of Nhà Hậu Lý decided to build a palace for Princess Từ Hoa in a village near Thăng Long so that she could spend => her time farming silk cocoons on the large mulberry fields. The village was Nghi Tàm, a name now famous throughout the country for the flowers grown here. Nghi Tàm flowers in fact add to the beauty of Hồ Tây or the West Lake area in present-day Hà Nội. It is said that Nhà Hậu Lý in Vietnam was not only famous for its glorious victories in defence => of the country against foreign invaders. It paid much attention to the development of agriculture and handicrafts. For long, the village of Tằm (or the village of silk cocoons) had been known for its handlooms. The story of this village goes as follows: Initially, there were only three basic kinds of trees grown here, ịẹ the peach, kumquat and chrysanthemum. Peach trees and their spring blossom have brought fame to this village. Originally, the cultivation of peach started in the village of Tằm, then spread to Nhật Tân. Young peach trees are carefully tended and allowed to blossom only on the Lunar New Year's Eve. Hanoians take the utmost care in the selection of their New Year branch of peach From the size to the form of the branch and the design of the pot, every tiny detail must be in harmony with the sentiment or philosophy that one wishes to express, in addition to matching with the interior decoration of the house. Kumquat is another species that spread from Tằm village to Tây Hồ. During tết, most families in Hà Nội, and now throughout the country, have their kumquat trees inside the home. Kumquat is used by Vietnamese to symbolise "talents" and "wealth" for the family White apricot blossoms called "Bạch mai" in Vietnamese are yet another scene-stealer in Nghi Tàm. The villagers of Nghi Tàm consider an apricot blossom as beautiful only when it has six white soft petals on a green calyx. They must resemble the swallow's wings in the spring days. There is also a kind of green apricot which is rare and valuable. Then there is "Song mai" or "Double apricot" since each flower gives two fruits. The apricot branch should be able to incorporate the spirit. After the flowering season, the branch starts to give fruit which are washed and put in a ceramic cask to prepare apricot wine for the following New Year's festival. Narcissus of various kinds are also cultivated in Nghi Tàm. The people here know the secret of making these flowers bloom at the required time as on New Year's Eve or on the wedding day etc. Each narcissus pot should have about 20-30 flowers blooming to the right degree to express the virginity of the bride. Along with these species of flowers, Nghi Tàm is also known for the chrysanthemum and camelia species it grows. But the concern now is that with the rapid urbanisation of the locality, will it continue to preserve this beautiful tradition?
+     - Đền Quan Thánh (Quan Thanh Temple): The three ancient Chinese characters which are still seen today on the top of the entrance to the temple mean Tran Vu Quan. Literally, the temple is dedicated to Saint Tran Vụ Temples are places for worshipping saints while pagodas are dedicated to Buddha and faithful disciplines. Saint Tran Vu was a legendary figure which was a combination between a legendary character in Vietnam's legend and a mystic character derived from Chinás legend. In Vietnam's legend, he was a saint who had earned the merits of assisting Thục Phán (future King An Dương Vương) in getting rid of ghost spirit during the construction of Cổ Loa Citadel. An Dương Vương Temple in Cổ Loa Citadel (Đông Anh district) is also named Thuong Temple. Inside it, there are An Dương Vương's bronze statue (cast in 1897) and a big arbalest symbolizing the magic arbalest in the old days. In China's legend, Saint Tran Vu was a saint who had made many contributions in safeguarding the northern border. Quan Thánh Temple was built during the reign of King Lý Thái Tổ (1010-1028). Special attention should be paid to the black bronze statue of Saint Tran Vụ Another object of no less significance is a smaller black bronze statue of Old Trong, a chief artisan of the bronze casting team who had made the giant statue of Saint Tran Vu and the great bell on top of the entrance
+     - Đền Hai Bà Trưng (Hai Bà Trưng Temple) is also called Đồng Nhân Temple, because it is located in Đồng Nhân village, Hai Bà Trưng precinct. Built in 1142 under the reign of King Lý Anh Tôn, it is dedicated to the two Vietnamese heroines Trưng Trắc and Trưng Nhị. On the 5th and 6th days of the lunar second month, there is a grand festival at this temple to commemorate the two national heroines
+     - Hồ Tây (West Lake) & Đường Thanh Niên (Youth Road): Youth Road can be compared to a beautiful bridge spanning across the two large bodies of water - West Lake to the northwest and Trúc Bạch Lake to the southeast. Covering an area of nearly 500 hectares, Hồ Tây was also called Dam Dam (Misty Pond), Lang Bac (White Waves)....Oral tradition has it that Hồ Tây derived from a low-lying area upturned by a golden buffalo, so the stream derived from Hồ Tây was named Sông Kim Ngưu (Golden Buffalo River). As for Trúc Bạch Lake, legend has it that in the old days, Trúc Bạch Lake was where lived the abandoned ladies-in-waiting who were forced to weave silk. Therefore, beautiful silk was called Trúc Bạch (Silk of the Trúc village). As the biggest lake in the city, Hồ Tây is surrounded by many areas reputed for their traditional occupations: Yên Phụ and Nghi Tàm (silkworm-breeding and silk-weaving villages in the past), Quảng Bá, Nhật Tân (peach-growing village), Bưởi (paper-making village). In Tây Sơn times, Nguyễn Huy Lượng wrote Tụng Tây Hồ Phú (Eulogy for West Lake) so as to highlight the landscapes of the West Lake and Nguyễn Huệ (future Quang Trung)'s glorious merits. Now, Hồ Tây has been earmarked for the city's major tourism development center
+     - Hồ Hoàn Kiếm (Lake of Restored Sword): The name of this lake is derived from a legend having it that a fisherman named Lê Thân caught a sword blade when drawing the fish-net. Thân decided to offer it to his commanding general Lê Lợi (future Lê Thái Tổ). Afterwards, Lê Lợi found a hilt fitting that blade very well. This sword had always been on his side during 10 years of resistance against Ming aggressors After winning over the foreign aggression, King Lê Thái Tổ returned to Thăng Long Citadel. One day, aboard a royal boat, he took a cruise in the Lục Thủy lake. Suddenly, a giant turtle emerged and came towards him. The king withdrew his sword, and pinpointed with the sword the direction of the coming turtle for his soldiers's attention. All of a sudden, the turtle caught the sword between its teeth from the king's hand and submerged. The king thought that during the resistance against Ming aggressors, the genius had offered him this sword to help him defeat the enemy. At that time, the peace was returning, and the genius appeared to take back the sword. Consequently, King Lê Thái Tổ decided to name the Luc Thuy lake Hồ Hoàn Kiếm (Lake of Restored Sword). In the middle of the lake is Tháp Rùa (Turtle Tower). The lake abounds in big turtles aged five or six hundred. When there are the changes in weather, they often emerge or expose themselves at the foot of the Turtle Temple
+     - Đền Ngọc Sơn (Ngoc Son Temple): Initially, the temple was called Ngọc Sơn Pagoda. Later, it was renamed as Ngọc Sơn Temple, because it was dedicated to the saints. Saint Van Xuong was a person considered the brightest star in Vietnam's literature and intellectual circles. Trần Hưng Đạo was worshipped because he was the national hero who led the Vietnamese people to a resounding victory over the Mongol aggression. The temple as it is seen today was attributable to the restoration efforts of Nguyễn Văn Siêu, a great Hanoian writer. He had a large pen-shaped tower (Tháp Bút) built at the entrance to the temple. On the upper section of Tháp Bút, there are three Chinese characters Tả Thanh Thiên which mean literally that to write on the blue sky is to imply the height of a genuine and righteous person's determination and will. Behind Tháp Bút is Đài Nghiên (Ink Stand). The Ink Stand is carved from stone resembling a peach, which is placed on the back of three frogs on top of the gate to the temple. Passing through Đài Nghiên, visitors will tread on the wooden bridge called Thê Húc. Thê Húc is literally understood as the place where beams of morning sunshine are touching
+     - NGHI TÀM: A VILLAGE OF FLOWERS? Once upon a time, the King of Nhà Hậu Lý decided to build a palace for Princess Từ Hoa in a village near Thăng Long so that she could spend her time farming silk cocoons on the large mulberry fields. The village was Nghi Tàm, a name now famous throughout the country for the flowers grown here. Nghi Tàm flowers in fact add to the beauty of Hồ Tây or the West Lake area in present-day Hà Nội. It is said that Nhà Hậu Lý in Vietnam was not only famous for its glorious victories in defence of the country against foreign invaders. It paid much attention to the development of agriculture and handicrafts. For long, the village of Tằm (or the village of silk cocoons) had been known for its handlooms. The story of this village goes as follows: Initially, there were only three basic kinds of trees grown here, ịẹ the peach, kumquat and chrysanthemum. Peach trees and their spring blossom have brought fame to this village. Originally, the cultivation of peach started in the village of Tằm, then spread to Nhật Tân. Young peach trees are carefully tended and allowed to blossom only on the Lunar New Year's Eve. Hanoians take the utmost care in the selection of their New Year branch of peach From the size to the form of the branch and the design of the pot, every tiny detail must be in harmony with the sentiment or philosophy that one wishes to express, in addition to matching with the interior decoration of the house. Kumquat is another species that spread from Tằm village to Tây Hồ. During tết, most families in Hà Nội, and now throughout the country, have their kumquat trees inside the home. Kumquat is used by Vietnamese to symbolise "talents" and "wealth" for the family White apricot blossoms called "Bạch mai" in Vietnamese are yet another scene-stealer in Nghi Tàm. The villagers of Nghi Tàm consider an apricot blossom as beautiful only when it has six white soft petals on a green calyx. They must resemble the swallow's wings in the spring days. There is also a kind of green apricot which is rare and valuable. Then there is "Song mai" or "Double apricot" since each flower gives two fruits. The apricot branch should be able to incorporate the spirit. After the flowering season, the branch starts to give fruit which are washed and put in a ceramic cask to prepare apricot wine for the following New Year's festival. Narcissus of various kinds are also cultivated in Nghi Tàm. The people here know the secret of making these flowers bloom at the required time as on New Year's Eve or on the wedding day etc. Each narcissus pot should have about 20-30 flowers blooming to the right degree to express the virginity of the bride. Along with these species of flowers, Nghi Tàm is also known for the chrysanthemum and camelia species it grows. But the concern now is that with the rapid urbanisation of the locality, will it continue to preserve this beautiful tradition?
 
 há nỡ
      - Not to be so hearless as
@@ -47433,7 +47432,7 @@ hoa huệ
           Ex: Hoa huệ tây => Lily
 
 hoả kế
-     - (ly') Pyrometer
+     - (lý) Pyrometer
 
 hoa kỳ
 * noun
@@ -47915,7 +47914,7 @@ hoàn vũ
 
 hoãn xung
      - (cơ học;
-     - cơ khi') Deaden a shock, act as a buffer
+     - cơ khí) Deaden a shock, act as a buffer
 
 hoang
 * adjective
@@ -48869,7 +48868,7 @@ hộ pháp
           Ex: Người trông như ông hộ pháp => To look a colossus
 
 hổ phù
-     - Ancient military officers' tigerhead-shaped seal (insigniạ..)
+     - Ancient military officers's tigerhead-shaped seal (insigniạ..)
      -Tiger-faced design
           Ex: áo thêu hổ phù => A robe embroidered with a tiger-faced design.
      -(b) (thông tục) Face bloated with anger
@@ -49265,7 +49264,7 @@ hồi tố
      - (luật) Retroactive
 
 hội tụ
-     - (ly') Converge
+     - (lý) Converge
           Ex: Thấu kính hội tụ => Converging lens
 
 hồi tưởng
@@ -49655,7 +49654,7 @@ hộp sọ
 
 hộp số
      - (cơ học;
-     - cơ khi') Gear-box
+     - cơ khí) Gear-box
 
 hộp thư
 * noun
@@ -49749,7 +49748,7 @@ hở sườn
      - (quân) Expose the flank
 
 hở vai
-     - De'collete' (of dress)
+     - Decollete (of dress)
 
 hơi
 * noun
@@ -50091,7 +50090,7 @@ hủ nho
      - Old-fashioned and narrow-minded scholar
 
 hủ tiếu
-     - Noodle with seasoned and saute' beef (served hot and with other ingredients)
+     - Noodle with seasoned and saute's beef (served hot and with other ingredients)
 
 hú tim
      - Hide-and-seek
@@ -50136,7 +50135,7 @@ huấn luyện
 huấn luyện viên
      - Coach, instructor, trainer
           Ex: Huấn luyện viên nhảy sào => A pole-vaulting coach (instructor)
-          Ex: Trở thành huấn luyện viên sau hơn một chục năm làm vận động viên => To become a coach after more than ten years' cativity as an athlete
+          Ex: Trở thành huấn luyện viên sau hơn một chục năm làm vận động viên => To become a coach after more than ten years's cativity as an athlete
 
 huấn từ
      - (từ cũ;
@@ -50561,7 +50560,7 @@ huyên náo
      - clamorous
 
 huyền phù
-     - (ly') Suspension
+     - (lý) Suspension
 
 huyền sâm
      - (thực vật, dược) Fig-wort
@@ -50692,7 +50691,7 @@ huỳnh quang
 
 huynh trưởng
      - (trtr) Senior
-          Ex: Ông ấy là bậc huynh trưởng của chúng tôi. => He belongs to our seniors' group;
+          Ex: Ông ấy là bậc huynh trưởng của chúng tôi. => He belongs to our seniors's group;
      - he is our elder
      -Grown-up (in relation to children)
           Ex: Phải lễ độ đối với các huynh trưởng => One should be polite to the grow-ups
@@ -53889,7 +53888,7 @@ khám nghiệm
      - to examine
 
 khám nhà
-     - Search someone' house
+     - Search someone's house
 
 khám phá
 * verb
@@ -54370,7 +54369,7 @@ khâm mạng
      - Act as the king's envoy
           Ex: Khâm mạng ra bắc Thanh tra => To act as the king's envoy and go on an inspection tour in the North
      -King's envoy
-     -Le'gate
+     -Legate
 
 khâm phục
 * verb
@@ -56366,7 +56365,7 @@ khởi hấn
      - Open the hostilities
 
 khởi loạn
-     - Rebel, rise (against an estalished authority according to the feudatists' conception)
+     - Rebel, rise (against an estalished authority according to the feudatists's conception)
 
 khơi mào
      - Introductory
@@ -57444,7 +57443,7 @@ lai lịch
           Ex: lai lịch một gia đình => the source of family
 
 lại mặt
-     - Newly-weds' first visit to the briede's family (on the wedding day's morrow)
+     - Newly-weds's first visit to the briede's family (on the wedding day's morrow)
 
 lại mục
      - (cũ) Clerkk (in a district yamen)
@@ -57874,7 +57873,7 @@ làng
           Ex: làng báo => the press circles
           Ex: nhà cái thua cả làng => the banker lost to all the table
           Ex: làng nho => the Chinese scholar circles
-     -FLOATING VILLAGES: Rearing fish in cages under rafts has become increasingly common in a number of countries, but perhaps nowhere is this occupation as advantageous as in Vietnam with its maze of rivers and streams criss-crossing the country from north to south, from west to east, totalling perhaps millions of kilometres in length.When it comes to raising fish in cages, AnGiang province in the Mekong River delta has always taken the lead. It has 40 to 50 years' experience, has the biggest number of cages and produces more caged fish than any other locality in the country. It is no exaggeration to say that the fishing rafts on AnGiang rivers are true floating villages.If you ever come to AnGiang, do not fail to visit Cồn Tiên where you can fully appreciate the poetic nature of such villages. They are made of large rafts of either bamboo or timber depending on the capabilities of the fish raisers. In most cases, they are timber rafts measuring about 12 by 5 metres and 3 metres in height. After five months -- the usual time for the fish to complete their life cycle -- the family of the fish raiser anchors the raft on some part of the Tiền, Hậu, or Châu Đốc rivers or any major canals. At present, most districts in AnGiang such as Long Xuyên, Châu Đốc, Chợ Mới, Phú Tân, Phú Châu and Châu Phú raise caged fish, but this occupation is still essentially practised in Cồn Tiên village, Châu Đốc township Cồn Tiên has the advantage of being located near the supply centre for young fish and fish meal (the Châu Đốc market) and also on a fast-flowing river. Cồn Tiên actually accounts for almost half of all the fish rafts of AnGiang provincẹThe two main fish species raised in cages in AnGiang are the Ba Sa and Chai which take their food from the water surface. Their food consists chiefly of rice bran mixed with vegetables such as pumpkin.A raft for rearing 50,000 Ba Sa fish needs about 3,500 kilograms of food, but for rearing 10,000 to 20,000 Chai, only 00 to 800 kilos of food are required. One raft needs only three workhands. The first harvest from a raft averages 12 tonnes of Ba Sa and three tonnes of he or Chai fish. => Net profit may account for 25 % - 30 % of the proceeds. But not everything has been plain sailing for the fish raisers of AnGiang. At its peak year, AnGiang had 1,200 rafts. In 1971, there were only 662 and the number slumped to 225 in 1980. A rapid recovery began in 1984, when the local government decreed new policies on prices and on the rearing and marketing of caged fish. Early in 1990, the AnGiang Aquatic Produce Import- Export Company loaned fish raisers three billion dong. It also found markets for caged fish in Australia, Hong Kong and Singapore. Subsequently, the number of rafts rose to 715 and fish output to 14,000 tonnes, double the figures for 1989. The expansion also provided jobs for 4,000 people. One of the biggest problems in caged fish raising in AnGiang is the supply of young fish, since most of them come from natural breeding. Production of all other fish still depends on natural breeding. Research and experimentation in this direction with regard to fish such as Ba Sa, Chai and Bong are going on at the provincial sciences committee. In recent years, caged fish raising has also been undertaken by other provinces such as Hà Tây, Hà Bắc and Vĩnh Phú in the north and Hậu Giang, Đồng Tháp and Long An in the south. In Hà Tây province west of Hà Nội, 200 families in the district of Ba Vì, Dan Phương and Mỹ Đức keep more than 200 fish cages along the Đà and Red Rivers. Ba Vì district alone has 165 cages, mainly raising Indian carp. They yield from two to three tonnes of fish per cage. On average, the fish raisers get from 16 to 24 million dong in income and about seven million in net profit. Riverside villages such as Thuan My, Tay Dang, Co Do and Minh Châu are gradually shifting from fishing in the river to raising fish in cages. The administration in Ba Vì has made a uniform loan of one million dong to every family of fish raisers. Experts are providing technical assistance to make fish spawn in the rivers, thus reducing production costs. Many families of farmers are also raising fish as a secondary occupation besides cultivation. One thousand families of farmers in Ba Vì district have registered for caged fish raising
+     -FLOATING VILLAGES: Rearing fish in cages under rafts has become increasingly common in a number of countries, but perhaps nowhere is this occupation as advantageous as in Vietnam with its maze of rivers and streams criss-crossing the country from north to south, from west to east, totalling perhaps millions of kilometres in length.When it comes to raising fish in cages, AnGiang province in the Mekong River delta has always taken the lead. It has 40 to 50 years's experience, has the biggest number of cages and produces more caged fish than any other locality in the country. It is no exaggeration to say that the fishing rafts on AnGiang rivers are true floating villages.If you ever come to AnGiang, do not fail to visit Cồn Tiên where you can fully appreciate the poetic nature of such villages. They are made of large rafts of either bamboo or timber depending on the capabilities of the fish raisers. In most cases, they are timber rafts measuring about 12 by 5 metres and 3 metres in height. After five months -- the usual time for the fish to complete their life cycle -- the family of the fish raiser anchors the raft on some part of the Tiền, Hậu, or Châu Đốc rivers or any major canals. At present, most districts in AnGiang such as Long Xuyên, Châu Đốc, Chợ Mới, Phú Tân, Phú Châu and Châu Phú raise caged fish, but this occupation is still essentially practised in Cồn Tiên village, Châu Đốc township Cồn Tiên has the advantage of being located near the supply centre for young fish and fish meal (the Châu Đốc market) and also on a fast-flowing river. Cồn Tiên actually accounts for almost half of all the fish rafts of AnGiang provincẹThe two main fish species raised in cages in AnGiang are the Ba Sa and Chai which take their food from the water surface. Their food consists chiefly of rice bran mixed with vegetables such as pumpkin.A raft for rearing 50,000 Ba Sa fish needs about 3,500 kilograms of food, but for rearing 10,000 to 20,000 Chai, only 00 to 800 kilos of food are required. One raft needs only three workhands. The first harvest from a raft averages 12 tonnes of Ba Sa and three tonnes of he or Chai fish. => Net profit may account for 25 % - 30 % of the proceeds. But not everything has been plain sailing for the fish raisers of AnGiang. At its peak year, AnGiang had 1,200 rafts. In 1971, there were only 662 and the number slumped to 225 in 1980. A rapid recovery began in 1984, when the local government decreed new policies on prices and on the rearing and marketing of caged fish. Early in 1990, the AnGiang Aquatic Produce Import- Export Company loaned fish raisers three billion dong. It also found markets for caged fish in Australia, Hong Kong and Singapore. Subsequently, the number of rafts rose to 715 and fish output to 14,000 tonnes, double the figures for 1989. The expansion also provided jobs for 4,000 people. One of the biggest problems in caged fish raising in AnGiang is the supply of young fish, since most of them come from natural breeding. Production of all other fish still depends on natural breeding. Research and experimentation in this direction with regard to fish such as Ba Sa, Chai and Bong are going on at the provincial sciences committee. In recent years, caged fish raising has also been undertaken by other provinces such as Hà Tây, Hà Bắc and Vĩnh Phú in the north and Hậu Giang, Đồng Tháp and Long An in the south. In Hà Tây province west of Hà Nội, 200 families in the district of Ba Vì, Dan Phương and Mỹ Đức keep more than 200 fish cages along the Đà and Red Rivers. Ba Vì district alone has 165 cages, mainly raising Indian carp. They yield from two to three tonnes of fish per cage. On average, the fish raisers get from 16 to 24 million dong in income and about seven million in net profit. Riverside villages such as Thuan My, Tay Dang, Co Do and Minh Châu are gradually shifting from fishing in the river to raising fish in cages. The administration in Ba Vì has made a uniform loan of one million dong to every family of fish raisers. Experts are providing technical assistance to make fish spawn in the rivers, thus reducing production costs. Many families of farmers are also raising fish as a secondary occupation besides cultivation. One thousand families of farmers in Ba Vì district have registered for caged fish raising
 
 lảng
 * verb
@@ -60467,7 +60466,7 @@ lục vị
 
 lục xì
      - (từ cũ;
-     - nghĩa cũ) Prostitues' medical service (thời thuộc pháp)
+     - nghĩa cũ) Prostitues's medical service (thời thuộc pháp)
 
 lui
 * noun
@@ -60803,7 +60802,7 @@ luồng tư tưởng
 
 luốt
      - Be lost in
-          Ex: Tiếng nói bị luốt đi trong gi'o => The voice is the wind
+          Ex: Tiếng nói bị luốt đi trong gió => The voice is the wind
 
 lụp xụp
 * adj
@@ -60824,7 +60823,7 @@ lút đầu
 
 lụt lội
      - flood, inundation (nói khái quát). flooded,inundated
-          Ex: Mưa to mấy hôm liền, đường sá lụt lội => The roads were flooded after many days' heavy raining
+          Ex: Mưa to mấy hôm liền, đường sá lụt lội => The roads were flooded after many days's heavy raining
 
 lũy
 * noun
@@ -61073,7 +61072,7 @@ lực điền
      - nghĩa cũ) Hefty peasant
 
 lực học
-     - (ly') Dynamology
+     - (lý) Dynamology
 
 lực kế
      - Dynamometer
@@ -61103,7 +61102,7 @@ lừng
      - Resound
           Ex: tiếng tăm lừng khắp mọi nơi => His fame resounded everywhere
      -Pervade, diffuse
-          Ex: mùi hoa sen thơ lừng khắp cánh đồng => the lotos' fragrance. pervaded all the fields
+          Ex: mùi hoa sen thơ lừng khắp cánh đồng => the lotos's fragrance. pervaded all the fields
 
 lửng
 * noun
@@ -61369,13 +61368,13 @@ lượng cá
      - Generosity
 
 lưỡng cư
-     - (ddo^.ng) Amphibian
+     - (động) Amphibian
 
 lưỡng cực
-     - (ly') Bipolar, dipolar, twopole
+     - (lý) Bipolar, dipolar, twopole
 
 lưỡng chiết
-     - (ly') Birefringent
+     - (lý) Birefringent
 
 lương dân
      - ordinary citizen, civilian
@@ -61447,11 +61446,11 @@ lưỡng tự
           Ex: Còn lưỡng chưa quyết định được => To be still wavering and unable to make up one's mind, to be still of two minds
 
 lượng tử
-     - (ly') Quantum
+     - (lý) Quantum
           Ex: Thuyết lượng tử => The Quantum theory
 
 lượng tử hóa
-     - (ly') Quantify
+     - (lý) Quantify
 
 lưỡng thê
      - như lương cư
@@ -63348,9 +63347,9 @@ mổ
           Ex: sự mổ bụng tự sát => hara-kiri
 
 mỗ
-     - I, mẹ
+     - I, me
           Ex: Mỗ đây là con nhà gia giáo => I here am of a good family breeding
-     -What's-his (-her, -its) -name, what -d' you call-him (-her, -it...)
+     -What's -his (-her, -its) -name, what'd you call -him (-her, -it...)
           Ex: Ông mỗ ở xã mỗ => What's-his-name live in what's-its-name
 
 mố
@@ -63617,7 +63616,7 @@ môn đồ
      - (từ cũ) Disciple
 
 môn hạ
-     - [influential famyly's] underling
+     - [influential family's] underling
 
 môn học
 * noun
@@ -64175,7 +64174,7 @@ múa mỏ
 
 múa rối
      - Puppetry, art of puppet-showing, marionnette-show, puppet-play
-     -Mua roi nuoc (water puppetry) is common throughout the world. Water puppetry was developed in lake and pond-rich areas in the Red River Delta The surface of water serves as the stage while spectators sit at the water's edge. The puppeteers both male and female stand waist-deep in the water to manipulate the puppets making them move about and even dance on the surface of the water. The water serves not only to hide the puppeteers and the puppets' strings but also to create a trembling stage full of reflection, while providing natural amplification for singing puppeteers accompanied by percussion music and fire crackers. Every puppet is a piece of real folk sculpture. It is made of wood, painted with waterproof lacquer. The prominent character is buffoon Teu with a plump body and a humorous smile. When the curtain is raised, the merry, arch Teu enters onto the stage and introduces the play. A considerable repertoire of traditional water puppet plays still get a big hand from the audience They include Teu Dance, Buffalo Fighting, Duck Tender Chasing Fox and Chess Playing
+     -Mua roi nuoc (water puppetry) is common throughout the world. Water puppetry was developed in lake and pond-rich areas in the Red River Delta The surface of water serves as the stage while spectators sit at the water's edge. The puppeteers both male and female stand waist-deep in the water to manipulate the puppets making them move about and even dance on the surface of the water. The water serves not only to hide the puppeteers and the puppets's strings but also to create a trembling stage full of reflection, while providing natural amplification for singing puppeteers accompanied by percussion music and fire crackers. Every puppet is a piece of real folk sculpture. It is made of wood, painted with waterproof lacquer. The prominent character is buffoon Teu with a plump body and a humorous smile. When the curtain is raised, the merry, arch Teu enters onto the stage and introduces the play. A considerable repertoire of traditional water puppet plays still get a big hand from the audience They include Teu Dance, Buffalo Fighting, Duck Tender Chasing Fox and Chess Playing
 
 mua sắm
 * verb
@@ -66850,7 +66849,7 @@ nói rào
      - Take oratory precautions, be guarded in what one says
 
 nói riêng
-     - Speak (with somebody) in private, have a word in sombodys' ear
+     - Speak (with somebody) in private, have a word in sombodys's ear
      -In particular
 
 nói rõ
@@ -67648,7 +67647,7 @@ nông hộ
      - Farmer household
 
 nông hội
-     - Peasants' association
+     - Peasants's association
 
 nông lâm
      - Agriculture and silvicultue, agriculture and forestry
@@ -68029,7 +68028,7 @@ nuốt hờn
      - Suppress one's anger
 
 nuốt lời
-     - Go back on one ' s word
+     - Go back on one's word
           Ex: Hức trịnh trọng thế mà rồi lại nuốt lời => To go back on one's word after making such a solemn promise
 
 nuốt nhục
@@ -69026,7 +69025,7 @@ ngay cả
 
 ngày càng
      - More with every passing day
-          Ex: Làm sao cho đời sống nhân dân ngày càng cao => To see to it that the masses' living standard becomes higher with every passing day
+          Ex: Làm sao cho đời sống nhân dân ngày càng cao => To see to it that the masses's living standard becomes higher with every passing day
 
 ngày công
 * noun
@@ -70075,7 +70074,7 @@ nghỉ ốm
 
 nghỉ phép
      - Be on leave, be on furlough
-          Ex: Mỗi năm được một số ngày nghỉ phép => Every year one is entitled to a number of days' leave (with pay)
+          Ex: Mỗi năm được một số ngày nghỉ phép => Every year one is entitled to a number of days's leave (with pay)
 
 nghị quyết
 * noun
@@ -70821,7 +70820,7 @@ ngọc trai
      - pearl
 
 ngoe
-     - Crab'slegs
+     - Crab's legs
      -New-born baby's cry
 
 ngóe
@@ -71486,7 +71485,7 @@ ngủ khì
           Ex: Rượu say ngủ khì => To be drunk and dead to the world
 
 ngủ lang
-     - Put up indiscriminately at others' houses
+     - Put up indiscriminately at others's houses
 
 ngủ mê
      - Dream
@@ -71736,7 +71735,7 @@ nguyên thủy
           Ex: Bộ lạc nguyên thủy => Primitive tribes
 
 Nguyễn Trãi
-     - Nguyễn Trãi (1380-1442) - a great politician, strategist, diplomat, poet - was born in Thăng Long, and his paternal village located in Nhị Khê (Thường Tín - Hà Tây). His mother was the daughter of Trần Nguyên Đán (a high-ranking mandarin of Nhà Trần). His father was Nguyễn Phi Khanh who had graduated as doctor. At the age of 20, Nguyễn Trãi also graduated as doctor and served in the Hồ dynasty like his father. On the occurence of the Chinese invasion, Nguyễn Phi Khanh was captured and marched off to China. Nguyễn Trãi was kept under surveillance in Đông Quan (Thăng Long). Later, he fled in Lam Sơn to follow Lê Lợi (future Lê Thái Tổ), submitted Bình Ngô Sách (strategies of the people's war against the Ming invasion). After the enemy had been completely expelled, Nguyễn Trãi did his best to help Lê Lợi in the national reconstruction. In 1442, because of dishonest mandarins' great harm, Nguyễn Trãi and all his three related families were exterminated. His famous works were Bình Ngô Đại Cáo, Quân Trung Từ Mệnh Tập, Quốc Âm Thi Tập...
+     - Nguyễn Trãi (1380-1442) - a great politician, strategist, diplomat, poet - was born in Thăng Long, and his paternal village located in Nhị Khê (Thường Tín - Hà Tây). His mother was the daughter of Trần Nguyên Đán (a high-ranking mandarin of Nhà Trần). His father was Nguyễn Phi Khanh who had graduated as doctor. At the age of 20, Nguyễn Trãi also graduated as doctor and served in the Hồ dynasty like his father. On the occurence of the Chinese invasion, Nguyễn Phi Khanh was captured and marched off to China. Nguyễn Trãi was kept under surveillance in Đông Quan (Thăng Long). Later, he fled in Lam Sơn to follow Lê Lợi (future Lê Thái Tổ), submitted Bình Ngô Sách (strategies of the people's war against the Ming invasion). After the enemy had been completely expelled, Nguyễn Trãi did his best to help Lê Lợi in the national reconstruction. In 1442, because of dishonest mandarins's great harm, Nguyễn Trãi and all his three related families were exterminated. His famous works were Bình Ngô Đại Cáo, Quân Trung Từ Mệnh Tập, Quốc Âm Thi Tập...
 
 nguyên vật liệu
      - Raw and working material
@@ -72262,7 +72261,7 @@ nhà dòng
      - Religious order
 
 nhà dưới
-     - Servants' quarters
+     - Servants's quarters
 
 nhà đá
      - Prison, gaol, jail
@@ -72321,7 +72320,7 @@ nhà hát
           Ex: nhà hát Lớn - Hà Nội
 
 Nhà Hậu Lê
-     - Nhà Hậu Lê (Post-Lê Dynasty) was founded by Lê Thái Tổ after the resounding victory over the Ming invaders. Our country was Đại Việt with Đông Kinh (Hà Nội) as royal capital. The feudal centralism had the despotic trends, especially in the second half of the 15th century The economic, political, military, educational and cultural fields were considerably developed. Đại Việt became the powerful nation in Southeast Asia. Confucianism held a more and more important position, while the literature reached the apogee under the reign of Lê Thánh Tôn. Đại Việt defeated Chăm Pa, occupied its royal city and set up the Quảng Nam administrative division. Because of the ruling class' immoderate luxury, Post-Lê Dynasty began to decline since the 17th century. Competition for power between warlords and peasant insurrections broke out everywhere. In 1527, Nhà Mạc (Mạc Dynasty) usurped Nhà Hậu Lệ Under the pretext of restoring Nhà Hậu Lê, Lords Nguyễn and Trịnh sought ways for suppressing Nhà Mạc. Between 1533 and 1788 was the period when Lê passed through renaissance and decline
+     - Nhà Hậu Lê (Post-Lê Dynasty) was founded by Lê Thái Tổ after the resounding victory over the Ming invaders. Our country was Đại Việt with Đông Kinh (Hà Nội) as royal capital. The feudal centralism had the despotic trends, especially in the second half of the 15th century The economic, political, military, educational and cultural fields were considerably developed. Đại Việt became the powerful nation in Southeast Asia. Confucianism held a more and more important position, while the literature reached the apogee under the reign of Lê Thánh Tôn. Đại Việt defeated Chăm Pa, occupied its royal city and set up the Quảng Nam administrative division. Because of the ruling class's immoderate luxury, Post-Lê Dynasty began to decline since the 17th century. Competition for power between warlords and peasant insurrections broke out everywhere. In 1527, Nhà Mạc (Mạc Dynasty) usurped Nhà Hậu Lệ Under the pretext of restoring Nhà Hậu Lê, Lords Nguyễn and Trịnh sought ways for suppressing Nhà Mạc. Between 1533 and 1788 was the period when Lê passed through renaissance and decline
 
 nhà hộ sinh
      - Maternity hospital
@@ -72506,7 +72505,7 @@ nhà tiêu
      - cũng nói nhà_xí
 
 nhà tình nghĩa
-     - House of affestion (built by the population, for var-invalids or martyrs' families)
+     - House of affestion (built by the population, for var-invalids or martyrs's families)
 
 nhà tôi
      - my old man, my old woman, my huaband, my wife
@@ -72638,11 +72637,11 @@ nhạc cụ
      - others are the ding pa, klong put of the highlanders;
      - the stones hung over a waterfall to make a sound when struck together and used to drive off beasts gave these groups the inspiration to make the very ancient lithophone;
      - an elevated wicker string above a plank-covered hole is called rong Quan and was the prototype for the fantastic monocord;
-     - the Phong Tiêu, a type of flute, which reminds the listener of a kite flute and the To diep, Ky pa are not remote from the highland hunters' beast-calling horn;
+     - the Phong Tiêu, a type of flute, which reminds the listener of a kite flute and the To diep, Ky pa are not remote from the highland hunters's beast-calling horn;
      - the never-ending sound of the wind in caves and caverns, or on hills where kouniaks have been felled, served as tangible models for highlanders voong to be hung before the Nhà Rông, or village hall, so that the wind makes a concert throughout the year. The lithophone is both musical instrument and a holy object. The gong and the cymbal are both musical instruments and precious and religious objects. Vietnam's musical instruments spring from real life and were made by creative laborers. The instruments were, and are, crucial to cultural life
 
 nhạc gia
-     - (cũ, trang trọng) in-laws, one's wife'c parents
+     - (cũ, trang trọng) in-laws, one's wife's parents
 
 nhạc hát
      - cũng nói thanh nhạc Vocal music
@@ -72690,7 +72689,7 @@ nhái
 
 nhại
      - (địa phương) Ape, mimic, imiate (someone's voice)
-          Ex: Có tài nhại người khác => To be skill in mimicking [others'voic]
+          Ex: Có tài nhại người khác => To be skill in mimicking [others's voice]
 
 nhãi con
      - như nhãi
@@ -74347,7 +74346,7 @@ nhị giáp
      - (cũ) Second grade (doctorate)
 
 nhị hỉ
-     - Newly-weds first visit to the bride ' s family (one the wedding day's morrow)
+     - Newly-weds first visit to the bride's family (one the wedding day's morrow)
 
 nhi khoa
 * noun
@@ -74966,13 +74965,13 @@ nhọc nhằn
 nhọc óc
      - Tire one's mind
 
-nhoe'
+nhóe 
      - Sudden scream
           Ex: kêu nhóe lên => To utter a sudden scream when having one foot trodden on
      - nhoe nhóe (láy, ý tăng)
           Ex: Kêu nhoe nhóe => To utter a sudden shrill scream
 
-nhoè
+nhòe
      - Blur
           Ex: Giấy ẩm viết nhòe => One's writing blurs on wet paper
           Ex: nhòe nhoẹt => To dirtily blur, to smear all over
@@ -74985,7 +74984,7 @@ nhoe nhoét
      - Messily pulpy, messy
           Ex: Mực nhoe nhoét đầy tay => To messily smear one's hands with ink
 
-nhoè nhoẹt
+nhòe nhoẹt
      - xem nhòe
 
 nhoen nhoẻn
@@ -75335,7 +75334,7 @@ nhớ chừng
 
 nhơ danh
      - sully, smear (someone's) name
-          Ex: Nhơ danh cha mẹ => To smear one's parents' name
+          Ex: Nhơ danh cha mẹ => To smear one's parents's name
 
 nhơ đời
      - Shameful
@@ -75409,7 +75408,7 @@ nhơi
 
 nhời
      - (địa phương) như lời 
-          Ex: Nghe nhời bố mẹ => To obey one's parents' word
+          Ex: Nghe nhời bố mẹ => To obey one's parents's word
 
 nhởi
      - (địa phương) Frolic, grambol
@@ -77104,7 +77103,7 @@ ong vò vẽ
 
 ông vải
      - Ancestor 
-          Ex: Thờ cúng ông vải. => To pratise the ancestors' cult
+          Ex: Thờ cúng ông vải. => To pratise the ancestors's cult
 
 ông vãi
 * noun
@@ -77199,7 +77198,7 @@ ong vò vẽ
 
 ơ hờ
      - Be indifferent
-          Ex: Không nên ơ hờ trước sự đau khổ của người khác => One must not remain indifferent in front of others' miseries
+          Ex: Không nên ơ hờ trước sự đau khổ của người khác => One must not remain indifferent in front of others's miseries
 
 ơ kìa
      - như ô kìa
@@ -78376,7 +78375,7 @@ phẩm cách
           Ex: Giữ gìn phẩm cách. => To preserve one's human dignity
 
 phẩm cấp
-     - (từ cũ) Mandarins' ranks
+     - (từ cũ) Mandarins's ranks
 
 phẩm chất
 * noun
@@ -78390,7 +78389,7 @@ phẩm giá
      - dignity
 
 phẩm hàm
-     - (từ cũ) Mandarins' grades
+     - (từ cũ) Mandarins's grades
 
 phẩm hạnh
 * noun
@@ -78405,13 +78404,13 @@ phầm phập
      - xem phập (láy)
 
 phẩm phục
-     - (từ cũ) Mandarins' grade attire
+     - (từ cũ) Mandarins's grade attire
 
 phẩm tước
-     - Mandarins' titles, dignity
+     - Mandarins's titles, dignity
 
 phẩm trật
-     - (từ cũ) Mandarins' ranks
+     - (từ cũ) Mandarins's ranks
 
 phẩm vật
 * noun
@@ -82291,7 +82290,7 @@ quận
 quần áo
 * noun
      - Clothing, clothes
-     - The land of Vietnam is not large, but it incorporates over 50 ethnic groups. Except for the Kinh or Việt people living throughout the country's plains and occupying the majority, others find their place on the hilly and mountainous areas and are preserving their very own cultures and dressing patterns. A costume contest for all ethnicities in Vietnam, if organised, would for sure be very much interesting.What excites people most could be the both primitive and modern costumes of some groups like the Gia Rai. Women of this group wear nothing but a small skirt. Men would take just a loin-cloth to go on any occasion. Certainly, this is much more sexy than any modern fashions in the West! On the other hand, many others are dressing quite complicatedly. The H'Mông girls for instance would wear a shirt, undergarments, leggings and put on a coiled scarf on their head. Their skirts are usually in cone shape with lots of folds that enhance their gentleness. And it is not less exciting to watch them dance, making the folds wide open. The dressing pattern of each ethnic group reflects their culture, history and conceptions. It also shows their life style and working conditions as well. Also, each subgroup also has its distinction from the rest of the same minority. Take the Tày, Thái, Mường, Dao for example. The traditional Tày's costume for girls is a kerchief tied in a triangle on the forehead, simple indigo dress, belt and silver bracelets and chains. A Mường girl usually wears a medium length skirt, short white shirt and a pair of silver earrings The Thái girls are different. They would wear a colourful scarf, short jacket with silver buttons in two lines and a tight black skirt. The silver buttons and shining decorations look like budding bauhinia blossoms. People of the subgroups in the Dao minority share many similarities while at the same time are a little bit distinct from each other. Girls in the Dao Đỏ (Red Dao) keep their hair long and fold them around their heads covered with a red cloth. They wear indigo dress embroiled with decorations in red. It is understandable that these people wear what suit their way of living and the climate they are in. But at the same time, they also know how to produce cloths, embroideries etc. to make their very own dress. One of the speciality they produce is brocade which has become quite famous and made a worthy export product. Nowadays, their traditional dresses have changed to some extend due to cultural interactions with other minorities and the Viet majority. This trend has been shown most obviously in those groups living near the plains where the Việt people are present. The culture of the Việt which forms the majority of their population greatly influences other minorities' cultures. Theoretically, this is a normal phenomena. In the last 10 years, thanks to the renovation process in the country, the pace of cultural, economic interactions among all ethnic groups have been increasing considerably. The process of rapid urbanisation can be found now even in hilly areas. As such, traditional and ethnic cultural activities experience deep changes both for the better and the worse. In some regions, it is now a little difficult to find a youth wearing his/her traditional costume. Although the middle-aged are still keeping with traditions like those in Thanh Hoá or Hoà Bình, it seems many of them have been 'Vietnamised'. The farther they stay from the plains, the more they could keep their dressing, patterns and traditions. It is something worth thinking of when there is a clash between traditional characteristics and a modern life style. Many among them have shifted from skirts and loin-cloths to jeans and plants plus a Western style shirt though the things they are wearing are local made and not quite in vogue The new way of dressing has been introduced to these remote areas by local civil workers who have had chances to go down to the country's urban areas or by teachers sent from such places. In many places, traditional dress is still overwhelming modern new one. With increasing awareness, ethnic people are trying to preserve their dressing patterns in a modern society, combining them to make new designs. This proves to be a good trend worth studying. Modernity does not always coincides with beauty. Fashion development should incorporate both cultural traditions and modern life For these ethnic people, there would be no traditional festivals held if their traditional dresses were dropped out. There would be no more cloth ball contests of the Thái if these people wear fashion wears. Many Vietnamese as well as foreign tourists have found themselves infatuated by the rượu cần (wine pot to be drunk together) and the Thái girls' dance in their on-stilts houses. The guests would fly with the dance rhythms. And that is what is attracting tourists to Mai Châu (Hoà Bình province)
+     - The land of Vietnam is not large, but it incorporates over 50 ethnic groups. Except for the Kinh or Việt people living throughout the country's plains and occupying the majority, others find their place on the hilly and mountainous areas and are preserving their very own cultures and dressing patterns. A costume contest for all ethnicities in Vietnam, if organised, would for sure be very much interesting.What excites people most could be the both primitive and modern costumes of some groups like the Gia Rai. Women of this group wear nothing but a small skirt. Men would take just a loin-cloth to go on any occasion. Certainly, this is much more sexy than any modern fashions in the West! On the other hand, many others are dressing quite complicatedly. The H'Mông girls for instance would wear a shirt, undergarments, leggings and put on a coiled scarf on their head. Their skirts are usually in cone shape with lots of folds that enhance their gentleness. And it is not less exciting to watch them dance, making the folds wide open. The dressing pattern of each ethnic group reflects their culture, history and conceptions. It also shows their life style and working conditions as well. Also, each subgroup also has its distinction from the rest of the same minority. Take the Tày, Thái, Mường, Dao for example. The traditional Tày's costume for girls is a kerchief tied in a triangle on the forehead, simple indigo dress, belt and silver bracelets and chains. A Mường girl usually wears a medium length skirt, short white shirt and a pair of silver earrings The Thái girls are different. They would wear a colourful scarf, short jacket with silver buttons in two lines and a tight black skirt. The silver buttons and shining decorations look like budding bauhinia blossoms. People of the subgroups in the Dao minority share many similarities while at the same time are a little bit distinct from each other. Girls in the Dao Đỏ (Red Dao) keep their hair long and fold them around their heads covered with a red cloth. They wear indigo dress embroiled with decorations in red. It is understandable that these people wear what suit their way of living and the climate they are in. But at the same time, they also know how to produce cloths, embroideries etc. to make their very own dress. One of the speciality they produce is brocade which has become quite famous and made a worthy export product. Nowadays, their traditional dresses have changed to some extend due to cultural interactions with other minorities and the Viet majority. This trend has been shown most obviously in those groups living near the plains where the Việt people are present. The culture of the Việt which forms the majority of their population greatly influences other minorities's cultures. Theoretically, this is a normal phenomena. In the last 10 years, thanks to the renovation process in the country, the pace of cultural, economic interactions among all ethnic groups have been increasing considerably. The process of rapid urbanisation can be found now even in hilly areas. As such, traditional and ethnic cultural activities experience deep changes both for the better and the worse. In some regions, it is now a little difficult to find a youth wearing his/her traditional costume. Although the middle-aged are still keeping with traditions like those in Thanh Hoá or Hoà Bình, it seems many of them have been 'Vietnamised'. The farther they stay from the plains, the more they could keep their dressing, patterns and traditions. It is something worth thinking of when there is a clash between traditional characteristics and a modern life style. Many among them have shifted from skirts and loin-cloths to jeans and plants plus a Western style shirt though the things they are wearing are local made and not quite in vogue The new way of dressing has been introduced to these remote areas by local civil workers who have had chances to go down to the country's urban areas or by teachers sent from such places. In many places, traditional dress is still overwhelming modern new one. With increasing awareness, ethnic people are trying to preserve their dressing patterns in a modern society, combining them to make new designs. This proves to be a good trend worth studying. Modernity does not always coincides with beauty. Fashion development should incorporate both cultural traditions and modern life For these ethnic people, there would be no traditional festivals held if their traditional dresses were dropped out. There would be no more cloth ball contests of the Thái if these people wear fashion wears. Many Vietnamese as well as foreign tourists have found themselves infatuated by the rượu cần (wine pot to be drunk together) and the Thái girls's dance in their on-stilts houses. The guests would fly with the dance rhythms. And that is what is attracting tourists to Mai Châu (Hoà Bình province)
 
 quẩn bách
      - Hard up
@@ -84640,7 +84639,7 @@ rập
 
 rập khuôn
      - Imitate servilely, ape, copy
-          Ex: Không nên rập khuôn kinh nghiệm của người khác => One must not imitate servilely others' experience
+          Ex: Không nên rập khuôn kinh nghiệm của người khác => One must not imitate servilely others's experience
 
 rập nổi
      - (kỹ thuật) Strike
@@ -86694,7 +86693,7 @@ rứt
 rứt ruột
      - Have one's heart (soul) wrung (with agony, sadness)
           Ex: Buồn rứt ruột => To have one's soul wrung with melancholy
-          Ex: Con đẻ rứt ruột => Fruit of the womb, children of one'slown womb
+          Ex: Con đẻ rứt ruột => Fruit of the womb, children of one's lown womb
 
 sa
 * noun
@@ -86939,7 +86938,7 @@ sài
 sải
 * noun
      - spread of arms
-          Ex: một sải dây => an arms' spread of cord
+          Ex: một sải dây => an arms's spread of cord
 
 sãi
      - Boatman
@@ -89149,7 +89148,7 @@ sinh thái học
 
 sinh thành
      - Give birth and a settled position tọ
-          Ex: Ơn bố mẹ sinh thành => Gratitude for one's parents' giving birth and a settled position to one
+          Ex: Ơn bố mẹ sinh thành => Gratitude for one's parents's giving birth and a settled position to one
 
 sinh thiết
      - (y học) Biopsy
@@ -96596,7 +96595,7 @@ thẩn thơ
 
 thân thuộc
 * noun
-     - relatives, re'lation
+     - relatives, relation
 
 thận trọng
 * adj

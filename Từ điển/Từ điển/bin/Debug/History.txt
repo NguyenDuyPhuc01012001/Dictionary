@@ -1,43 +1,59 @@
-﻿abandon
-abandon /ə'bændən/
-* ngoại động từ
-     - bộm (nhiếp ảnh) (nhiếp ảnh) (từ Mỹ, nghĩa Mỹ) từ bỏ; bỏ rơi, ruồng bỏ
-          VD: to abandon a hope => từ bỏ hy vọng
-          VD: to abandon one's wife and children => ruồng bỏ vợ con
-          VD: to abandon oneself to => đắm đuối, chìm đắm vào (nỗi thất vọng...)
-* danh từ
-     - sự phóng túng, sự tự do, sự buông thả
-          VD: with abandon => phóng túng
+﻿á
+* excl
+     - Aah! Oof(expression of suffering)
+* noun
+     - Asia
+          Ex: khối đại đông á => the New Order for greater East Asia
+          Ex: người châu á => an Asian
+* adj
+     - Asian, Asiatic
+          Ex: Hiệp hội các nước đông nam á => Association of South-East Asian Nations (ASEAN)
 
-hi
-hi /hai/
-* thán từ
-     - (từ Mỹ, nghĩa Mỹ) này!, ê! (gọi, chào)
+à
+* excl
+     - Oh! (exclamation of surprise)
+          Ex: à, đẹp tuyệt nhỉ! => Oh, beautiful!
+     - By the way
+          Ex: à này, tên anh ta là gì? => by the way, what's his name?
 
-hello
-hello /hə'lou/ (halloa) /hə'lou/ (hello) /'he'lou/
-* thán từ
-     - chào anh!, chào chị!
-     - này, này
-     - ô này! (tỏ ý ngạc nhiên)
-* danh từ
-     - tiếng chào
-     - tiếng gọi này, này !
-     - tiếng kêu ô này ! (tỏ ý ngạc nhiên)
-* nội động từ
-     - chào
-     - gọi này, này 
-     - kêu ô này (tỏ ý ngạc nhiên)
+a
+* excl
+     - O;
+     - oh (exclamation of surprise, regret, ect.)
+          Ex: a, đồ chơi đẹp quá! => Oh! What a nice toy!
+          Ex: a, tội nghiệp quá => Oh! What a pity!
+     - By the way
+          Ex: a, còn một vấn đề này nữa => By the way, there's this one other question
+* noun
+     - Acre (100 square meters)
 
-hi
-hi /hai/
-* thán từ
-     - (từ Mỹ, nghĩa Mỹ) này!, ê! (gọi, chào)
+a dua
+* verb
+     - To ape, to chime in, to join in, to take a leaf out of sb's book
+          Ex: a dua theo lối ăn mặc lố lăng => to ape other's eccentric style of dress
+          Ex: người hay a dua bắt chước => a copy-cat
 
-hi
-hi /hai/
-* thán từ
-     - (từ Mỹ, nghĩa Mỹ) này!, ê! (gọi, chào)
+a dua
+* verb
+     - To ape, to chime in, to join in, to take a leaf out of sb's book
+          Ex: a dua theo lối ăn mặc lố lăng => to ape other's eccentric style of dress
+          Ex: người hay a dua bắt chước => a copy-cat
+
+a
+* excl
+     - O;
+     - oh (exclamation of surprise, regret, ect.)
+          Ex: a, đồ chơi đẹp quá! => Oh! What a nice toy!
+          Ex: a, tội nghiệp quá => Oh! What a pity!
+     - By the way
+          Ex: a, còn một vấn đề này nữa => By the way, there's this one other question
+* noun
+     - Acre (100 square meters)
+
+ái ngại
+* verb
+     - To feel compassion for
+          Ex: thấy lũ trẻ bơ vơ, ai cũng ái ngại => at the sight of those waifs and strays, everyone feels compassion for them
 
 a
 a /ei, ə/
@@ -67,11 +83,6 @@ a /ei, ə/
      - mỗi, mỗi một
           VD: twice a week => mỗi tuần hai lần
 
-hi
-hi /hai/
-* thán từ
-     - (từ Mỹ, nghĩa Mỹ) này!, ê! (gọi, chào)
-
 a
 a /ei, ə/
 * danh từ, số nhiều as, a's
@@ -100,23 +111,9 @@ a /ei, ə/
      - mỗi, mỗi một
           VD: twice a week => mỗi tuần hai lần
 
-hi
-hi /hai/
-* thán từ
-     - (từ Mỹ, nghĩa Mỹ) này!, ê! (gọi, chào)
-
-hello
-hello /hə'lou/ (halloa) /hə'lou/ (hello) /'he'lou/
-* thán từ
-     - chào anh!, chào chị!
-     - này, này
-     - ô này! (tỏ ý ngạc nhiên)
-* danh từ
-     - tiếng chào
-     - tiếng gọi này, này !
-     - tiếng kêu ô này ! (tỏ ý ngạc nhiên)
-* nội động từ
-     - chào
-     - gọi này, này 
-     - kêu ô này (tỏ ý ngạc nhiên)
+a.m
+a.m
+     - (viết tắt)(radio)viết tắt của amplitude modulation) biến điệu biên độ
+     - (viết tắt của Master of Arts) cao học văn chương
+     - (viết tắt của tiếng Latinh Antemeridian) sáng, trước ngọ
 
