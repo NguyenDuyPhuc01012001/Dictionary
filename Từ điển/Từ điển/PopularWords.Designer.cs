@@ -31,27 +31,28 @@ namespace Từ_điển
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PopularWords));
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaControlBox2 = new Guna.UI.WinForms.GunaControlBox();
-            this.cmbWord = new System.Windows.Forms.ComboBox();
+            this.cboWord = new System.Windows.Forms.ComboBox();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.btnIrrVerbs = new Guna.UI.WinForms.GunaGradientButton();
             this.btnToefl = new Guna.UI.WinForms.GunaGradientButton();
             this.btnToeic = new Guna.UI.WinForms.GunaGradientButton();
             this.btnIelts = new Guna.UI.WinForms.GunaGradientButton();
             this.btnOxford = new Guna.UI.WinForms.GunaGradientButton();
-            this.btnAfter = new System.Windows.Forms.Button();
-            this.btnBefore = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dgvIrrVerbs = new System.Windows.Forms.DataGridView();
+            this.dvwIrrVerbs = new System.Windows.Forms.DataGridView();
             this.Base = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PastSimple = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PastParticiple = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Definition = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txbMeaning = new System.Windows.Forms.TextBox();
+            this.txtMeaning = new System.Windows.Forms.TextBox();
+            this.btnAfter = new System.Windows.Forms.Button();
+            this.btnBefore = new System.Windows.Forms.Button();
+            this.picExample = new System.Windows.Forms.PictureBox();
             this.gunaPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvIrrVerbs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvwIrrVerbs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picExample)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -78,19 +79,19 @@ namespace Từ_điển
             this.gunaControlBox2.Size = new System.Drawing.Size(41, 26);
             this.gunaControlBox2.TabIndex = 7;
             // 
-            // cmbWord
+            // cboWord
             // 
-            this.cmbWord.DropDownHeight = 200;
-            this.cmbWord.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbWord.FormattingEnabled = true;
-            this.cmbWord.IntegralHeight = false;
-            this.cmbWord.Location = new System.Drawing.Point(303, 36);
-            this.cmbWord.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cmbWord.Name = "cmbWord";
-            this.cmbWord.Size = new System.Drawing.Size(344, 30);
-            this.cmbWord.Sorted = true;
-            this.cmbWord.TabIndex = 8;
-            this.cmbWord.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cboWord.DropDownHeight = 200;
+            this.cboWord.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboWord.FormattingEnabled = true;
+            this.cboWord.IntegralHeight = false;
+            this.cboWord.Location = new System.Drawing.Point(303, 36);
+            this.cboWord.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cboWord.Name = "cboWord";
+            this.cboWord.Size = new System.Drawing.Size(344, 30);
+            this.cboWord.Sorted = true;
+            this.cboWord.TabIndex = 8;
+            this.cboWord.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // gunaPanel1
             // 
@@ -262,48 +263,14 @@ namespace Từ_điển
             this.btnOxford.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnOxford.Click += new System.EventHandler(this.btnOxford_Click);
             // 
-            // btnAfter
+            // dvwIrrVerbs
             // 
-            this.btnAfter.BackgroundImage = global::Từ_điển.Properties.Resources.Right;
-            this.btnAfter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAfter.Location = new System.Drawing.Point(660, 34);
-            this.btnAfter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnAfter.Name = "btnAfter";
-            this.btnAfter.Size = new System.Drawing.Size(32, 31);
-            this.btnAfter.TabIndex = 11;
-            this.btnAfter.UseVisualStyleBackColor = true;
-            this.btnAfter.Click += new System.EventHandler(this.btnAfter_Click);
-            // 
-            // btnBefore
-            // 
-            this.btnBefore.BackgroundImage = global::Từ_điển.Properties.Resources.Left;
-            this.btnBefore.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBefore.Location = new System.Drawing.Point(256, 34);
-            this.btnBefore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnBefore.Name = "btnBefore";
-            this.btnBefore.Size = new System.Drawing.Size(32, 31);
-            this.btnBefore.TabIndex = 9;
-            this.btnBefore.UseVisualStyleBackColor = true;
-            this.btnBefore.Click += new System.EventHandler(this.btnBefore_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(256, 74);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(436, 276);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // dgvIrrVerbs
-            // 
-            this.dgvIrrVerbs.AllowUserToAddRows = false;
-            this.dgvIrrVerbs.AllowUserToDeleteRows = false;
-            this.dgvIrrVerbs.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvIrrVerbs.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
-            this.dgvIrrVerbs.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dgvIrrVerbs.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dvwIrrVerbs.AllowUserToAddRows = false;
+            this.dvwIrrVerbs.AllowUserToDeleteRows = false;
+            this.dvwIrrVerbs.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dvwIrrVerbs.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            this.dvwIrrVerbs.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dvwIrrVerbs.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -311,27 +278,27 @@ namespace Từ_điển
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvIrrVerbs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvIrrVerbs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvIrrVerbs.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dvwIrrVerbs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dvwIrrVerbs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvwIrrVerbs.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Base,
             this.PastSimple,
             this.PastParticiple,
             this.Definition});
-            this.dgvIrrVerbs.Location = new System.Drawing.Point(195, 46);
-            this.dgvIrrVerbs.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvIrrVerbs.Name = "dgvIrrVerbs";
-            this.dgvIrrVerbs.RowHeadersVisible = false;
-            this.dgvIrrVerbs.RowHeadersWidth = 51;
-            this.dgvIrrVerbs.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.dgvIrrVerbs.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.dgvIrrVerbs.RowTemplate.DefaultCellStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvIrrVerbs.RowTemplate.Height = 24;
-            this.dgvIrrVerbs.RowTemplate.ReadOnly = true;
-            this.dgvIrrVerbs.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgvIrrVerbs.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvIrrVerbs.Size = new System.Drawing.Size(559, 406);
-            this.dgvIrrVerbs.TabIndex = 32;
+            this.dvwIrrVerbs.Location = new System.Drawing.Point(195, 46);
+            this.dvwIrrVerbs.Margin = new System.Windows.Forms.Padding(2);
+            this.dvwIrrVerbs.Name = "dvwIrrVerbs";
+            this.dvwIrrVerbs.RowHeadersVisible = false;
+            this.dvwIrrVerbs.RowHeadersWidth = 51;
+            this.dvwIrrVerbs.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.dvwIrrVerbs.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.dvwIrrVerbs.RowTemplate.DefaultCellStyle.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvwIrrVerbs.RowTemplate.Height = 24;
+            this.dvwIrrVerbs.RowTemplate.ReadOnly = true;
+            this.dvwIrrVerbs.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dvwIrrVerbs.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dvwIrrVerbs.Size = new System.Drawing.Size(559, 406);
+            this.dvwIrrVerbs.TabIndex = 32;
             // 
             // Base
             // 
@@ -361,17 +328,51 @@ namespace Từ_điển
             this.Definition.MinimumWidth = 6;
             this.Definition.Name = "Definition";
             // 
-            // txbMeaning
+            // txtMeaning
             // 
-            this.txbMeaning.BackColor = System.Drawing.Color.White;
-            this.txbMeaning.Location = new System.Drawing.Point(211, 363);
-            this.txbMeaning.Margin = new System.Windows.Forms.Padding(2);
-            this.txbMeaning.Multiline = true;
-            this.txbMeaning.Name = "txbMeaning";
-            this.txbMeaning.ReadOnly = true;
-            this.txbMeaning.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txbMeaning.Size = new System.Drawing.Size(528, 89);
-            this.txbMeaning.TabIndex = 34;
+            this.txtMeaning.BackColor = System.Drawing.Color.White;
+            this.txtMeaning.Location = new System.Drawing.Point(211, 363);
+            this.txtMeaning.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMeaning.Multiline = true;
+            this.txtMeaning.Name = "txtMeaning";
+            this.txtMeaning.ReadOnly = true;
+            this.txtMeaning.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtMeaning.Size = new System.Drawing.Size(528, 89);
+            this.txtMeaning.TabIndex = 34;
+            // 
+            // btnAfter
+            // 
+            this.btnAfter.BackgroundImage = global::Từ_điển.Properties.Resources.Right;
+            this.btnAfter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAfter.Location = new System.Drawing.Point(660, 34);
+            this.btnAfter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnAfter.Name = "btnAfter";
+            this.btnAfter.Size = new System.Drawing.Size(32, 31);
+            this.btnAfter.TabIndex = 11;
+            this.btnAfter.UseVisualStyleBackColor = true;
+            this.btnAfter.Click += new System.EventHandler(this.btnAfter_Click);
+            // 
+            // btnBefore
+            // 
+            this.btnBefore.BackgroundImage = global::Từ_điển.Properties.Resources.Left;
+            this.btnBefore.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBefore.Location = new System.Drawing.Point(256, 34);
+            this.btnBefore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnBefore.Name = "btnBefore";
+            this.btnBefore.Size = new System.Drawing.Size(32, 31);
+            this.btnBefore.TabIndex = 9;
+            this.btnBefore.UseVisualStyleBackColor = true;
+            this.btnBefore.Click += new System.EventHandler(this.btnBefore_Click);
+            // 
+            // picExample
+            // 
+            this.picExample.Location = new System.Drawing.Point(256, 74);
+            this.picExample.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.picExample.Name = "picExample";
+            this.picExample.Size = new System.Drawing.Size(436, 276);
+            this.picExample.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picExample.TabIndex = 0;
+            this.picExample.TabStop = false;
             // 
             // PopularWords
             // 
@@ -379,23 +380,24 @@ namespace Từ_điển
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(765, 473);
-            this.Controls.Add(this.txbMeaning);
+            this.Controls.Add(this.txtMeaning);
             this.Controls.Add(this.btnAfter);
             this.Controls.Add(this.gunaPanel1);
             this.Controls.Add(this.btnBefore);
-            this.Controls.Add(this.cmbWord);
+            this.Controls.Add(this.cboWord);
             this.Controls.Add(this.gunaControlBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.dgvIrrVerbs);
+            this.Controls.Add(this.picExample);
+            this.Controls.Add(this.dvwIrrVerbs);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "PopularWords";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PopularWords";
             this.gunaPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvIrrVerbs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvwIrrVerbs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picExample)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -403,10 +405,10 @@ namespace Từ_điển
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picExample;
         private Guna.UI.WinForms.GunaElipse gunaElipse1;
         private System.Windows.Forms.Button btnBefore;
-        private System.Windows.Forms.ComboBox cmbWord;
+        private System.Windows.Forms.ComboBox cboWord;
         private Guna.UI.WinForms.GunaControlBox gunaControlBox2;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
         private Guna.UI.WinForms.GunaGradientButton btnOxford;
@@ -415,11 +417,11 @@ namespace Từ_điển
         private Guna.UI.WinForms.GunaGradientButton btnToeic;
         private Guna.UI.WinForms.GunaGradientButton btnIelts;
         private Guna.UI.WinForms.GunaGradientButton btnIrrVerbs;
-        private System.Windows.Forms.DataGridView dgvIrrVerbs;
+        private System.Windows.Forms.DataGridView dvwIrrVerbs;
         private System.Windows.Forms.DataGridViewTextBoxColumn Base;
         private System.Windows.Forms.DataGridViewTextBoxColumn PastSimple;
         private System.Windows.Forms.DataGridViewTextBoxColumn PastParticiple;
         private System.Windows.Forms.DataGridViewTextBoxColumn Definition;
-        private System.Windows.Forms.TextBox txbMeaning;
+        private System.Windows.Forms.TextBox txtMeaning;
     }
 }

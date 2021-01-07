@@ -2174,7 +2174,7 @@
         ov8D9VUaOjIa+bwAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picLoading.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         R0lGODlh7QDtAPcAAAAAANBUXOBaY+BaY+BaY+BaY+BaY+BaY+FbZOFbZOFbZOFbZOFbZOFbZOFbZOFb
         ZOFbZOFbZOFbZOFbZOFbZOFbZOFbZOFbZOFbZOFbZOFbZOFbZOFbZOFbZOFbZOFbZOFbZOFbZOFbZOFb
@@ -3780,7 +3780,7 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 </value>
   </data>
-  <data name="btnSpeakEnglish.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnSpeak.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EwAACxMBAJqcGAAAGO5JREFUeF7t3Xu0/tlAx/EZ426UpkElGZVbskQqFbIkVFqrCxqlcmkqXRbdW5Ui

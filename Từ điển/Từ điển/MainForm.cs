@@ -1,10 +1,8 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
-using System.Drawing.Drawing2D;
 using System.IO;
 using System.Net.Http;
 using System.Speech.Synthesis;
@@ -18,11 +16,6 @@ namespace Từ_điển
 {
     public partial class MainForm : Form
     {
-        bool IsShowCmbLike = false;
-        bool IsShowCmbHistory = false;
-        bool IsShowIrrVerb = false;
-        bool IsShowToolStripSetting = false;
-
         public MainForm()
         {
             InitializeComponent();
@@ -32,109 +25,217 @@ namespace Từ_điển
 
         #region Speak
         SpeechSynthesizer voice = new SpeechSynthesizer();
-
-        private void btnSpeakEnglish_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Speak word in combobox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnSpeak_Click(object sender, EventArgs e)
         {
-            if (cmbLanguage.SelectedIndex == 0)
+            try
             {
-                voice.SpeakAsync(cbWord.Text);
-                return;
-            }
-            if (cmbLanguage.SelectedIndex == 1)
-            {
-                String payload = cbTu.Text;
-                if (payload.Length < 5)
-                    payload = "    " + payload;
-                try
+                if (cboLanguage.SelectedIndex == 0)
                 {
-                    String result = Task.Run(async () =>
+                    voice.SpeakAsync(cboWord.Text);
+                    return;
+                }
+                else
+                {
+                    String payload = cboTu.Text;
+                    if (payload.Length < 5)
+                        payload = "    " + payload;
+                    try
                     {
-                        HttpClient client = new HttpClient();
-                        client.DefaultRequestHeaders.Add("api-key", "IyNOVYUO3CGiRTMKzP1empfmrk3dSXfE");
-                        client.DefaultRequestHeaders.Add("speed", "-1");
-                        client.DefaultRequestHeaders.Add("voice", "linhsan");
-                        client.DefaultRequestHeaders.Add("callback_url", "");
-                        var response = await client.PostAsync("https://api.fpt.ai/hmi/tts/v5", new StringContent(payload));
-                        return await response.Content.ReadAsStringAsync();
-                    }).GetAwaiter().GetResult();
+                        String result = Task.Run(async () =>
+                        {
+                            HttpClient client = new HttpClient();
+                            client.DefaultRequestHeaders.Add("api-key", "IyNOVYUO3CGiRTMKzP1empfmrk3dSXfE");
+                            client.DefaultRequestHeaders.Add("speed", "-1");
+                            client.DefaultRequestHeaders.Add("voice", "linhsan");
+                            client.DefaultRequestHeaders.Add("callback_url", "");
+                            var response = await client.PostAsync("https://api.fpt.ai/hmi/tts/v5", new StringContent(payload));
+                            return await response.Content.ReadAsStringAsync();
+                        }).GetAwaiter().GetResult();
 
-                    var json = JsonConvert.DeserializeObject<SpeechJSon.root>(result);
-                    SpeechJSon.root output = json;
+                        var json = JsonConvert.DeserializeObject<SpeechJSon.root>(result);
+                        SpeechJSon.root output = json;
 
-                    string url = string.Format("{0}", output.async);
+                        string url = string.Format("{0}", output.async);
 
-                    WindowsMediaPlayer sound = new WindowsMediaPlayer();
-                    sound.URL = url;
-                    sound.controls.play();
-                }
-                catch (System.Net.Http.HttpRequestException)
-                {
-                    MessageBox.Show("Hãy kết nối mạng trước khi sử dụng tính năng này.");
+                        WindowsMediaPlayer sound = new WindowsMediaPlayer();
+                        sound.URL = url;
+                        sound.controls.play();
+                    }
+                    catch (System.Net.Http.HttpRequestException)
+                    {
+                        MessageBox.Show("Hãy kết nối mạng trước khi sử dụng tính năng này.", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
         }
         #endregion
 
         #region Search
+        /// <summary>
+        /// Search word in comboBox
+        /// </summary>
+        /// <param name="comboBox"></param> comboBox is using
         private void SelectedIndexChanged(ComboBox comboBox)
         {
-            btnLike.BackgroundImage = Properties.Resources.NotLike;
-
-            if (comboBox.SelectedItem != null)
+            try
             {
-                rTxbExplan.Text = comboBox.SelectedItem.ToString();
-                if (cmbHistory.Items.Count > 0)
-                    ReverseCombobox(cmbHistory);
-                if (cmbHistory.Items.Contains(comboBox.SelectedItem))
-                    cmbHistory.Items.Remove(comboBox.SelectedItem);
-                cmbHistory.Items.Add(comboBox.SelectedItem);
-                ReverseCombobox(cmbHistory);
-                LoadHightLightData("HightLight.txt");
-            }
+                btnLike.BackgroundImage = Properties.Resources.NotLike;
 
-            for (int i = 0; i < cmbLike.Items.Count; i++)
-            {
-
-                String substringCmBLike = cmbLike.Items[i].ToString().Split('\r')[0];
-                String substringComboBox = comboBox.Text.Split('\r')[0];
-
-                if (substringCmBLike == substringComboBox)
+                if (comboBox.SelectedItem != null)
                 {
-                    btnLike.BackgroundImage = Properties.Resources.Like;
-                    cmbLike.Text = substringComboBox;
+                    rtxtExplan.Text = comboBox.SelectedItem.ToString();
+                    if (cboHistory.Items.Count > 0)
+                        ReverseCombobox(cboHistory);
+                    cboHistory.Items.Add(comboBox.SelectedItem);
+                    ReverseCombobox(cboHistory);
+                    LoadHightLightData("HightLight.txt");
 
+                    for (int i = 0; i < cboFavorite.Items.Count; i++)
+                    {
+                        String substringCboLike = cboFavorite.Items[i].ToString().Split('\r')[1];
+                        String substringComboBox = comboBox.SelectedItem.ToString().Split('\r')[1];
+
+                        if (substringCboLike == substringComboBox)
+                        {
+                            btnLike.BackgroundImage = Properties.Resources.Like;
+                            cboFavorite.Text = substringComboBox;
+                        }
+                    }
+                    int max = cboHistory.Items.Count;
+                    for (int i = 1; i < max; i++)
+                    {
+                        String substringCboHistory = cboHistory.Items[i].ToString().Split('\r')[1];
+                        String substringComboBox = comboBox.SelectedItem.ToString().Split('\r')[1];
+
+                        if (substringCboHistory == substringComboBox)
+                        {
+                            cboHistory.Items.RemoveAt(i);
+                            break;
+                        }
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
         private void Search(object sender, EventArgs e)
         {
-            if (cmbLanguage.SelectedIndex.ToString() == "0")
-                SelectedIndexChanged(cbWord);
-            if (cmbLanguage.SelectedIndex.ToString() == "1")
-                SelectedIndexChanged(cbTu);
+            try
+            {
+                if (cboLanguage.SelectedIndex == 0)
+                    SelectedIndexChanged(cboWord);
+                else
+                    SelectedIndexChanged(cboTu);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
 
-        private void cmbHistory_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            rTxbExplan.Text = cmbHistory.SelectedItem.ToString();
-            LoadHightLightData("HightLight.txt");
-        }
-
+        /// <summary>
+        /// Open browser and go to Google Image to search picture
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSearchImage_Click(object sender, EventArgs e)
         {
-            Process.Start("https://google.com.vn/search?q=" + cbWord.Text + "&tbm=isch");
+            try
+            {
+                Process.Start("https://google.com.vn/search?q=" + cboWord.Text + "&tbm=isch");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        /// <summary>
+        /// Open browser and go to website had selected to search word
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnSearchOnline_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (tstrCboOnline.SelectedItem == "vdict")
+                {
+                    if (cboLanguage.SelectedIndex == 0)
+                        Process.Start("https://vdict.com/" + cboWord.Text + ",1,0,0.html");
+                    else
+                        Process.Start("https://vdict.com/" + cboTu.Text + ",2,0,0.html");
+                }
+                if (tstrCboOnline.SelectedItem == "soha")
+                {
+                    if (cboLanguage.SelectedIndex == 0)
+                        Process.Start("http://tratu.soha.vn/dict/en_vn/" + cboWord.Text);
+                    else
+                        Process.Start("http://tratu.soha.vn/dict/vn_en/" + cboTu.Text);
+                }
+                if (tstrCboOnline.SelectedItem == "vndic")
+                {
+                    if (cboLanguage.SelectedIndex == 0)
+                        Process.Start("http://3.vndic.net/index.php?word=" + cboWord.Text + "&dict=en_vi");
+                    else
+                        Process.Start("http://3.vndic.net/index.php?word=" + cboTu.Text + "&dict=vi_en");
+                }
+                if (tstrCboOnline.SelectedItem == "Oxford")
+                {
+                    if (cboLanguage.SelectedIndex == 0)
+                        Process.Start("https://www.oxfordlearnersdictionaries.com/definition/english/" + cboWord.Text + "? q=" + cboWord.Text);
+                    else
+                        MessageBox.Show("Ngôn ngữ không hỗ trợ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                if (tstrCboOnline.SelectedItem == "laban")
+                {
+                    if (cboLanguage.SelectedIndex == 0)
+                        Process.Start("https://dict.laban.vn/find?type=1&query=" + cboWord.Text);
+                    else
+                        Process.Start("https://dict.laban.vn/find?type=2&query=" + cboTu.Text);
+                }
+                if (tstrCboOnline.SelectedItem == "Cambridge")
+                {
+                    if (cboLanguage.SelectedIndex == 0)
+                        Process.Start("https://dictionary.cambridge.org/dictionary/english/" + cboWord.Text);
+                    else
+                        MessageBox.Show("Ngôn ngữ không hỗ trợ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
         #endregion
 
         #region Format
+        /// <summary>
+        /// Make new thread to load data from file to comboBox
+        /// </summary>
+        /// <param name="Path"></param>Path of file
+        /// <param name="comboBox"></param>comboBox want to fill item
+        /// <param name="IsLoading"></param>If false then hide loading, use for loading biggest file
         private void LoadData(string Path, ComboBox comboBox, bool IsLoading)
         {
             new Thread(
                 () =>
                 {
                     lblLoading.Show();
-                    pictureBox1.Show();
+                    picLoading.Show();
                     try
                     {
                         string line = "";
@@ -165,7 +266,7 @@ namespace Từ_điển
                     if (IsLoading)
                     {
                         lblLoading.Hide();
-                        pictureBox1.Hide();
+                        picLoading.Hide();
                         MessageBox.Show("Dữ liệu đã được tải lên thành công ✓", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                     }
                 }
@@ -173,7 +274,11 @@ namespace Từ_điển
             { IsBackground = true }.Start();
         }
 
-        private void LoadHightLightData(string Path)
+        /// <summary>
+        /// Make new thread to load file HightLight to hightlight speacial word
+        /// </summary>
+        /// <param name="HightLightPath"></param>Path of file hightlight
+        private void LoadHightLightData(string HightLightPath)
         {
             new Thread(
                 () =>
@@ -182,8 +287,9 @@ namespace Từ_điển
                     {
                         string line = "", start, end;
                         int ColorX, ColorY, ColorZ;
+
                         //tạo 1 đối tượng luồng đọc để đọc file 
-                        StreamReader streamReader = new StreamReader(Path);
+                        StreamReader streamReader = new StreamReader(HightLightPath);
                         //mỗi lần đọc 1 dòng trên file text và nếu đọc được sẽ lưu vào chuỗi line
                         while ((line = streamReader.ReadLine()) != null)
                         {
@@ -194,7 +300,8 @@ namespace Từ_điển
                             ColorX = int.Parse(streamReader.ReadLine());
                             ColorY = int.Parse(streamReader.ReadLine());
                             ColorZ = int.Parse(streamReader.ReadLine());
-                            HighlightPhrase(rTxbExplan, start, end, Color.FromArgb(ColorX, ColorY, ColorZ));
+
+                            HighlightPhrase(rtxtExplan, start, end, Color.FromArgb(ColorX, ColorY, ColorZ));
                             streamReader.ReadLine();
                         }
                     }
@@ -207,47 +314,82 @@ namespace Từ_điển
             { IsBackground = true }.Start();
         }
 
-        static void HighlightPhrase(RichTextBox box, string begin, string end, Color color)
+        void HighlightPhrase(RichTextBox box, string begin, string end, Color color)
         {
-            string s = box.Text;
-            for (int ix = 0; ix < s.Length;)
+            try
             {
-                int jx = s.IndexOf(begin, ix);
-                if (jx < 0)
+string str = box.Text;
+
+            for (int i = 0; i < str.Length;)
+            {
+                int indexOfBegin = str.IndexOf(begin, i);
+                if (indexOfBegin < 0)
                     break;
-                int kx = s.IndexOf(end, jx);
-                if (kx < 0)
-                    kx = jx;
-                box.SelectionStart = jx;
-                box.SelectionLength = kx - jx;
+                int indexOfEnd = str.IndexOf(end, indexOfBegin);
+                if (indexOfEnd < 0)
+                    indexOfEnd = indexOfBegin;
+
+                box.SelectionStart = indexOfBegin;
+                box.SelectionLength = indexOfEnd - indexOfBegin;
                 box.SelectionColor = color;
-                ix = kx + 1;
+                i = indexOfEnd + 1;
+            }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }            
+        }
+
+        /// <summary>
+        /// New word on top of comboBox
+        /// </summary>
+        /// <param name="comboBox"></param>comboBox want to reverse
+        private void ReverseCombobox(ComboBox comboBox)
+        {
+            try
+            {
+                List<DictionaryData> dictionaries = new List<DictionaryData>();
+                int maxItemsComboBox = cboHistory.Items.Count;
+                int maximumItems = 100;
+
+                foreach (DictionaryData item in cboHistory.Items)
+                    dictionaries.Add(item);
+                dictionaries.Reverse();
+
+                cboHistory.Items.Clear();
+                for (int i = 0; i < maximumItems; i++)
+                {
+                    if (i >= maxItemsComboBox)
+                        return;
+                    cboHistory.Items.Add(dictionaries[i]);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
-        private void ReverseCombobox(ComboBox combo)
+        /// <summary>
+        /// Save file 
+        /// </summary>
+        /// <param name="comboBox"></param>comboBox want to save
+        /// <param name="filePath"></param>Path of file
+        private void Output(ComboBox comboBox, string filePath)
         {
-            List<DictionaryData> dictionaries = new List<DictionaryData>();
-            int max = cmbHistory.Items.Count;
-
-            foreach (DictionaryData item in cmbHistory.Items)
+            try
             {
-                dictionaries.Add(item);
+                FileStream fs = new FileStream(filePath, FileMode.Create);
+                StreamWriter writer = new StreamWriter(fs, Encoding.UTF8);
+                foreach (var item in comboBox.Items)
+                    writer.WriteLine(item);
+                writer.Flush();
+                fs.Close();
             }
-            dictionaries.Reverse();
-            cmbHistory.Items.Clear();
-            for (int i = 0; i < 10; i++)
+            catch (Exception ex)
             {
-                if (i > max)
-                    return;
-                try
-                {
-                    cmbHistory.Items.Add(dictionaries[i]);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
         #endregion
@@ -257,19 +399,19 @@ namespace Từ_điển
         {
             if (ImageCompareArray((Bitmap)btnLike.BackgroundImage, Properties.Resources.NotLike))
             {
-                if (cmbLanguage.SelectedIndex.ToString() == "0")
-                    Like(cbWord);
-                if (cmbLanguage.SelectedIndex.ToString() == "1")
-                    Like(cbTu);
+                if (cboLanguage.SelectedIndex.ToString() == "0")
+                    Like(cboWord);
+                if (cboLanguage.SelectedIndex.ToString() == "1")
+                    Like(cboTu);
                 btnLike.BackgroundImage = Properties.Resources.Like;
             }
             else
                 if (ImageCompareArray((Bitmap)btnLike.BackgroundImage, Properties.Resources.Like))
             {
-                if (cmbLanguage.SelectedIndex.ToString() == "0")
-                    Dislike(cbWord);
-                if (cmbLanguage.SelectedIndex.ToString() == "1")
-                    Dislike(cbTu);
+                if (cboLanguage.SelectedIndex.ToString() == "0")
+                    Dislike(cboWord);
+                if (cboLanguage.SelectedIndex.ToString() == "1")
+                    Dislike(cboTu);
                 btnLike.BackgroundImage = Properties.Resources.NotLike;
             }
         }
@@ -305,101 +447,17 @@ namespace Từ_điển
                 return false;
         }
 
-        private void btnFavorite_Click(object sender, EventArgs e)
-        {
-            IsShowCmbLike = !IsShowCmbLike;
-            if (IsShowCmbLike)
-            {
-                cmbLike.Show();
-                cmbLanguage.Hide();
-                cmbHistory.Hide();
-                IsShowCmbHistory = false;
-            }
-            else
-            {
-                cmbLike.Hide();
-                cmbLanguage.Show();
-            }
-        }
-
-        #endregion
-
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (toolStripCmbLanguage.SelectedItem == "Vietnamese")
-            {
-                if (MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
-                {
-                    e.Cancel = true;
-                    return;
-                }
-            }
-            else
-            {
-                if (MessageBox.Show("Do you want to exit?", "Notification", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
-                {
-                    e.Cancel = true;
-                    return;
-                }
-            }
-            Output(cmbHistory, "History.txt");
-            Output(cmbLike, "Favorite.txt");
-            voice.SpeakAsyncCancelAll();
-        }
-
-        private void cmbLanguage_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cmbLanguage.SelectedIndex == 0)
-            {
-                cbWord.Show();
-                cbTu.Hide();
-                cbWord.Text = "";
-            }
-            else
-            {
-                cbTu.Show();
-                cbWord.Hide();
-                cbTu.Text = "";
-            }
-        }
-
-        private void Output(ComboBox comboBox, string FilePath)
-        {
-            FileStream fs = new FileStream(FilePath, FileMode.Create);
-            StreamWriter writer = new StreamWriter(fs, Encoding.UTF8);
-            foreach (var item in comboBox.Items)
-                writer.WriteLine(item);
-            writer.Flush();
-            fs.Close();
-        }
-
-        private void btnHistory_Click(object sender, EventArgs e)
-        {
-            IsShowCmbHistory = !IsShowCmbHistory;
-            if (IsShowCmbHistory)
-            {
-                cmbHistory.Show();
-                cmbLanguage.Hide();
-                cmbLike.Hide();
-                IsShowCmbLike = false;
-            }
-            else
-            {
-                cmbHistory.Hide();
-                cmbLanguage.Show();
-            }
-        }
 
         private void Like(ComboBox comboBox)
         {
             if (comboBox.SelectedItem != null)
             {
-                if (cmbLike.Items.Count > 0)
-                    ReverseCombobox(cmbLike);
-                if (cmbLike.Items.Contains(comboBox.SelectedItem))
-                    cmbLike.Items.Remove(comboBox.SelectedItem);
-                cmbLike.Items.Add(comboBox.SelectedItem);
-                ReverseCombobox(cmbLike);
+                if (cboFavorite.Items.Count > 0)
+                    ReverseCombobox(cboFavorite);
+                if (cboFavorite.Items.Contains(comboBox.SelectedItem))
+                    cboFavorite.Items.Remove(comboBox.SelectedItem);
+                cboFavorite.Items.Add(comboBox.SelectedItem);
+                ReverseCombobox(cboFavorite);
             }
         }
 
@@ -407,128 +465,53 @@ namespace Từ_điển
         {
             if (comboBox.SelectedItem != null)
             {
-                if (cmbLike.Items.Contains(comboBox.SelectedItem))
+                if (cboFavorite.Items.Contains(comboBox.SelectedItem))
                 {
-                    cmbLike.Items.Remove(comboBox.SelectedItem);
+                    cboFavorite.Items.Remove(comboBox.SelectedItem);
                 }
             }
         }
 
-        private void btnHDSD_Click(object sender, EventArgs e)
-        {
-            string line = "";
-            string HDSD = "";
-            //tạo 1 đối tượng luồng đọc để đọc file 
-            StreamReader streamReader = new StreamReader("HDSD.txt");
-            while ((line = streamReader.ReadLine()) != null)
-            {
-                HDSD += line;
-                while ((line = streamReader.ReadLine()) != null)
-                {
-                    if (line == "")
-                        break;
-                    HDSD += "\r\n" + line;
-                }
-                HDSD += "\r\n";
-            }
-            rTxbExplan.Text = HDSD;
-        }
+        #endregion
 
-        private void btnIrrVerbs_Click(object sender, EventArgs e)
-        {
-            PopularWords popularWords = new PopularWords();
-            popularWords.Show();
-        }
-
-        private void btnTranslator_Click(object sender, EventArgs e)
-        {
-            TranslatorForm form = new TranslatorForm();
-            form.Show();
-        }
-
-        private void cmbLike_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            btnLike.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Like));
-            rTxbExplan.Text = cmbLike.SelectedItem.ToString();
-            LoadHightLightData("HightLight.txt");
-        }
-
-        private void btnSearchOnline_Click(object sender, EventArgs e)
-        {
-            if (cmbOnline.SelectedItem == "vdict")
-            {
-                if (cmbLanguage.SelectedIndex == 0)
-                    Process.Start("https://vdict.com/" + cbWord.Text + ",1,0,0.html");
-                else
-                    Process.Start("https://vdict.com/" + cbTu.Text + ",2,0,0.html");
-            }
-            if (cmbOnline.SelectedItem == "soha")
-            {
-                if (cmbLanguage.SelectedIndex == 0)
-                    Process.Start("http://tratu.soha.vn/dict/en_vn/" + cbWord.Text);
-                else
-                    Process.Start("http://tratu.soha.vn/dict/vn_en/" + cbTu.Text);
-            }
-            if (cmbOnline.SelectedItem == "vndic")
-            {
-                if (cmbLanguage.SelectedIndex == 0)
-                    Process.Start("http://3.vndic.net/index.php?word=" + cbWord.Text + "&dict=en_vi");
-                else
-                    Process.Start("http://3.vndic.net/index.php?word=" + cbTu.Text + "&dict=vi_en");
-            }
-            if (cmbOnline.SelectedItem == "Oxford")
-            {
-                if (cmbLanguage.SelectedIndex == 0)
-                    Process.Start("https://www.oxfordlearnersdictionaries.com/definition/english/" + cbWord.Text + "? q=" + cbWord.Text);
-                else
-                    MessageBox.Show("Ngôn ngữ không hỗ trợ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            if (cmbOnline.SelectedItem == "laban")
-            {
-                if (cmbLanguage.SelectedIndex == 0)
-                    Process.Start("https://dict.laban.vn/find?type=1&query=" + cbWord.Text);
-                else
-                    Process.Start("https://dict.laban.vn/find?type=2&query=" + cbTu.Text);
-            }
-            if (cmbOnline.SelectedItem == "Cambridge")
-            {
-                if (cmbLanguage.SelectedIndex == 0)
-                    Process.Start("https://dictionary.cambridge.org/dictionary/english/" + cbWord.Text);
-                else
-                    MessageBox.Show("Ngôn ngữ không hỗ trợ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
+        #region MainForm
         private void MainForm_Load(object sender, EventArgs e)
         {
             #region LoadData
-            LoadData("AnhViet.txt", cbWord, true);
-            LoadData("VietAnh.txt", cbTu, false);
-            LoadData("History.txt", cmbHistory, false);
-            LoadData("Favorite.txt", cmbLike, false);
-            foreach (FontFamily font in FontFamily.Families)
-                toolStripCmbFont.Items.Add(font.Name);
+            try
+            {
+                LoadData("AnhViet.txt", cboWord, true);
+                LoadData("VietAnh.txt", cboTu, false);
+                LoadData("History.txt", cboHistory, false);
+                LoadData("Favorite.txt", cboFavorite, false);
+                foreach (FontFamily font in FontFamily.Families)
+                    tstrCboFont.Items.Add(font.Name);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
             #endregion
 
             #region Init
-            cbWord.DisplayMember = "Key";                       //set display of cbWord
-            cmbHistory.DisplayMember = "Key";                   //set display of cbHistory
-            cmbLike.DisplayMember = "Key";                      //set display of cbLike
-            cbTu.DisplayMember = "Key";                         //set display of cbTu
-            cmbLanguage.SelectedIndex = 0;                      //set language
-            toolStripCmbFont.SelectedItem = "Times New Romans"; //set font
-            toolStripCmbSize.Text = "13";                       //set size    
-            toolStripCmbLanguage.SelectedIndex = 0;             //set language
-            cmbOnline.SelectedIndex = 0;                        //set online dictionary
+            cboWord.DisplayMember = "Key";                //set display of cbWord
+            cboHistory.DisplayMember = "Key";             //set display of cbHistory
+            cboFavorite.DisplayMember = "Key";            //set display of cbLike
+            cboTu.DisplayMember = "Key";                  //set display of cbTu
+            cboLanguage.SelectedIndex = 0;                //set language
+            tstrCboFont.SelectedItem = "Times New Roman"; //set font
+            tstrCboSize.SelectedItem = "14";              //set size    
+            tstrCboLanguage.SelectedIndex = 0;            //set language
+            tstrCboOnline.SelectedIndex = 0;              //set online dictionary
 
-            cmbLike.Hide();
-            cmbHistory.Hide();
+            cboFavorite.Hide();
+            cboHistory.Hide();
             #endregion
 
             #region InvisibleBorder
             btnLike.FlatAppearance.BorderSize = 0;
             btnSearchImage.FlatAppearance.BorderSize = 0;
-            btnSpeakEnglish.FlatAppearance.BorderSize = 0;
+            btnSpeak.FlatAppearance.BorderSize = 0;
             btnSearchOnline.FlatAppearance.BorderSize = 0;
             #endregion
 
@@ -541,48 +524,62 @@ namespace Từ_điển
             #endregion  
         }
 
-        private void toolStripCmbLanguage_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            int index = cmbLanguage.SelectedIndex;
-
-            if (toolStripCmbLanguage.SelectedItem == "Vietnamese")
-            {
-                btnFavorite.Text = "Từ yêu thích";
-                btnHistory.Text = "Lịch sử tra từ";
-                btnHDSD.Text = "Hướng dẫn dùng";
-                btnTranslator.Text = "Dịch văn bản";
-                btnPop.Text = "Từ phổ biến";
-                toolStripCmbLanguage.Text = "Tiếng Việt";
-                cmbLanguage.Items.Clear();
-                cmbLanguage.Items.Add("Anh - Việt");
-                cmbLanguage.Items.Add("Việt - Anh");
-                cmbLanguage.SelectedIndex = index;
-                lblLoading.Text = "Đang tải dữ liệu. Vui lòng chờ!";
-            }
-            else
-            {
-                btnFavorite.Text = "Favorite";
-                btnHistory.Text = "History";
-                btnHDSD.Text = "How to use ?";
-                btnTranslator.Text = "Translator";
-                btnPop.Text = "Popular Words";
-                toolStripCmbLanguage.Text = "English";
-                cmbLanguage.Items.Clear();
-                cmbLanguage.Items.Add("Eng - Vie");
-                cmbLanguage.Items.Add("Vie - Eng");
-                cmbLanguage.SelectedIndex = index;
-                lblLoading.Text = "Loading data. Please wait!";
-            }
-        }
-
-        private void ChangeFontSize(object sender, EventArgs e)
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             try
             {
-                if (toolStripCmbFont.Text != "" && toolStripCmbSize.Text != "")
+                if (tstrCboLanguage.SelectedItem == "Vietnamese")
                 {
-                    rTxbExplan.Font = new Font(toolStripCmbFont.Text, int.Parse(toolStripCmbSize.Text));
-                    LoadHightLightData("HightLight.txt");
+                    if (MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+                    {
+                        e.Cancel = true;
+                        return;
+                    }
+                }
+                else
+                {
+                    if (MessageBox.Show("Do you want to exit?", "Notification", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+                    {
+                        e.Cancel = true;
+                        return;
+                    }
+                }
+                Output(cboHistory, "History.txt");
+                Output(cboFavorite, "Favorite.txt");
+                voice.SpeakAsyncCancelAll();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+        #endregion
+
+        #region Method
+        bool IsShowCmbLike = false;
+        bool IsShowCmbHistory = false;
+        bool IsShowIrrVerb = false;
+
+        /// <summary>
+        /// Change language to find word
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void cmbLanguage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (cboLanguage.SelectedIndex == 0)
+                {
+                    cboWord.Show();
+                    cboTu.Hide();
+                    cboWord.Text = "";
+                }
+                else
+                {
+                    cboTu.Show();
+                    cboWord.Hide();
+                    cboTu.Text = "";
                 }
             }
             catch (Exception ex)
@@ -590,5 +587,242 @@ namespace Từ_điển
                 MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+
+        /// <summary>
+        /// Show word in comboBox like
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void cmbLike_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                btnLike.BackgroundImage = ((System.Drawing.Image)(Properties.Resources.Like));
+                rtxtExplan.Text = cboFavorite.SelectedItem.ToString();
+                LoadHightLightData("HightLight.txt");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        /// <summary>
+        /// Show word in comboBox history
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void cmbHistory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                rtxtExplan.Text = cboHistory.SelectedItem.ToString();
+                LoadHightLightData("HightLight.txt");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        /// <summary>
+        /// Show or hide comboBox history
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnHistory_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                IsShowCmbHistory = !IsShowCmbHistory;
+                if (IsShowCmbHistory)
+                {
+                    cboHistory.Show();
+                    cboLanguage.Hide();
+                    cboFavorite.Hide();
+                    IsShowCmbLike = false;
+                }
+                else
+                {
+                    cboHistory.Hide();
+                    cboLanguage.Show();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        /// <summary>
+        /// Show or hide comboBox like
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnFavorite_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                IsShowCmbLike = !IsShowCmbLike;
+                if (IsShowCmbLike)
+                {
+                    cboFavorite.Show();
+                    cboLanguage.Hide();
+                    cboHistory.Hide();
+                    IsShowCmbHistory = false;
+                }
+                else
+                {
+                    cboFavorite.Hide();
+                    cboLanguage.Show();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        /// <summary>
+        /// Load file to introduce how to use this dictionary
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnHDSD_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string line = "";
+                string HDSD = "";
+                //tạo 1 đối tượng luồng đọc để đọc file 
+                StreamReader streamReader = new StreamReader("HDSD.txt");
+                while ((line = streamReader.ReadLine()) != null)
+                {
+                    HDSD += line + "\r\n";
+                    while ((line = streamReader.ReadLine()) != null)
+                    {
+                        if (line == "")
+                        {
+                            HDSD += "\r\n";
+                            break;
+                        }
+                        HDSD += "\r\n" + line;
+                    }
+                }
+                rtxtExplan.Text = HDSD;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        /// <summary>
+        /// Show form PopularWord
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnPop_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                PopularWords popularWords = new PopularWords();
+                popularWords.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        /// <summary>
+        /// Show form Translator
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnTranslator_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                TranslatorForm form = new TranslatorForm();
+                form.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+        #endregion
+
+        #region Toolstrip
+        /// <summary>
+        /// Change language display
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void toolStripCmbLanguage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                int index = cboLanguage.SelectedIndex;
+
+                if (tstrCboLanguage.SelectedItem == "Vietnamese")
+                {
+                    btnFavorite.Text = "Từ yêu thích";
+                    btnHistory.Text = "Lịch sử tra từ";
+                    btnHDSD.Text = "Hướng dẫn";
+                    btnTranslator.Text = "Dịch văn bản";
+                    btnPop.Text = "Từ phổ biến";
+                    tstrCboLanguage.Text = "Tiếng Việt";
+                    cboLanguage.Items.Clear();
+                    cboLanguage.Items.Add("Anh - Việt");
+                    cboLanguage.Items.Add("Việt - Anh");
+                    cboLanguage.SelectedIndex = index;
+                    lblLoading.Text = "Đang tải dữ liệu. Vui lòng chờ!";
+                }
+                else
+                {
+                    btnFavorite.Text = "Favorite";
+                    btnHistory.Text = "History";
+                    btnHDSD.Text = "How to use ?";
+                    btnTranslator.Text = "Translator";
+                    btnPop.Text = "Popular Words";
+                    tstrCboLanguage.Text = "English";
+                    cboLanguage.Items.Clear();
+                    cboLanguage.Items.Add("Eng - Vie");
+                    cboLanguage.Items.Add("Vie - Eng");
+                    cboLanguage.SelectedIndex = index;
+                    lblLoading.Text = "Loading data. Please wait!";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void ChangeFontSize(object sender, EventArgs e)
+        {
+            float emSize;
+            try
+            {
+                float.TryParse(tstrCboSize.Text, out emSize);
+                rtxtExplan.Font = new Font(tstrCboFont.Text, emSize);
+            }
+            catch (ArgumentException)
+            {
+                emSize = 13;
+                rtxtExplan.Font = new Font(tstrCboFont.Text, emSize);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.GetType().ToString(), this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            finally
+            {                
+                LoadHightLightData("HightLight.txt");
+            }
+        }
+        #endregion
     }
 }

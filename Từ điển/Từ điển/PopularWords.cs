@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Từ_điển
@@ -24,26 +18,28 @@ namespace Từ_điển
         {
             InitializeComponent();
 
-            cmbWord.DisplayMember = "Key";
+            cboWord.DisplayMember = "Key";
 
-            cmbWord.Hide();
+            cboWord.Hide();
             btnAfter.Hide();
             btnBefore.Hide();
-            pictureBox1.Hide();
-            txbMeaning.Hide();
-            dgvIrrVerbs.Hide();
+            picExample.Hide();
+            txtMeaning.Hide();
+            dvwIrrVerbs.Hide();
         }
 
+        /// <summary>
+        /// Load picture form file 
+        /// </summary>
         private void LoadPicture()
         {
-            Image img=null;
+            Image img = null;
             try
             {
                 string filename = null;
-                string name = cmbWord.Text.ToString().Split('/')[0];
+                string name = cboWord.Text.ToString().Split('/')[0];
                 if (name.EndsWith(" N"))
-                    name=name.Substring(0, name.Length - 2);
-                MessageBox.Show(name);
+                    name = name.Substring(0, name.Length - 2);
                 if (IsToeic)
                     filename = @"TOEIC\" + name + ".jpg";
                 if (IsToefl)
@@ -64,16 +60,17 @@ namespace Từ_điển
             }
             finally
             {
-                pictureBox1.Image = img;
+                picExample.Image = img;
             }
         }
 
         private void LoadData(string Path, ComboBox comboBox)
         {
-            cmbWord.Items.Clear();
+            cboWord.Items.Clear();
             new Thread(
                 () =>
-                {;
+                {
+                    ;
                     try
                     {
                         string line = "";
@@ -98,36 +95,53 @@ namespace Từ_điển
                     }
                     catch (Exception ex)
                     {
-                        string errorMsg = string.Format("An error has occured in {0}. \nException:\n{1}", "cbWord", ex.Message);
-                        MessageBox.Show(errorMsg, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
                 }
                 )
             { IsBackground = true }.Start();
         }
 
+        /// <summary>
+        /// Search word in comboBox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbWord.SelectedItem != null)
+            try
             {
-                if (cmbWord.SelectedIndex == 0)
-                    btnBefore.Hide();
-                else
-                    btnBefore.Show();
-                if (cmbWord.SelectedIndex == cmbWord.Items.Count-1)
-                    btnAfter.Hide();
-                else
-                    btnAfter.Show();
-                txbMeaning.Text = cmbWord.SelectedItem.ToString();
-                LoadPicture();
+                if (cboWord.SelectedItem != null)
+                {
+                    if (cboWord.SelectedIndex == 0)
+                        btnBefore.Hide();
+                    else
+                        btnBefore.Show();
+                    if (cboWord.SelectedIndex == cboWord.Items.Count - 1)
+                        btnAfter.Hide();
+                    else
+                        btnAfter.Show();
+                    txtMeaning.Text = cboWord.SelectedItem.ToString();
+
+                    LoadPicture();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
+        /// <summary>
+        /// Show previous word
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnBefore_Click(object sender, EventArgs e)
         {
             try
             {
-                cmbWord.SelectedIndex = cmbWord.SelectedIndex - 1;
+                cboWord.SelectedIndex = cboWord.SelectedIndex - 1;
             }
             catch (Exception ex)
             {
@@ -135,11 +149,16 @@ namespace Từ_điển
             }
         }
 
+        /// <summary>
+        /// Show next word
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAfter_Click(object sender, EventArgs e)
         {
             try
             {
-                cmbWord.SelectedIndex = cmbWord.SelectedIndex + 1;
+                cboWord.SelectedIndex = cboWord.SelectedIndex + 1;
             }
             catch (Exception ex)
             {
@@ -147,53 +166,79 @@ namespace Từ_điển
             }
         }
 
+        /// <summary>
+        /// Load 600 words TOEIC to comboBox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnToeic_Click(object sender, EventArgs e)
         {
-            IsToeic = !IsToeic;
-            if (IsToeic)
+            try
             {
-                LoadData("TOEIC.txt", cmbWord);
+                IsToeic = !IsToeic;
+                if (IsToeic)
+                {
+                    LoadData("TOEIC.txt", cboWord);
 
-                #region Show
-                cmbWord.Show();
-                btnAfter.Show();
-                btnBefore.Show();
-                pictureBox1.Show();
-                txbMeaning.Show();
-                #endregion
+                    #region Show
+                    cboWord.Show();
+                    btnAfter.Show();
+                    btnBefore.Show();
+                    picExample.Show();
+                    txtMeaning.Show();
+                    #endregion
 
-                #region Another btn change to false
-                IsOxford = false;
-                IsToefl = false;
-                IsIrrVerbs = false;
-                IsIelts = false;
-                #endregion
+                    #region Another btn change to false
+                    IsOxford = false;
+                    IsToefl = false;
+                    IsIrrVerbs = false;
+                    IsIelts = false;
+                    #endregion
 
-                dgvIrrVerbs.Hide();
+                    dvwIrrVerbs.Hide();
+                }
+                else
+                {
+                    cboWord.Hide();
+                    btnAfter.Hide();
+                    btnBefore.Hide();
+                    picExample.Hide();
+                    txtMeaning.Hide();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                cmbWord.Hide();
-                btnAfter.Hide();
-                btnBefore.Hide();
-                pictureBox1.Hide();
-                txbMeaning.Hide();
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+
         }
 
+        /// <summary>
+        /// Load 900 words TOEFL to comboBox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnToefl_Click(object sender, EventArgs e)
         {
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
             IsToefl = !IsToefl;
             if (IsToefl)
             {
-                LoadData("TOEFL.txt", cmbWord);
+                LoadData("TOEFL.txt", cboWord);
 
                 #region Show
-                cmbWord.Show();
+                cboWord.Show();
                 btnAfter.Show();
                 btnBefore.Show();
-                pictureBox1.Show();
-                txbMeaning.Show();
+                picExample.Show();
+                txtMeaning.Show();
                 #endregion
 
                 #region Another btn change to false
@@ -203,31 +248,44 @@ namespace Từ_điển
                 IsIelts = false;
                 #endregion
 
-                dgvIrrVerbs.Hide();
+                dvwIrrVerbs.Hide();
             }
             else
             {
-                cmbWord.Hide();
+                cboWord.Hide();
                 btnAfter.Hide();
                 btnBefore.Hide();
-                pictureBox1.Hide();
-                txbMeaning.Hide();
+                picExample.Hide();
+                txtMeaning.Hide();
             }
         }
 
+        /// <summary>
+        /// Load 900 words IELTS to comboBox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnIelts_Click(object sender, EventArgs e)
         {
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
             IsIelts = !IsIelts;
             if (IsIelts)
             {
-                LoadData("IELTS.txt", cmbWord);
+                LoadData("IELTS.txt", cboWord);
 
                 #region Show
-                cmbWord.Show();
+                cboWord.Show();
                 btnAfter.Show();
                 btnBefore.Show();
-                pictureBox1.Show();
-                txbMeaning.Show();
+                picExample.Show();
+                txtMeaning.Show();
                 #endregion
 
                 #region Another btn change to false
@@ -237,31 +295,44 @@ namespace Từ_điển
                 IsToefl = false;
                 #endregion
 
-                dgvIrrVerbs.Hide();
+                dvwIrrVerbs.Hide();
             }
             else
             {
-                cmbWord.Hide();
+                cboWord.Hide();
                 btnAfter.Hide();
                 btnBefore.Hide();
-                pictureBox1.Hide();
-                txbMeaning.Hide();
+                picExample.Hide();
+                txtMeaning.Hide();
             }
         }
 
+        /// <summary>
+        /// Load 3000 words OXFORD to comboBox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnOxford_Click(object sender, EventArgs e)
         {
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
             IsOxford = !IsOxford;
             if (IsOxford)
             {
-                LoadData("OXFORD.txt", cmbWord);
+                LoadData("OXFORD.txt", cboWord);
 
                 #region Show
-                cmbWord.Show();
+                cboWord.Show();
                 btnAfter.Show();
                 btnBefore.Show();
-                pictureBox1.Show();
-                txbMeaning.Show();
+                picExample.Show();
+                txtMeaning.Show();
                 #endregion
 
                 #region Another btn change to false
@@ -271,38 +342,52 @@ namespace Từ_điển
                 IsToefl = false;
                 #endregion
 
-                dgvIrrVerbs.Hide();
+                dvwIrrVerbs.Hide();
             }
             else
             {
-                cmbWord.Hide();
+                cboWord.Hide();
                 btnAfter.Hide();
                 btnBefore.Hide();
-                pictureBox1.Hide();
-                txbMeaning.Hide();
+                picExample.Hide();
+                txtMeaning.Hide();
             }
         }
 
+        /// <summary>
+        /// Show irregular verbs
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnIrrVerbs_Click(object sender, EventArgs e)
         {
-            IsIrrVerbs = !IsIrrVerbs;
-            if (IsIrrVerbs)
+            try
             {
-                dgvIrrVerbs.Show();
-                LoadDataToIrregularVerbs("BQT_en.txt", dgvIrrVerbs);
-                cmbWord.Hide();
-                btnAfter.Hide();
-                btnBefore.Hide();
-                pictureBox1.Hide();
-                txbMeaning.Hide();
+                IsIrrVerbs = !IsIrrVerbs;
+                if (IsIrrVerbs)
+                {
+                    dvwIrrVerbs.Show();
+                    LoadDataToDvwIrrVerbs("BQT_en.txt", dvwIrrVerbs);
+                    #region Hide others method
+                    cboWord.Hide();
+                    btnAfter.Hide();
+                    btnBefore.Hide();
+                    picExample.Hide();
+                    txtMeaning.Hide();
+                    #endregion
+                }
+                else
+                {
+                    dvwIrrVerbs.Hide();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                dgvIrrVerbs.Hide();
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
-        private void LoadDataToIrregularVerbs(string Path, DataGridView dataGrid)
+        private void LoadDataToDvwIrrVerbs(string Path, DataGridView dataGrid)
         {
             new Thread(
                 () =>
@@ -326,8 +411,7 @@ namespace Từ_điển
                             {
                                 if (line == "")
                                     break;
-                                def += Environment.NewLine;
-                                def += line;
+                                def += Environment.NewLine + line;
                             }
                             dataGrid.Rows.Add(baseWord, Vp, Vpp, def);
                         }
