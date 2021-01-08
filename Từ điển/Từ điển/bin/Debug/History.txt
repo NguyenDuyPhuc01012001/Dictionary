@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ﻿<<<<<<< Updated upstream
 ﻿name
 name /neim/
@@ -231,6 +232,148 @@ a dua
      - (viết tắt của will)
 >>>>>>> Stashed changes
 
+=======
+﻿style
+style /stail/
+* danh từ
+     - cột đồng hồ mặt trời
+     - (thực vật học) vòi nhuỵ
+     - văn phong
+     - phong cách, cách, lối
+          VD: style of playing the piano => cách đánh pianô
+          VD: style of work => tác phong làm việc
+          VD: style of living => cách ăn ở
+          VD: to live in great style => sống đế vượng
+     - loại, kiểu, dáng
+          VD: in all sizes and styles => đủ các cỡ và các kiểu
+          VD: Renaissance style => diểu thời Phục hưng (đồ gỗ)
+     - thời trang, mốt
+          VD: in the latest style => theo mốt mới nhất
+     - danh hiệu, tước hiệu
+          VD: I did not recognize him under his new style => tôi không nhận ra anh ta dưới danh hiệu mới
+     - lịch
+          VD: new style => lịch mới ((viết tắt) N.S.)
+          VD: old style => lịch cũ ((viết tắt) O.S.)
+     - điều đặc sắc, điểm xuất sắc
+          VD: there is no style about her => cô ta trông không có gì xuất sắc
+     - bút trâm (để vết trên sáp, ở thời cổ)
+     - (thơ ca) bút mực, bút chì
+     - (y học) kim
+* ngoại động từ ((thường) dạng bị động)
+     - gọi tên, gọi là
+          VD: he is styled orator => anh ta được gọi là nhà hùng biện
+          VD: to style oneself doctor => tự xưng là bác sĩ
+
+school
+school /sku:l/
+* danh từ
+     - đàn cá, bầy cá
+          VD: school fish => loại cá thường đi thành bầy
+* nội động từ
+     - hợp thành đàn, bơi thành bầy (cá...)
+* danh từ
+     - trường học, học đường
+          VD: normal school => trường sư phạm
+          VD: primary school => trường sơ cấp
+          VD: private school => trường tư
+          VD: public school => trường công
+          VD: secondary school => trường trung học
+          VD: to keep a school => mở trường tư
+     - trường sở, phòng học
+          VD: chemistry school => phòng dạy hoá học
+     - trường (toàn thể học sinh một trường)
+          VD: the whole school knows it => toàn trường biết việc đó
+     - (nghĩa bóng) trường, hiện trường
+          VD: he learnt his generalship in a serve school => ông ta đã học tập nghệ thuật chỉ huy quân sự trong một hiện trường rất ác liệt
+     - giảng đường (thời Trung cổ)
+     - buổi học, giờ học, giờ lên lớp; sự đi học
+          VD: there will be no school today => hôm nay không học
+     - trường phái
+          VD: school of art => trường phái nghệ thuật
+     - môn học
+          VD: the history school => môn sử học
+     - phòng thi (ở trường đại học); sự thi
+          VD: to be in the schools => dự thi, đi thi
+     - môn đệ, môn sinh
+     - (âm nhạc) sách dạy đàn
+~a gentleman of the old school
+     - một người quân tử theo kiểu cũ
+~to go to school to somebody
+     - theo đòi ai, học hỏi ai
+* ngoại động từ
+     - cho đi học; dạy dỗ giáo dục
+     - rèn luyện cho vào khuôn phép
+          VD: to school one's temper => rèn luyện tính tình
+          VD: to school onself to patience => rèn luyện tính kiên nhẫn
+
+trưởng phòng
+* noun
+     - chief;
+     - manager
+
+trường học
+* noun
+     - school
+
+trường ca
+* noun
+     - epic
+
+name
+name /neim/
+* danh từ
+     - tên, danh
+          VD: maiden name => tên thời con gái
+          VD: I know him only by name => tôi chỉ biết tên ông ta
+          VD: under the name of => mang tên, lấy tên
+          VD: in the name of => nhân danh; vì, vì quyền lợi của
+          VD: in the name of the law => nhân danh luật pháp
+          VD: in one's own name => nhân danh cá nhân; vì mình, vì quyền lợi bản thân
+          VD: to call someone names => réo đủ các thứ tên ra mà chửi rủa ai
+     - danh nghĩa
+          VD: a king in name => vua trên danh nghĩa
+     - (chỉ số ít) tiếng, tiếng tăm, danh tiếng
+          VD: to make a name => nổi tiếng
+          VD: to have a good name => có tiếng tốt
+          VD: to have a name for courage => nổi tiếng là dũng cảm
+     - danh nhân
+          VD: the great names of history => những danh nhân trong lịch sử
+     - dòng họ
+          VD: the last of the Mac Donaldsəname => người cuối cùng của dòng họ Mác-Đô-nan
+~to give it a name
+     - muốn (uống rượu, được món quà...) gì thì nói ra
+~to have not a penny to one's name
+     - không có một đồng xu dính túi
+* ngoại động từ
+     - đặt tên; gọi tên
+          VD: can you name all the flowers in this garden? => anh có thể nói tên được tất cả các loại hoa trong vườn này không?
+     - định rõ; nói rõ
+          VD: to name the day => định rõ ngày; định rõ ngày cưới (người con gái)
+          VD: name a price => hây nói giá đi, hây cho giá đi
+     - chỉ định, bổ nhiệm
+          VD: to be named for => được bổ nhiệm làm (chức vụ gì...)
+~to name after; (Mỹ) to name for (from)
+     - đặt theo tên (của người nào)
+          VD: the town was named after Lenin => thành phố được đặt tên là Lê-nin
+~not to be named on (in) the same day with
+     - không thể sánh với, không thể để ngang hàng với
+          VD: he is not to be named on the same day with his brother => nó không thể nào sánh với anh nó được
+
+ả giang hồ
+* noun
+     -prostitute,
+     -street-walker
+
+ả
+* noun
+     - Lass
+          Ex: tại anh tại ả, tại cả đôi bên => it's the lad's fault, it's the lass's fault, it's the fault of both
+
+'ll
+'ll
+     - (viết tắt của will)
+
+>>>>>>> Stashed changes
 á
 * excl
      - Aah! Oof(expression of suffering)
