@@ -75,7 +75,7 @@ namespace Từ_điển
                         }
                         if (tstrCboLanguage.SelectedIndex == 0)
                         {
-                            MessageBox.Show("Please make sure you are connected to the internet", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Please make sure you are connected to the internet to use this feature", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
                 }
@@ -332,22 +332,22 @@ namespace Từ_điển
         {
             try
             {
-string str = box.Text;
+                string str = box.Text;
 
-            for (int i = 0; i < str.Length;)
-            {
-                int indexOfBegin = str.IndexOf(begin, i);
-                if (indexOfBegin < 0)
+                for (int i = 0; i < str.Length;)
+                {
+                    int indexOfBegin = str.IndexOf(begin, i);
+                    if (indexOfBegin < 0)
                     break;
-                int indexOfEnd = str.IndexOf(end, indexOfBegin);
-                if (indexOfEnd < 0)
+                    int indexOfEnd = str.IndexOf(end, indexOfBegin);
+                    if (indexOfEnd < 0)
                     indexOfEnd = indexOfBegin;
 
-                box.SelectionStart = indexOfBegin;
-                box.SelectionLength = indexOfEnd - indexOfBegin;
-                box.SelectionColor = color;
-                i = indexOfEnd + 1;
-            }
+                    box.SelectionStart = indexOfBegin;
+                    box.SelectionLength = indexOfEnd - indexOfBegin;
+                    box.SelectionColor = color;
+                    i = indexOfEnd + 1;
+                }
             }
             catch (Exception ex)
             {
@@ -838,5 +838,35 @@ string str = box.Text;
             }
         }
         #endregion
+
+        private void MainForm_KeyUp(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                if (e.Alt)
+                {
+                    if (e.KeyCode.Equals(Keys.X))
+                    {
+                        cboTu.Text = "";
+                        cboWord.Text = "";
+                    }
+                    if (e.KeyCode.Equals(Keys.Z))
+                    {
+                        this.WindowState = FormWindowState.Minimized;
+                    }
+                }
+                if (e.Control)
+                {
+                    if (e.KeyCode.Equals(Keys.Q))
+                    {
+                        this.Close();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
     }
 }

@@ -3,20 +3,23 @@ Chào mừng bạn đến với từ điển EVDict! Để sử dụng ứng d�
 Bấm tổ hợp phím: 
  • Ctrl+ Q		thoát khỏi chương trình
  • Alt+ Z		thu nhỏ cửa sổ
- • Alt+ X		ẩn cửa sổ
- • Alt+ C hay ESC	xoá trường gõ vào
+ • Alt+ X		xoá trường gõ vào
 
 + Để thêm một từ vào danh sách yêu thích, hãy bấm vào nút trái tim ở bên phải màn hình.
 
-+ Để xem danh sách các từ yêu thích, chọn nút Favorite ở bên trái
++ Để xem danh sách các từ yêu thích, chọn nút Favorite
 
 + Để xem lịch sử tra từ, chọn nút History
 
-+ Để học những động từ bất quy tắc, chọn nút Irregular Verbs
++ Để học những động từ bất quy tắc hay các từ thông dụng, chọn nút Popular Words
 
 + Để bắt đầu dịch đoạn văn, chọn nút Translator
 
-+ Để thay đổi giọng nói, âm lượng nói, ngôn ngữ... chọn vào nút Setting
++ Để tìm hình ảnh chọn nút biểu tượng hình ảnh
+
++ Để nghe phát âm chọn nút biểu tượng loa
+
++ Để tra từ trực tuyến chọn nút biểu tượng online 
 
 Ứng dụng EVDict là ứng dụng từ điển miễn phí được tạo bởi nhóm 3 thành viên: 
 - Nguyễn Duy Phúc
@@ -24,7 +27,8 @@ Bấm tổ hợp phím:
 - Nguyễn Doãn Thịnh
 
 Vì đây là ứng dụng đầu tiên mà nhóm làm nên không thể tránh khỏi thiếu sót. Nếu bạn có thắc mắc trong quá trình sử dụng và ý kiến góp ý, xin đừng ngần ngại gửi email đến địa chỉ  
-- thinhnguyendoan5122001@gmail.com
+- 19522275@gm.uit.edu.vn
 - 19522038@gm.uit.edu.vn
+- 19522281@gm.uit.edu.vn
 
 Nhóm xin chân thành cám ơn!
