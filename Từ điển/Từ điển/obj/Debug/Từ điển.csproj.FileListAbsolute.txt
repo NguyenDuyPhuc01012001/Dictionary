@@ -78,3 +78,22 @@ C:\Users\Admin\3D Objects\Từ điển Anh Việt\Dictionary\Từ điển\Từ �
 C:\Users\Admin\3D Objects\Từ điển Anh Việt\Dictionary\Từ điển\Từ điển\obj\Debug\Từ điển.csproj.CopyComplete
 C:\Users\Admin\3D Objects\Từ điển Anh Việt\Dictionary\Từ điển\Từ điển\obj\Debug\Từ điển.exe
 C:\Users\Admin\3D Objects\Từ điển Anh Việt\Dictionary\Từ điển\Từ điển\obj\Debug\Từ điển.pdb
+C:\Users\Asus\Downloads\Từ điển\Từ điển\Từ điển\obj\Debug\Từ điển.csprojAssemblyReference.cache
+C:\Users\Asus\Downloads\Từ điển\Từ điển\Từ điển\obj\Debug\Interop.WMPLib.dll
+C:\Users\Asus\Downloads\Từ điển\Từ điển\Từ điển\obj\Debug\Từ điển.csproj.ResolveComReference.cache
+C:\Users\Asus\Downloads\Từ điển\Từ điển\Từ điển\obj\Debug\Từ_điển.MainForm.resources
+C:\Users\Asus\Downloads\Từ điển\Từ điển\Từ điển\obj\Debug\Từ_điển.PopularWords.resources
+C:\Users\Asus\Downloads\Từ điển\Từ điển\Từ điển\obj\Debug\Từ_điển.Properties.Resources.resources
+C:\Users\Asus\Downloads\Từ điển\Từ điển\Từ điển\obj\Debug\Từ_điển.TranslatorForm.resources
+C:\Users\Asus\Downloads\Từ điển\Từ điển\Từ điển\obj\Debug\Từ điển.csproj.GenerateResource.cache
+C:\Users\Asus\Downloads\Từ điển\Từ điển\Từ điển\obj\Debug\Từ điển.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Downloads\Từ điển\Từ điển\Từ điển\obj\Debug\Từ điển.exe
+C:\Users\Asus\Downloads\Từ điển\Từ điển\Từ điển\obj\Debug\Từ điển.pdb
+C:\Users\Asus\Downloads\Từ điển\Từ điển\Từ điển\bin\Debug\Từ điển.exe.config
+C:\Users\Asus\Downloads\Từ điển\Từ điển\Từ điển\bin\Debug\Từ điển.exe
+C:\Users\Asus\Downloads\Từ điển\Từ điển\Từ điển\bin\Debug\Từ điển.pdb
+C:\Users\Asus\Downloads\Từ điển\Từ điển\Từ điển\bin\Debug\Guna.UI.dll
+C:\Users\Asus\Downloads\Từ điển\Từ điển\Từ điển\bin\Debug\Guna.UI2.dll
+C:\Users\Asus\Downloads\Từ điển\Từ điển\Từ điển\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Asus\Downloads\Từ điển\Từ điển\Từ điển\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Asus\Downloads\Từ điển\Từ điển\Từ điển\obj\Debug\Từ điển.csproj.CopyComplete
