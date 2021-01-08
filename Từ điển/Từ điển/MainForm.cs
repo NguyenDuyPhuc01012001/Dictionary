@@ -20,8 +20,7 @@ namespace Từ_điển
         {
             InitializeComponent();
 
-            Control.CheckForIllegalCrossThreadCalls = false;
-            
+            Control.CheckForIllegalCrossThreadCalls = false;            
         }
 
         #region Speak
@@ -572,7 +571,6 @@ string str = box.Text;
         #region Method
         bool IsShowCmbLike = false;
         bool IsShowCmbHistory = false;
-        bool IsShowIrrVerb = false;
 
         /// <summary>
         /// Change language to find word
@@ -740,7 +738,7 @@ string str = box.Text;
         {
             try
             {
-                PopularWords popularWords = new PopularWords();
+                PopularWords popularWords = new PopularWords(tstrCboLanguage.SelectedIndex);
                 popularWords.Show();
             }
             catch (Exception ex)

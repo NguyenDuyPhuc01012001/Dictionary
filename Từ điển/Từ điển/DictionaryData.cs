@@ -2,7 +2,7 @@
 
 namespace Từ_điển
 {
-    public class DictionaryData : IComparable<DictionaryData>
+    public class DictionaryData
     {
         public string Key { get; set; }
         public string Explanation { get; set; }
@@ -13,10 +13,6 @@ namespace Từ_điển
             if (string.IsNullOrEmpty(Explanation)) //Added this check to avoid 
                 return this.GetType().Name; //Return string.Empty or something other than null else you will get OutOfMemoryException error when you add or bind this object to listbox
             return Key+"\r\n"+Explanation;
-        }
-        public int CompareTo(DictionaryData obj) // OverRight phương thức CompareTo của Interface IComparable
-        {
-            return this.Key.CompareTo(obj.Key);
         }
     }
 }

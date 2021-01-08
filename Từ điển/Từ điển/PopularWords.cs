@@ -14,9 +14,20 @@ namespace Từ_điển
         bool IsOxford = false;
         bool IsIrrVerbs = false;
 
-        public PopularWords()
+        public PopularWords(int language)
         {
             InitializeComponent();
+
+            if (language == 0)
+            {
+                btnIrrVerbs.Text = "Irregular Verbs";
+                LoadDataToDvwIrrVerbs("BQT_en.txt", dvwIrrVerbs);
+            }
+            else
+            {
+                btnIrrVerbs.Text = "Bất quy tắc";
+                LoadDataToDvwIrrVerbs("BQT_vi.txt", dvwIrrVerbs);
+            }
 
             cboWord.DisplayMember = "Key";
 
@@ -367,7 +378,6 @@ namespace Từ_điển
                 if (IsIrrVerbs)
                 {
                     dvwIrrVerbs.Show();
-                    LoadDataToDvwIrrVerbs("BQT_en.txt", dvwIrrVerbs);
                     #region Hide others method
                     cboWord.Hide();
                     btnAfter.Hide();
@@ -394,6 +404,7 @@ namespace Từ_điển
                 {
                     try
                     {
+                        dvwIrrVerbs.Rows.Clear();
                         //dataGrid.PerformLayout();
                         string line = "";
 
