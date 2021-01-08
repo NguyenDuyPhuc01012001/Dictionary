@@ -51,14 +51,8 @@ C:\Users\Asus\Downloads\Git\Từ điển\Từ điển\bin\Debug\Newtonsoft.Json.
 C:\Users\Asus\Downloads\Git\Từ điển\Từ điển\obj\Debug\Interop.WMPLib.dll
 C:\Users\Asus\Downloads\Git\Từ điển\Từ điển\obj\Debug\Từ điển.csproj.ResolveComReference.cache
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 C:\Users\Asus\Downloads\Git\Từ điển\Từ điển\bin\Debug\Guna.UI.dll
 C:\Users\Asus\Downloads\Git\Từ điển\Từ điển\bin\Debug\Guna.UI2.dll
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 C:\Users\Admin\3D Objects\Từ điển Anh Việt\Dictionary\Từ điển\Từ điển\bin\Debug\Từ điển.exe.config
