@@ -52,8 +52,11 @@ C:\Users\Asus\Downloads\Git\Từ điển\Từ điển\obj\Debug\Interop.WMPLib.d
 C:\Users\Asus\Downloads\Git\Từ điển\Từ điển\obj\Debug\Từ điển.csproj.ResolveComReference.cache
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 C:\Users\Asus\Downloads\Git\Từ điển\Từ điển\bin\Debug\Guna.UI.dll
 C:\Users\Asus\Downloads\Git\Từ điển\Từ điển\bin\Debug\Guna.UI2.dll
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
