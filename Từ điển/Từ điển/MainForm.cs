@@ -21,6 +21,7 @@ namespace Từ_điển
             InitializeComponent();
 
             Control.CheckForIllegalCrossThreadCalls = false;
+            
         }
 
         #region Speak
@@ -68,7 +69,14 @@ namespace Từ_điển
                     }
                     catch (System.Net.Http.HttpRequestException)
                     {
-                        MessageBox.Show("Hãy kết nối mạng trước khi sử dụng tính năng này.", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        if (tstrCboLanguage.SelectedIndex==1)
+                        {
+                            MessageBox.Show("Hãy kết nối mạng trước khi sử dụng tính năng này.", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        if (tstrCboLanguage.SelectedIndex == 0)
+                        {
+                            MessageBox.Show("Please make sure you are connected to the internet", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
                     }
                 }
             }
@@ -172,42 +180,42 @@ namespace Từ_điển
         {
             try
             {
-                if (tstrCboOnline.SelectedItem == "vdict")
+                if (tstrCboOnline.SelectedIndex == 0)
                 {
                     if (cboLanguage.SelectedIndex == 0)
                         Process.Start("https://vdict.com/" + cboWord.Text + ",1,0,0.html");
                     else
                         Process.Start("https://vdict.com/" + cboTu.Text + ",2,0,0.html");
                 }
-                if (tstrCboOnline.SelectedItem == "soha")
+                if (tstrCboOnline.SelectedIndex == 1)
                 {
                     if (cboLanguage.SelectedIndex == 0)
                         Process.Start("http://tratu.soha.vn/dict/en_vn/" + cboWord.Text);
                     else
                         Process.Start("http://tratu.soha.vn/dict/vn_en/" + cboTu.Text);
                 }
-                if (tstrCboOnline.SelectedItem == "vndic")
+                if (tstrCboOnline.SelectedIndex == 2)
                 {
                     if (cboLanguage.SelectedIndex == 0)
                         Process.Start("http://3.vndic.net/index.php?word=" + cboWord.Text + "&dict=en_vi");
                     else
                         Process.Start("http://3.vndic.net/index.php?word=" + cboTu.Text + "&dict=vi_en");
                 }
-                if (tstrCboOnline.SelectedItem == "Oxford")
+                if (tstrCboOnline.SelectedIndex == 3)
                 {
                     if (cboLanguage.SelectedIndex == 0)
                         Process.Start("https://www.oxfordlearnersdictionaries.com/definition/english/" + cboWord.Text + "? q=" + cboWord.Text);
                     else
-                        MessageBox.Show("Ngôn ngữ không hỗ trợ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                           MessageBox.Show("Ngôn ngữ không hỗ trợ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);                   
                 }
-                if (tstrCboOnline.SelectedItem == "laban")
+                if (tstrCboOnline.SelectedIndex == 4)
                 {
                     if (cboLanguage.SelectedIndex == 0)
                         Process.Start("https://dict.laban.vn/find?type=1&query=" + cboWord.Text);
                     else
                         Process.Start("https://dict.laban.vn/find?type=2&query=" + cboTu.Text);
                 }
-                if (tstrCboOnline.SelectedItem == "Cambridge")
+                if (tstrCboOnline.SelectedIndex == 5)
                 {
                     if (cboLanguage.SelectedIndex == 0)
                         Process.Start("https://dictionary.cambridge.org/dictionary/english/" + cboWord.Text);
@@ -267,7 +275,10 @@ namespace Từ_điển
                     {
                         lblLoading.Hide();
                         picLoading.Hide();
-                        MessageBox.Show("Dữ liệu đã được tải lên thành công ✓", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                        if (tstrCboLanguage.SelectedIndex==1)
+                            MessageBox.Show("Dữ liệu đã được tải lên thành công ✓", "Hoàn tất", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                        if(tstrCboLanguage.SelectedIndex==0)
+                            MessageBox.Show("Data has been loaded sucessfully ✓", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                     }
                 }
                 )
@@ -307,7 +318,10 @@ namespace Từ_điển
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message, "Application Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                        if (tstrCboLanguage.SelectedIndex ==0)
+                            MessageBox.Show(ex.Message, "Application Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                        if(tstrCboLanguage.SelectedIndex==1)
+                            MessageBox.Show(ex.Message, "Ứng dụng bị lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                     }
                 }
                 )
@@ -528,7 +542,7 @@ string str = box.Text;
         {
             try
             {
-                if (tstrCboLanguage.SelectedItem == "Vietnamese")
+                if (tstrCboLanguage.SelectedIndex == 1)
                 {
                     if (MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
                     {
@@ -766,7 +780,7 @@ string str = box.Text;
             {
                 int index = cboLanguage.SelectedIndex;
 
-                if (tstrCboLanguage.SelectedItem == "Vietnamese")
+                if (tstrCboLanguage.SelectedIndex == 1)
                 {
                     btnFavorite.Text = "Từ yêu thích";
                     btnHistory.Text = "Lịch sử tra từ";
@@ -780,7 +794,7 @@ string str = box.Text;
                     cboLanguage.SelectedIndex = index;
                     lblLoading.Text = "Đang tải dữ liệu. Vui lòng chờ!";
                 }
-                else
+                else if(tstrCboLanguage.SelectedIndex==0)
                 {
                     btnFavorite.Text = "Favorite";
                     btnHistory.Text = "History";

@@ -1,4 +1,44 @@
-﻿'gainst
+﻿name
+name /neim/
+* danh từ
+     - tên, danh
+          VD: maiden name => tên thời con gái
+          VD: I know him only by name => tôi chỉ biết tên ông ta
+          VD: under the name of => mang tên, lấy tên
+          VD: in the name of => nhân danh; vì, vì quyền lợi của
+          VD: in the name of the law => nhân danh luật pháp
+          VD: in one's own name => nhân danh cá nhân; vì mình, vì quyền lợi bản thân
+          VD: to call someone names => réo đủ các thứ tên ra mà chửi rủa ai
+     - danh nghĩa
+          VD: a king in name => vua trên danh nghĩa
+     - (chỉ số ít) tiếng, tiếng tăm, danh tiếng
+          VD: to make a name => nổi tiếng
+          VD: to have a good name => có tiếng tốt
+          VD: to have a name for courage => nổi tiếng là dũng cảm
+     - danh nhân
+          VD: the great names of history => những danh nhân trong lịch sử
+     - dòng họ
+          VD: the last of the Mac Donaldsəname => người cuối cùng của dòng họ Mác-Đô-nan
+~to give it a name
+     - muốn (uống rượu, được món quà...) gì thì nói ra
+~to have not a penny to one's name
+     - không có một đồng xu dính túi
+* ngoại động từ
+     - đặt tên; gọi tên
+          VD: can you name all the flowers in this garden? => anh có thể nói tên được tất cả các loại hoa trong vườn này không?
+     - định rõ; nói rõ
+          VD: to name the day => định rõ ngày; định rõ ngày cưới (người con gái)
+          VD: name a price => hây nói giá đi, hây cho giá đi
+     - chỉ định, bổ nhiệm
+          VD: to be named for => được bổ nhiệm làm (chức vụ gì...)
+~to name after; (Mỹ) to name for (from)
+     - đặt theo tên (của người nào)
+          VD: the town was named after Lenin => thành phố được đặt tên là Lê-nin
+~not to be named on (in) the same day with
+     - không thể sánh với, không thể để ngang hàng với
+          VD: he is not to be named on the same day with his brother => nó không thể nào sánh với anh nó được
+
+'gainst
 'gainst
 * giới từ
      - (thơ ca) (như) against
